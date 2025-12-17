@@ -206,10 +206,11 @@
   overflow: hidden;
   box-shadow: var(--card-shadow);
   width: 100%;
+  min-width: 100%;
   margin: 1.5rem 0;
   border-collapse: separate;
   border-spacing: 0;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 .md-typeset table:not([class]) th {

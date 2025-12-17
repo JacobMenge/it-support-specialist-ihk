@@ -1,140 +1,159 @@
 ---
-title: Vorgaben und Bewertung
-description: Was wird bewertet und welche formalen Anforderungen gelten
+title: Bewertungskriterien
+description: Was die Prüfer bewerten und worauf du achten musst
 ---
 
-# Vorgaben und Bewertung
+# Bewertungskriterien
 
-!!! abstract "Auf einen Blick"
-    Hier erfährst du, was genau bewertet wird und welche formalen Anforderungen gelten. Die Mini-Rubrik zeigt dir, woran Prüfer erkennen, ob ein Kriterium erfüllt ist.
-
----
-
-## :material-clock-fast: In 2 Minuten gelesen
-
-- Präsentation wird mit ca. **1/3**, Fachgespräch mit ca. **2/3** gewichtet
-- Bewertet werden: Fachliche Tiefe, Struktur, Kommunikation, Nutzen
-- Zielgruppe muss zu Beginn genannt werden
-- Prüfungsausschuss ist **KEINE** gültige Zielgruppe
-- Bei Zeitüberschreitung kann abgebrochen werden
+Hier erfährst du, was genau bewertet wird und welche Anforderungen du erfüllen musst.
 
 ---
 
-## :material-file-document-check: Prüflogik: Was wird erwartet?
+## Die Gewichtung verstehen
+
+Die Prüfung besteht aus zwei Teilen mit unterschiedlicher Gewichtung:
+
+| Teil | Gewichtung | Das bedeutet |
+|------|------------|--------------|
+| Präsentation | ca. 33% | Ein Drittel der Note |
+| Fachgespräch | ca. 67% | Zwei Drittel der Note |
+
+!!! warning "Wichtig"
+    Das Fachgespräch zählt doppelt so viel wie die Präsentation. Eine gute Präsentation allein reicht nicht – du musst auch im Fachgespräch überzeugen.
+
+---
+
+## Was wird bewertet?
+
+### In der Präsentation
+
+| Kriterium | Punkte | Was die Prüfer sehen wollen |
+|-----------|--------|----------------------------|
+| Aufbau und Struktur | max. 10 | Klare Gliederung, logischer roter Faden |
+| Fachliche Tiefe | max. 20 | Fachbegriffe richtig verwendet, Zusammenhänge verstanden |
+| Zielgruppenorientierung | max. 10 | Nutzen für die genannte Zielgruppe erkennbar |
+| Visualisierung | max. 10 | Übersichtliche Folien, sinnvolle Bilder und Diagramme |
+| Vortragstechnik | max. 10 | Freies Sprechen, Blickkontakt, angemessenes Tempo |
+
+### Im Fachgespräch
+
+| Kriterium | Punkte | Was die Prüfer sehen wollen |
+|-----------|--------|----------------------------|
+| Fachwissen | max. 25 | Fragen kompetent beantwortet, Hintergründe erklärt |
+| Kommunikation | max. 15 | Strukturierte Antworten, sachlich begründet, Reflexion gezeigt |
+
+Die genaue Punkteverteilung kann je nach IHK variieren.
+
+---
+
+## Die fünf Bewertungsbereiche
 
 ### 1. Zielgruppe
 
-- Du musst **vor** der Präsentation sagen, für wen du präsentierst
-- Gültige Zielgruppen: Endanwender, Administratoren, Management, Fachabteilung
-- Der Prüfungsausschuss versetzt sich in diese Rolle
+Du musst vor der Präsentation sagen, für wen du präsentierst.
 
-### 2. Nutzen & Ergebnis
+**Erlaubte Zielgruppen:**
 
-- Was war das Problem? Was ist jetzt besser?
+- Endanwender / Mitarbeiter einer Abteilung
+- IT-Administratoren / Kollegen im IT-Team
+- Führungskräfte / Management
+- Fachabteilung (z.B. Buchhaltung, Vertrieb)
+
+**Nicht erlaubt:** „Prüfungsausschuss" oder „Prüfer"
+
+**Beispielformulierung:**
+> „Meine Präsentation richtet sich an die IT-Abteilung eines mittelständischen Unternehmens."
+
+---
+
+### 2. Nutzen und Ergebnis
+
+Die Prüfer wollen sehen, was dein Vorgehen gebracht hat.
+
+**Zeige:**
+
+- Was war das Problem?
+- Was ist jetzt besser?
 - Messbarer Nutzen: Zeit gespart, Fehler reduziert, Sicherheit erhöht
-- Ergebnis muss für die Zielgruppe relevant sein
 
-### 3. Struktur & roter Faden
+**Beispiel:**
+> „Durch die neue Konfiguration sparen wir pro Tag 30 Minuten bei der Fehlersuche."
 
-- Klare Gliederung: Ausgangslage → Ziel → Vorgehen → Ergebnis
-- Logische Übergänge zwischen den Abschnitten
-- Keine Sprünge, keine Wiederholungen
+---
+
+### 3. Struktur und roter Faden
+
+Deine Präsentation muss einem klaren Aufbau folgen:
+
+1. **Ausgangslage:** Was war das Problem?
+2. **Ziel:** Was wolltest du erreichen?
+3. **Vorgehen:** Wie bist du vorgegangen?
+4. **Ergebnis:** Was hast du erreicht?
+
+**Wichtig:** Keine Sprünge, keine Wiederholungen.
+
+---
 
 ### 4. Fachliche Tiefe
 
-- Fachbegriffe korrekt verwenden und erklären können
-- Entscheidungen begründen („Warum diese Lösung?")
-- Alternativen kennen und Trade-offs benennen
+Die Prüfer prüfen dein Fachwissen.
 
-### 5. Kommunikation (Online)
+**Du solltest:**
+
+- Fachbegriffe richtig verwenden und erklären können
+- Entscheidungen begründen („Warum habe ich diese Lösung gewählt?")
+- Alternativen kennen und Vor- und Nachteile benennen
+
+**Beispiel:**
+> „Ich habe mich für DHCP-Reservierung statt statischer IP entschieden, weil sich dadurch der Verwaltungsaufwand reduziert."
+
+---
+
+### 5. Kommunikation
+
+Bei einer Online-Prüfung ist Kommunikation besonders wichtig.
+
+**Achte auf:**
 
 - Freies Sprechen (nicht ablesen)
-- **In die Webcam schauen** = Blickkontakt mit Prüfern
-- Angemessenes Tempo, deutliche Aussprache (Mikrofon!)
+- In die Kamera schauen (= Blickkontakt mit den Prüfern)
+- Angemessenes Tempo, deutliche Aussprache
 - Auf Fragen eingehen, nicht ausweichen
 
 ---
 
-## :material-table: Mini-Rubrik: Bewertungsschema
+## Fragen, die sich Prüfer stellen
 
-| Kriterium | Punkte | Woran erkennt man das? |
-|-----------|--------|------------------------|
-| **Aufbau & Struktur** | max. 10 | Projektziel klar beschrieben, logische Gliederung, roter Faden erkennbar |
-| **Fachliche Tiefe** | max. 20 | Fachbegriffe korrekt, Entscheidungen begründet, Alternativen bekannt |
-| **Zielgruppenorientierung** | max. 10 | Nutzen für Zielgruppe dargestellt, angemessene Detailtiefe |
-| **Visualisierung** | max. 10 | Folien übersichtlich, Medien sinnvoll eingesetzt, keine Textwände |
-| **Präsentationstechnik (Online)** | max. 10 | Freies Sprechen, Blick in Webcam, Tempo, klare Aussprache |
-| **Fachgespräch: Fachwissen** | max. 25 | Fragen kompetent beantwortet, Hintergründe erläutert |
-| **Fachgespräch: Kommunikation** | max. 15 | Strukturierte Antworten, sachlich argumentiert, Reflexion gezeigt |
+Während deiner Präsentation denken die Prüfer über diese Fragen nach:
 
-!!! note "Hinweis"
-    Die exakte Punkteverteilung kann je nach IHK variieren. Diese Rubrik basiert auf typischen Bewertungsschemata.
-
----
-
-## :material-format-list-checks: Formale Erwartungen
-
-### Vor der Präsentation (Online)
-
-- [ ] Zielgruppe nennen (z.B. „Meine Präsentation richtet sich an die IT-Abteilung")
-- [ ] **Online-Technik geprüft:** Webcam an, Mikrofon funktioniert, Bildschirmfreigabe bereit
-- [ ] Präsentation geöffnet und im Präsentationsmodus startbereit
-- [ ] Ruhiger Raum, keine Störungen, Hintergrund aufgeräumt
-
-### Während der Präsentation (10 Min.)
-
-- [ ] Zeit einhalten – bei Überschreitung wird abgebrochen
-- [ ] Keine Textwände auf Folien (Schlagworte, Grafiken)
-- [ ] Nicht vorlesen, sondern präsentieren
-- [ ] Ergebnis und Nutzen klar darstellen
-
-### Im Fachgespräch (5 Min.)
-
-- [ ] Kurze, strukturierte Antworten
-- [ ] Bei Nichtwissen ehrlich sein („Das müsste ich recherchieren")
-- [ ] Sachlich bleiben, nicht defensiv werden
-
----
-
-## :material-head-question: Typische Bewertungsfragen der Prüfer (intern)
-
-Diese Fragen stellen sich Prüfer während deiner Präsentation:
-
-1. Ist das Problem klar und der Impact verständlich?
-2. Ist das Ziel SMART formuliert (Spezifisch, Messbar, Erreichbar)?
+1. Ist das Problem klar und verständlich erklärt?
+2. Ist das Ziel konkret und messbar?
 3. Kann der Prüfling sein Vorgehen begründen?
 4. Gibt es ein nachweisbares Ergebnis?
 5. Kennt der Prüfling Alternativen und Risiken?
 6. Ist die Präsentation für die Zielgruppe angemessen?
-7. Kann der Prüfling im Gespräch fachlich vertiefen?
+7. Kann der Prüfling im Fachgespräch vertiefen?
 
 ---
 
-## :material-scale-balance: Gewichtung verstehen
+## Checkliste vor der Prüfung
 
-```
-┌─────────────────────────────────────────────────────┐
-│                    Gesamtnote                       │
-├─────────────────────┬───────────────────────────────┤
-│   Präsentation      │      Fachgespräch             │
-│       ~33%          │         ~67%                  │
-├─────────────────────┼───────────────────────────────┤
-│ • Struktur          │ • Fachwissen                  │
-│ • Visualisierung    │ • Argumentation               │
-│ • Vortragsstil      │ • Reflexion                   │
-│ • Zielgruppe        │ • Kommunikation               │
-└─────────────────────┴───────────────────────────────┘
-```
+### Vor der Präsentation
 
-!!! warning "Wichtig"
-    Das **Fachgespräch wiegt doppelt so viel** wie die Präsentation! Eine gute Präsentation allein reicht nicht – du musst auch im Q&A überzeugen.
+- [ ] Zielgruppe definiert und Formulierung vorbereitet
+- [ ] Technik geprüft: Kamera, Mikrofon, Bildschirmfreigabe
+- [ ] Präsentation geöffnet und startbereit
+- [ ] Ruhiger Raum ohne Störungen
 
----
+### Während der Präsentation
 
-## :material-link-variant: Quellen
+- [ ] Zeit einhalten (bei Überschreitung wird abgebrochen)
+- [ ] Keine Textwände auf Folien
+- [ ] Nicht vorlesen, sondern präsentieren
+- [ ] Ergebnis und Nutzen klar darstellen
 
-!!! info "Offizielle IHK-Dokumente"
-    - [IHK Bewertungskriterien Präsentation neue VO](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Offizielle Kriterien
-    - [IHK Bewertungsbogen Präsentation/Fachgespräch](https://www.ihk.de/blueprint/servlet/resource/blob/3588506/0367f6f5eb2d930c445bbe6191283cfd/it-pruefung-bewertungsbogen-praesentation-fachgespraech-data.pdf) – Punkteschema
-    - [IHK Bodensee-Oberschwaben: Zielgruppenhinweise](https://www.ihk.de/bodensee-oberschwaben/ausbildung/ausbildungspruefungen/berufsbezogene-pruefungsanforderungen/it-berufe/praesentation-der-projektarbeit-und-fachgespraech-3013362) – Zielgruppe definieren
-    - [der-pruefer.de: Beurteilung](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Gewichtung 1/3 zu 2/3
+### Im Fachgespräch
+
+- [ ] Kurze, strukturierte Antworten
+- [ ] Bei Nichtwissen ehrlich sein („Das müsste ich nachschlagen")
+- [ ] Sachlich bleiben, nicht nervös werden

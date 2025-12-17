@@ -1,6 +1,6 @@
-site_name: IT Support Specialist (IHK) - Prüfungsvorbereitung
-site_description: Komplette Unterlagensammlung für die IHK-Zertifikatsprüfung "IT Support Specialist"
-site_author: IHK Prüfungsvorbereitung
+site_name: IT Support Specialist (IHK)
+site_description: Prüfungsvorbereitung für das IHK-Zertifikat IT Support Specialist
+site_author: Syntax-Institut
 site_url: ""
 
 theme:
@@ -97,24 +97,27 @@ plugins:
   - tags
 
 nav:
-  - Start: index.md
-  - Grundlagen:
-    - Prüfungsleitfaden: grundlagen/pruefungsleitfaden.md
-    - Vorgaben & Bewertung: grundlagen/vorgaben-bewertung.md
-  - Vorbereitung:
-    - Themenpool & Scoping: vorbereitung/themenpool.md
-    - Präsentationsblueprint: vorbereitung/praesentationsblueprint.md
-    - Troubleshooting Playbook: vorbereitung/troubleshooting.md
-    - Kommunikation im Support: vorbereitung/kommunikation.md
-    - Merksatzkarten: vorbereitung/merksatzkarten.md
-  - Beispiele:
-    - "Technik: DNS-Problem": beispiele/technik-dns.md
-    - "Technik: Client-Rollout": beispiele/technik-rollout.md
-    - "Kommunikation: Service Recovery": beispiele/kommunikation-recovery.md
-    - "Mix: Identity & Access": beispiele/mix-identity.md
-  - Prüfung:
-    - Fragenkatalog (55+ Fragen): pruefung/fragenkatalog.md
-    - Mock-Prüfung Leitfaden: pruefung/mock-pruefung.md
+  - Übersicht: index.md
+  - Glossar: glossar.md
+  - 1. Die Prüfung verstehen:
+    - Prüfungsablauf: grundlagen/pruefungsleitfaden.md
+    - Bewertungskriterien: grundlagen/vorgaben-bewertung.md
+  - 2. Thema wählen:
+    - Themenpool: vorbereitung/themenpool.md
+  - 3. Präsentation erstellen:
+    - Folienaufbau: vorbereitung/praesentationsblueprint.md
+    - Formulierungshilfen: vorbereitung/merksatzkarten.md
+  - 4. Fachliches Wissen:
+    - Fehleranalyse: vorbereitung/troubleshooting.md
+    - Kundenkommunikation: vorbereitung/kommunikation.md
+  - 5. Beispiele:
+    - DNS-Problem lösen: beispiele/technik-dns.md
+    - Client-Rollout: beispiele/technik-rollout.md
+    - Eskalation bewältigen: beispiele/kommunikation-recovery.md
+    - Zugangsproblem: beispiele/mix-identity.md
+  - 6. Prüfung üben:
+    - Fragen und Antworten: pruefung/fragenkatalog.md
+    - Probeprüfung: pruefung/mock-pruefung.md
     - Checkliste Prüfungstag: pruefung/checkliste.md
 
-copyright: "&copy; 2024 IHK Prüfungsvorbereitung - IT Support Specialist"
+copyright: "&copy; 2025 Syntax-Institut – IT Support Specialist (IHK)"

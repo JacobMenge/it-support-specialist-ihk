@@ -6,7 +6,6 @@ site_url: ""
 theme:
   name: material
   language: de
-  custom_dir: docs/overrides
   palette:
     - scheme: default
       primary: custom

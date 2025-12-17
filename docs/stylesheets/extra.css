@@ -76,55 +76,30 @@
    Layout - Volle Breite nutzen
    ============================================ */
 
-/* MkDocs Material Grid-Variable überschreiben */
-:root {
-  --md-grid-max-width: 100%;
-}
-
-/* Alle Container auf volle Breite */
-.md-grid {
-  max-width: 100% !important;
-  margin: 0 !important;
-}
-
+/* Artikel-Bereich auf volle Breite */
 .md-main__inner {
-  max-width: 100% !important;
-  margin: 0 !important;
-}
-
-.md-content {
-  max-width: 100% !important;
+  max-width: none;
 }
 
 .md-content__inner {
-  max-width: 100% !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
+  max-width: none;
+  padding: 0 1.2rem;
 }
 
-/* Typeset-Container auch volle Breite */
-.md-typeset {
-  max-width: 100% !important;
-}
-
-/* Sidebars kompakt */
-@media screen and (min-width: 1220px) {
+/* Sidebars schmal halten */
+@media screen and (min-width: 60em) {
   .md-sidebar--primary {
-    width: 10rem !important;
-  }
-
-  .md-sidebar--secondary {
-    width: 11rem !important;
+    width: 9.4rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .md-sidebar--primary {
-    width: 11rem !important;
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    width: 10rem;
   }
 
-  .md-sidebar--secondary {
-    width: 12rem !important;
+  .md-sidebar--primary {
+    width: 9.4rem;
   }
 }
 

@@ -107,6 +107,94 @@ description: Vollständige Beispielpräsentation mit Kommunikation-Fokus - Eskal
 
 ---
 
+## Folie 5: Umsetzung – Das Deeskalationsgespräch
+
+### Folientitel
+**Umsetzung: Persönliches Gespräch mit dem Vertriebsleiter**
+
+### Bulletpoints
+- Termin am selben Nachmittag vereinbart (Dringlichkeit zeigen)
+- Vorbereitung: Fakten zum Incident, keine Ausreden
+- Gesprächsführung: Zuhören, Verständnis zeigen, nicht rechtfertigen
+- Kernsätze: „Ich verstehe Ihren Ärger" + „Das hätten wir besser machen müssen"
+- Ergebnis: Vertriebsleiter fühlt sich gehört, Eskalation abgewendet
+
+### Artefakt (Platzhalter)
+> [Gesprächsnotizen oder Kommunikationsprotokoll]
+
+!!! quote "Speaker Notes"
+    „Ich habe noch am selben Nachmittag einen Termin mit dem Vertriebsleiter vereinbart – es war wichtig, Dringlichkeit zu zeigen. In der Vorbereitung habe ich mir die Fakten zurechtgelegt, aber keine Ausreden vorbereitet. Im Gespräch habe ich vor allem zugehört und Verständnis gezeigt. Meine Kernsätze waren: ‚Ich verstehe Ihren Ärger' und ‚Das hätten wir besser machen müssen'. Keine Verteidigung, keine Schuldzuweisungen. Das Ergebnis: Er fühlte sich ernst genommen, und die Eskalation an den Vorstand war vom Tisch."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 6: Umsetzung – Transparente Kommunikation
+
+### Folientitel
+**Umsetzung: Kommunikation an alle User**
+
+### Bulletpoints
+- E-Mail an alle Mitarbeiter: Was ist passiert? Warum?
+- Keine technischen Details, aber ehrliche Erklärung
+- Konkrete Maßnahmen angekündigt: „Das ändern wir"
+- Entschuldigung für mangelnde Kommunikation während des Ausfalls
+- Kontaktperson benannt für Rückfragen
+
+### Artefakt (Platzhalter)
+> [Beispiel-Mail oder Kommunikationsvorlage]
+
+!!! quote "Speaker Notes"
+    „Am nächsten Tag habe ich eine E-Mail an alle Mitarbeiter geschickt. Inhalt: Was ist passiert, warum ist es passiert, aber ohne zu technisch zu werden. Ich habe konkrete Maßnahmen angekündigt, die wir umsetzen werden. Ganz wichtig: Ich habe mich für die mangelnde Kommunikation während des Ausfalls entschuldigt – nicht für den Ausfall selbst, den konnten wir nicht verhindern, aber für das Schweigen. Außerdem habe ich mich als Kontaktperson für Rückfragen benannt."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 7: Umsetzung – Prozessverbesserung
+
+### Folientitel
+**Maßnahmen: Damit es nicht wieder passiert**
+
+### Bulletpoints
+- Eskalationsmatrix erstellt: Wer informiert wen bei welchem Incident?
+- Status-Page eingeführt: Automatische Updates bei Störungen
+- Kommunikationsvorlage für Incidents erstellt
+- Regel: Bei Ausfall >15 Min → Status-Update alle 30 Minuten
+- Dokumentation im Incident-Management-Prozess verankert
+
+### Artefakt (Platzhalter)
+> [Screenshot: Eskalationsmatrix oder Status-Page]
+
+!!! quote "Speaker Notes"
+    „Aus dem Incident habe ich konkrete Maßnahmen abgeleitet. Erstens eine Eskalationsmatrix, die klar definiert, wer bei welchem Incident wie informiert werden muss. Zweitens eine Status-Page, auf der User selbst nachschauen können. Drittens eine Kommunikationsvorlage für Incidents, damit wir im Stress nichts vergessen. Die Regel ist jetzt: Bei jedem Ausfall über 15 Minuten gibt es alle 30 Minuten ein Status-Update. Das alles ist jetzt in unserem Incident-Management-Prozess dokumentiert."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 8: Ergebnis & Lessons Learned
+
+### Folientitel
+**Ergebnis: Vertrauen wiederhergestellt**
+
+### Bulletpoints
+- Kurzfristig: Keine Eskalation an Vorstand, Beschwerden gestoppt
+- Mittelfristig: Positives Feedback im Follow-up nach 1 Woche
+- Langfristig: Verbesserte Prozesse, weniger Beschwerden bei späteren Incidents
+- Lesson Learned: Kommunikation ist genauso wichtig wie die technische Lösung
+- Fazit: Ein Incident ist eine Chance, Vertrauen aufzubauen
+
+### Artefakt (Platzhalter)
+> [Feedback-Zitat oder Vorher-Nachher-Vergleich]
+
+!!! quote "Speaker Notes"
+    „Das Ergebnis: Kurzfristig habe ich die Eskalation abgewendet und die Beschwerden gestoppt. Im Follow-up-Gespräch nach einer Woche habe ich positives Feedback bekommen – der Vertriebsleiter hat sogar die Geschäftsleitung über unsere Verbesserungen informiert. Langfristig haben wir jetzt bessere Prozesse, und bei späteren Incidents gab es deutlich weniger Beschwerden. Mein wichtigstes Learning: Kommunikation ist genauso wichtig wie die technische Lösung. Ein gut gemanagter Incident kann sogar Vertrauen aufbauen."
+
+**Zeit:** 1:00
+
+---
+
 ## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist Service Recovery?"

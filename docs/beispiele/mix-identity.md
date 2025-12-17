@@ -132,6 +132,72 @@ description: Vollständige Beispielpräsentation mit Mix-Fokus - Account-Lockout
 
 ---
 
+## Folie 6: Lösung & Umsetzung
+
+### Folientitel
+**Lösung: Bereinigung und Neueinrichtung**
+
+### Bulletpoints
+- Maßnahme 1: Alte Mail-App vom Mobilgerät entfernt
+- Maßnahme 2: Gespeicherte Credentials in Windows gelöscht
+- Maßnahme 3: MFA-Registrierung zurückgesetzt und neu durchgeführt
+- Maßnahme 4: Outlook-App korrekt mit modernem Auth eingerichtet
+- Validierung: 24 Stunden keine erneute Sperrung
+
+### Artefakt (Platzhalter)
+> [Screenshot: MFA-Registrierung oder Authenticator-App Setup]
+
+!!! quote "Speaker Notes"
+    „Die Lösung bestand aus mehreren Schritten: Zuerst haben wir die alte Mail-App deinstalliert, die noch das veraltete Passwort gespeichert hatte. Dann habe ich im Credential Manager die gespeicherten Zugangsdaten gelöscht. Anschließend habe ich die MFA-Registrierung zurückgesetzt und gemeinsam mit dem User neu eingerichtet. Zum Schluss haben wir die offizielle Outlook-App mit moderner Authentifizierung konfiguriert. Nach 24 Stunden ohne Sperrung war klar: Problem gelöst."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 7: Ergebnis & Dokumentation
+
+### Folientitel
+**Ergebnis: Problem nachhaltig gelöst**
+
+### Bulletpoints
+- Technisch: Keine erneute Sperrung seit 2 Wochen
+- User: Versteht jetzt MFA und weiß, wann er den Code braucht
+- Dokumentation: Ticket mit Root Cause, Knowledge-Base-Artikel erstellt
+- Sicherheit: Brute-Force-Verdacht ausgeräumt
+- Beziehung: Geschäftsführer zufrieden, positives Feedback an IT-Leitung
+
+### Artefakt (Platzhalter)
+> [Screenshot: Ticket-Abschluss oder KB-Artikel]
+
+!!! quote "Speaker Notes"
+    „Das Ergebnis war rundum positiv: Technisch gab es seit zwei Wochen keine erneute Sperrung. Der User versteht jetzt, wie MFA funktioniert und wann er den Code aus seiner App braucht. Ich habe das Ticket vollständig dokumentiert und einen Knowledge-Base-Artikel erstellt für ähnliche Fälle. Besonders wichtig: Der Geschäftsführer war zufrieden und hat positives Feedback an die IT-Leitung gegeben."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 8: Fazit & Lessons Learned
+
+### Folientitel
+**Fazit: Technik und Kommunikation gehören zusammen**
+
+### Bulletpoints
+- Lesson 1: Nicht nur Symptom behandeln, sondern Ursache suchen
+- Lesson 2: Bei wiederkehrenden Problemen Event-Logs prüfen
+- Lesson 3: User-Kommunikation ist Teil der Lösung, nicht Extra
+- Lesson 4: VIP-Fälle brauchen persönliche Betreuung
+- Prävention: Onboarding-Guide für MFA-Einrichtung erstellt
+
+### Artefakt (Platzhalter)
+> [Optional: MFA-Onboarding-Guide oder Prozessverbesserung]
+
+!!! quote "Speaker Notes"
+    „Mein Fazit aus diesem Fall: Technik und Kommunikation gehören zusammen. Nur Account entsperren hätte das Problem nicht gelöst – ich musste die Ursache finden. Die Event-Logs waren dabei entscheidend. Aber genauso wichtig war die Kommunikation: Erst als der User verstanden hat, was MFA ist und warum die alte App Probleme macht, konnten wir das Problem gemeinsam lösen. Als Präventionsmaßnahme habe ich einen MFA-Onboarding-Guide erstellt, damit neue User von Anfang an richtig eingerichtet werden."
+
+**Zeit:** 1:00
+
+---
+
 ## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist Account-Lockout und wozu dient es?"

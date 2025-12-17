@@ -21,6 +21,10 @@ Hier findest du Methoden für systematische Fehleranalyse. Damit zeigst du in de
 
 ## Methode 1: Hypothesenbasiertes Troubleshooting
 
+Das hypothesenbasierte Troubleshooting ist die wichtigste Methode im IT-Support. Anstatt wahllos Dinge auszuprobieren, gehst du wissenschaftlich vor: Du stellst eine Vermutung auf, testest sie gezielt und ziehst Schlüsse aus dem Ergebnis.
+
+**Warum ist das wichtig?** Prüfer wollen sehen, dass du strukturiert denkst. „Ich habe einfach mal neu gestartet" ist keine gute Antwort. Besser: „Meine Hypothese war, dass ein Dienst nicht läuft. Ich habe das mit `Get-Service` geprüft und festgestellt, dass..."
+
 ```mermaid
 flowchart LR
     A[Problem beschreiben] --> B[Symptome sammeln]
@@ -33,6 +37,18 @@ flowchart LR
     F --> H[Validieren]
     H --> I[Dokumentieren]
 ```
+
+**Der Ablauf im Detail:**
+
+1. **Problem beschreiben:** Formuliere das Problem präzise. „Computer geht nicht" ist zu vage. „User kann sich nicht anmelden, Fehlermeldung ‚Falsches Passwort'" ist besser.
+
+2. **Symptome sammeln:** Was siehst du? Fehlermeldungen, Verhalten, Zeitpunkt des Auftretens. Je mehr Informationen, desto besser deine Hypothese.
+
+3. **Hypothese aufstellen:** Basierend auf den Symptomen: Was könnte die Ursache sein? Beginne mit der wahrscheinlichsten.
+
+4. **Test durchführen:** Prüfe deine Hypothese mit einem gezielten Test. Der Test muss die Hypothese bestätigen oder widerlegen können.
+
+5. **Auswerten:** Hat der Test die Hypothese bestätigt? Wenn ja, löse das Problem. Wenn nein, stelle eine neue Hypothese auf.
 
 ### So wendest du es an:
 
@@ -49,7 +65,13 @@ flowchart LR
 
 ## Methode 2: Teile und Herrsche
 
-Teile das System in Komponenten und isoliere das Problem.
+Die „Teile und Herrsche"-Methode (auch: Divide and Conquer) ist besonders effektiv bei komplexen Systemen mit vielen Komponenten. Das Prinzip: Du teilst das Gesamtsystem in einzelne Bereiche und testest systematisch, welcher Bereich das Problem verursacht.
+
+**Wann nutzt du diese Methode?** Wenn du nicht weißt, wo das Problem liegt. Statt jeden einzelnen Punkt zu testen, halbierst du das System und prüfst: Funktioniert die erste Hälfte? Wenn ja, liegt das Problem in der zweiten Hälfte. So grenzt du schnell ein.
+
+**Beispiel:** Ein User kann nicht auf einen Server zugreifen. Das System besteht aus: Client → Netzwerk → Server → Dienst. Statt alles einzeln zu prüfen, testest du zuerst das Netzwerk (Mitte). Funktioniert der Ping zum Server? Wenn ja, ist das Netzwerk OK – das Problem liegt beim Dienst. Wenn nein, prüfst du Client und Netzwerk genauer.
+
+Teile das System in Komponenten und isoliere das Problem:
 
 **Schritt 1:** Status erfassen
 
@@ -72,7 +94,21 @@ Teile das System in Komponenten und isoliere das Problem.
 
 ## OSI-Modell für Netzwerk-Fehlersuche
 
-Beginne bei Layer 1 (physisch) und arbeite dich nach oben.
+Das OSI-Modell (Open Systems Interconnection) ist ein Referenzmodell, das Netzwerkkommunikation in sieben Schichten unterteilt. Für das Troubleshooting ist es unverzichtbar, weil es dir hilft, Probleme systematisch einzugrenzen.
+
+**Die goldene Regel:** Beginne immer bei Layer 1 (physisch) und arbeite dich nach oben. Warum? Weil ein Problem auf einer unteren Schicht alle darüberliegenden Schichten beeinflusst. Wenn das Kabel nicht steckt (Layer 1), bringt es nichts, DNS-Einstellungen zu prüfen (Layer 7).
+
+**Warum ist das OSI-Modell prüfungsrelevant?** Prüfer fragen gerne: „Wie sind Sie bei der Fehlersuche vorgegangen?" Eine Antwort wie „Ich habe systematisch nach dem OSI-Modell gearbeitet, beginnend bei Layer 1" zeigt strukturiertes Denken.
+
+**Die wichtigsten Layer für den IT-Support:**
+
+- **Layer 1 (Physical):** Kabel, Stecker, LEDs, Hardware. Erste Prüfung: Ist alles physisch verbunden?
+- **Layer 2 (Data Link):** MAC-Adressen, Switches, VLANs. Hier geht es um die direkte Verbindung im lokalen Netzwerk.
+- **Layer 3 (Network):** IP-Adressen, Routing, Firewalls. Die meisten Netzwerkprobleme liegen hier.
+- **Layer 4 (Transport):** Ports, TCP/UDP. Wichtig für Anwendungsverbindungen.
+- **Layer 5-7 (Application):** Dienste, Authentifizierung, Anwendungslogik.
+
+Beginne bei Layer 1 (physisch) und arbeite dich nach oben:
 
 | Layer | Name | Typische Prüfungen | Tools/Befehle |
 |-------|------|-------------------|---------------|
@@ -97,9 +133,22 @@ Beginne bei Layer 1 (physisch) und arbeite dich nach oben.
 
 ## Ursachenanalyse
 
+Die Ursachenanalyse (Root Cause Analysis) geht über das reine Troubleshooting hinaus. Während Troubleshooting das Symptom behebt, sucht die Ursachenanalyse nach dem eigentlichen Grund – um Wiederholungen zu verhindern.
+
+**Warum ist das wichtig?** Im IT-Support löst du oft das gleiche Problem mehrfach. Eine Ursachenanalyse hilft dir, den wahren Grund zu finden und das Problem dauerhaft zu beheben. Prüfer schätzen es, wenn du nicht nur „das Problem gelöst" hast, sondern auch „die Wiederholung verhindert" hast.
+
+**Der Unterschied:**
+
+- **Symptom:** User kann nicht drucken → **Sofortlösung:** Drucker neu starten
+- **Root Cause:** Drucker hat keine feste IP → **Dauerhafte Lösung:** DHCP-Reservierung einrichten
+
 ### Methode 1: 5-Why
 
-Frage 5x „Warum?", um zur Ursache zu kommen.
+Die 5-Why-Methode ist einfach aber effektiv: Du fragst fünfmal „Warum?", bis du zur eigentlichen Ursache kommst. Die Zahl 5 ist dabei ein Richtwert – manchmal reichen 3 Fragen, manchmal brauchst du 7.
+
+**So funktioniert es:** Jede Antwort wird zur nächsten Frage. Du bohrst immer tiefer, bis du auf etwas stößt, das du ändern kannst – typischerweise einen fehlenden Prozess, eine falsche Konfiguration oder ein Wissenslücke.
+
+Frage 5x „Warum?", um zur Ursache zu kommen:
 
 | Iteration | Frage | Antwort |
 |-----------|-------|---------|
@@ -114,7 +163,17 @@ Frage 5x „Warum?", um zur Ursache zu kommen.
 
 ### Methode 2: Known Good Comparison
 
-Vergleiche das fehlerhafte System mit einem funktionierenden.
+Die Known-Good-Comparison-Methode ist besonders hilfreich, wenn du keine Ahnung hast, was falsch sein könnte. Das Prinzip: Vergleiche das fehlerhafte System Punkt für Punkt mit einem funktionierenden System. Der Unterschied zeigt dir oft das Problem.
+
+**Wann nutzt du diese Methode?**
+
+- Wenn ein System plötzlich nicht mehr funktioniert, ohne dass du etwas geändert hast
+- Wenn nur ein einzelner Rechner betroffen ist, aber andere funktionieren
+- Wenn du keine Fehlermeldung hast und im Dunkeln tappst
+
+**Typische Vergleichspunkte:** IP-Konfiguration, DNS-Server, Gateway, Gruppenmitgliedschaften, installierte Software, Gruppenrichtlinien.
+
+Vergleiche das fehlerhafte System mit einem funktionierenden:
 
 | Aspekt | Defektes System | Funktionierendes System | Unterschied? |
 |--------|-----------------|------------------------|--------------|
@@ -123,6 +182,17 @@ Vergleiche das fehlerhafte System mit einem funktionierenden.
 | Gateway | 192.168.1.1 | 192.168.1.1 | Nein |
 
 ### Methode 3: Ishikawa (Fischgräte) – vereinfacht
+
+Das Ishikawa-Diagramm (auch Fischgräten-Diagramm oder Ursache-Wirkungs-Diagramm) hilft bei komplexen Problemen, bei denen viele verschiedene Faktoren eine Rolle spielen könnten. Du kategorisierst mögliche Ursachen in Gruppen und gehst sie systematisch durch.
+
+**Die klassischen Kategorien (4M):**
+
+- **Mensch:** Bedienfehler, fehlendes Wissen, falsche Berechtigungen
+- **Maschine:** Hardware-Defekte, Software-Fehler, Konfigurationsprobleme
+- **Methode:** Falsche Prozesse, fehlende Dokumentation, unklare Abläufe
+- **Material:** Fehlende Dateien, korrupte Daten, falsche Versionen
+
+**Wann nutzt du diese Methode?** Bei wiederkehrenden oder komplexen Problemen, bei denen eine einzelne Ursache nicht offensichtlich ist. Auch gut für Team-Analysen nach einem Major Incident.
 
 Für komplexere Probleme mit mehreren möglichen Ursachen:
 
@@ -138,6 +208,17 @@ Für komplexere Probleme mit mehreren möglichen Ursachen:
 ---
 
 ## Ticket-Priorisierung
+
+Im IT-Support kommen ständig neue Anfragen rein. Die Kunst ist, die richtigen Prioritäten zu setzen. Nicht jedes Problem ist gleich dringend – und nicht jeder, der am lautesten ruft, hat das wichtigste Problem.
+
+**Das ITIL-Konzept:** Die Priorität eines Tickets ergibt sich aus zwei Faktoren:
+
+- **Impact (Auswirkung):** Wie viele User oder Systeme sind betroffen? Ein Mailserver-Ausfall für 500 User ist schlimmer als ein Druckerproblem für einen User.
+- **Urgency (Dringlichkeit):** Wie schnell muss das Problem gelöst werden? Gibt es einen Workaround? Steht eine Deadline bevor?
+
+**Die Formel:** Impact × Urgency = Priority
+
+**Warum ist das prüfungsrelevant?** Prüfer fragen oft: „Wie haben Sie das Problem priorisiert?" oder „Warum haben Sie dieses Ticket zuerst bearbeitet?" Mit dem Impact-Urgency-Modell kannst du deine Entscheidung nachvollziehbar begründen.
 
 ### Definitionen
 
@@ -168,19 +249,32 @@ Für komplexere Probleme mit mehreren möglichen Ursachen:
 
 ## Eskalation: Wann und wie?
 
-### Funktionale Eskalation (Fachlich)
-→ An Spezialisten mit mehr Know-how
+Eskalation ist kein Zeichen von Schwäche – es ist ein professionelles Werkzeug. Im IT-Support wirst du regelmäßig auf Probleme stoßen, die du nicht allein lösen kannst. Zu wissen, wann und wie du eskalierst, ist eine Kernkompetenz.
 
-**Wann:** Du kommst nicht weiter, brauchst tiefere Expertise
+**Wichtig:** Eskalation bedeutet nicht „das Problem abgeben". Du übergibst strukturiert an jemanden, der besser helfen kann – mit allen relevanten Informationen.
+
+### Funktionale Eskalation (Fachlich)
+
+Die funktionale Eskalation geht an Spezialisten mit mehr Know-how. Du bleibst am Ticket, holst dir aber Expertenwissen.
+
+**Typische Szenarien:**
+
+- Du hast ein Netzwerkproblem identifiziert, aber keine Berechtigung für die Firewall
+- Das Problem liegt im ERP-System, du kennst dich aber nur mit der Infrastruktur aus
+- Du brauchst Zugriff auf Systeme, die nur der 2nd Level hat
+
+**So eskalierst du richtig:** Dokumentiere, was du bereits geprüft hast. Niemand will bei null anfangen.
 
 ### Hierarchische Eskalation (Management)
-→ An Vorgesetzte für Ressourcen/Entscheidungen
 
-**Wann:**
+Die hierarchische Eskalation geht an Vorgesetzte. Hier geht es nicht um technisches Know-how, sondern um Entscheidungen und Ressourcen.
 
-- SLA-Verletzung droht
-- Politische Entscheidung nötig
-- Ressourcen fehlen
+**Typische Szenarien:**
+
+- Ein SLA droht verletzt zu werden
+- Du brauchst Budget oder zusätzliche Ressourcen
+- Es gibt einen Konflikt mit einem anderen Team oder Kunden
+- Eine politische oder strategische Entscheidung ist nötig
 
 ### Eskalations-Checkliste
 
@@ -193,6 +287,16 @@ Für komplexere Probleme mit mehreren möglichen Ursachen:
 ---
 
 ## Dokumentation: Was muss ins Ticket?
+
+Gute Dokumentation unterscheidet professionellen IT-Support von „irgendwie hinbiegen". Sie hat drei wichtige Funktionen:
+
+1. **Nachvollziehbarkeit:** Wenn das Problem wieder auftritt, kann jeder (auch du selbst in 6 Monaten) verstehen, was getan wurde.
+2. **Wissenstransfer:** Kollegen können von deinen Lösungen lernen.
+3. **Rechtliche Absicherung:** Bei Streitigkeiten oder Audits ist dokumentiert, was wann passiert ist.
+
+**Prüfungsrelevanz:** „Wie haben Sie das dokumentiert?" ist eine typische Prüferfrage. Eine gute Antwort zeigt, dass du professionell arbeitest.
+
+**Die goldene Regel:** Dokumentiere so, dass ein Kollege das Ticket verstehen und weiterbearbeiten kann, ohne dich fragen zu müssen.
 
 ### Minimum-Standard
 
@@ -223,6 +327,12 @@ Für komplexere Probleme mit mehreren möglichen Ursachen:
 ---
 
 ## Wichtige Befehle und Tools
+
+Als IT-Supporter brauchst du ein Repertoire an Befehlen und Tools, die du im Schlaf beherrschen solltest. Diese Liste enthält die wichtigsten – nicht alle, aber die, die du täglich brauchst.
+
+**Prüfungs-Tipp:** Prüfer fragen gerne: „Wie haben Sie das geprüft?" oder „Welchen Befehl haben Sie verwendet?" Nenne nicht nur den Befehl, sondern erkläre auch, was er dir zeigt.
+
+**Beispiel für eine gute Antwort:** „Ich habe `ipconfig /all` verwendet, um die vollständige Netzwerkkonfiguration zu sehen – insbesondere den DNS-Server und ob die IP per DHCP oder statisch vergeben wurde."
 
 ### Windows
 

@@ -107,9 +107,91 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - Standardisi
 
 ---
 
-## Folie 5-8 und Q&A
+## Folie 5: Umsetzung – Imaging & Deployment
 
-*(Siehe vollständige Folien 5-8 im originalen Beispieldokument für: Umsetzung Imaging & Deployment, Umsetzung BitLocker & Recovery, Ergebnis & Validierung, Fazit & Lessons Learned)*
+### Folientitel
+**Umsetzung: Master-Image und automatisches Deployment**
+
+### Bulletpoints
+- Master-Image erstellt: Windows 11 + Office + Standardsoftware
+- Sysprep für Generalisierung (eindeutige SID pro Client)
+- WDS-Server konfiguriert für PXE-Boot
+- Task Sequence in MDT: Image → Domain Join → Software → Treiber
+- Testlauf mit 5 Pilot-Geräten erfolgreich
+
+### Artefakt (Platzhalter)
+> [Screenshot: MDT Task Sequence oder WDS-Konsole]
+
+!!! quote "Speaker Notes"
+    „In der Umsetzung habe ich zunächst ein Master-Image erstellt mit Windows 11, Office und unserer Standardsoftware. Das Image wurde mit Sysprep generalisiert, damit jeder Client eine eigene SID erhält. Dann habe ich den WDS-Server für PXE-Boot konfiguriert und eine Task Sequence in MDT angelegt, die automatisch das Image installiert, den Client in die Domäne aufnimmt und die Treiber installiert. Mit fünf Pilot-Geräten habe ich den Prozess erfolgreich getestet."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 6: Umsetzung – BitLocker & Recovery Keys
+
+### Folientitel
+**Umsetzung: BitLocker per Gruppenrichtlinie**
+
+### Bulletpoints
+- GPO erstellt: „Workstation-BitLocker-Policy"
+- Einstellungen: AES-256, TPM erforderlich, keine PIN
+- Recovery-Key automatisch in AD speichern aktiviert
+- Test: Client verschlüsselt, Key im AD-Computerobjekt sichtbar
+- Rollout auf alle neuen Clients nach Pilot-Phase
+
+### Artefakt (Platzhalter)
+> [Screenshot: GPO-Einstellungen oder AD-Recovery-Key]
+
+!!! quote "Speaker Notes"
+    „Für BitLocker habe ich eine Gruppenrichtlinie erstellt. Die Einstellungen: AES-256-Verschlüsselung, TPM als Schutz erforderlich, keine zusätzliche PIN für bessere Benutzerfreundlichkeit. Entscheidend war die Option, den Recovery-Key automatisch im Active Directory zu speichern. Im Test konnte ich sehen, dass der Key im Computerobjekt hinterlegt wurde. Nach der erfolgreichen Pilot-Phase habe ich die Policy auf alle neuen Clients ausgerollt."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 7: Ergebnis & Validierung
+
+### Folientitel
+**Ergebnis: Schneller, sicherer, standardisiert**
+
+### Bulletpoints
+- Rollout-Zeit: 1-2 Tage → **unter 4 Stunden** (Ziel erreicht)
+- BitLocker-Compliance: 60% → **100%** (Ziel erreicht)
+- Fehlerquote bei Konfiguration: deutlich reduziert
+- Recovery-Keys: 100% zentral im AD gespeichert
+- Validierung: 20 Clients erfolgreich ausgerollt, Stichproben-Audit bestanden
+
+### Artefakt (Platzhalter)
+> [Tabelle/Grafik: Vorher-Nachher-Vergleich der Metriken]
+
+!!! quote "Speaker Notes"
+    „Das Ergebnis: Die Rollout-Zeit ist von 1-2 Tagen auf unter 4 Stunden gesunken – Ziel erreicht. Die BitLocker-Compliance liegt jetzt bei 100 Prozent statt vorher 60 Prozent. Die Fehlerquote bei der Konfiguration ist deutlich gesunken, weil alles automatisiert läuft. Alle Recovery-Keys sind zentral im AD gespeichert. Zur Validierung habe ich 20 Clients ausgerollt und ein Stichproben-Audit durchgeführt – alles bestanden."
+
+**Zeit:** 1:30
+
+---
+
+## Folie 8: Fazit & Lessons Learned
+
+### Folientitel
+**Fazit: Was ich gelernt habe**
+
+### Bulletpoints
+- Standardisierung spart Zeit und reduziert Fehler
+- Automatisierung ermöglicht Skalierung (auch 100 Clients kein Problem)
+- BitLocker per GPO ist einfacher als Skript-Lösungen
+- Recovery-Key-Management ist kritisch – immer zentral speichern
+- Nächster Schritt: Migration auf Autopilot für Cloud-Deployment
+
+### Artefakt (Platzhalter)
+> [Optional: Roadmap für zukünftige Verbesserungen]
+
+!!! quote "Speaker Notes"
+    „Mein Fazit: Standardisierung spart Zeit und reduziert Fehler erheblich. Durch die Automatisierung können wir jetzt skalieren – auch 100 Clients wären kein Problem. BitLocker per GPO hat sich als einfacher und wartbarer erwiesen als Skript-Lösungen. Ein kritischer Punkt ist das Recovery-Key-Management – ohne zentrale Speicherung stehen wir bei Problemen hilflos da. Als nächsten Schritt plane ich die Migration auf Microsoft Autopilot für Cloud-basiertes Deployment."
+
+**Zeit:** 1:00
 
 ---
 

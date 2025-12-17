@@ -76,33 +76,31 @@
    Sidebar / Inhaltsverzeichnis
    ============================================ */
 
-/* Kompaktere Sidebars für mehr Content-Platz */
+/* Content-Bereich maximieren */
+.md-grid {
+  max-width: 100% !important;
+}
+
+.md-main__inner {
+  max-width: 100% !important;
+}
+
+.md-content {
+  max-width: 100% !important;
+}
+
+.md-content__inner {
+  max-width: 100% !important;
+}
+
+/* Sidebars kompakt halten */
 @media screen and (min-width: 1220px) {
-  /* Linke Sidebar kompakt */
   .md-sidebar--primary {
     width: 11rem;
   }
 
-  /* Rechte Sidebar (TOC) kompakt */
   .md-sidebar--secondary {
-    width: 13rem;
-  }
-
-  /* Content nimmt verfügbaren Platz */
-  .md-content {
-    max-width: none;
-  }
-
-  /* Content-Artikel volle Breite */
-  .md-content__inner {
-    max-width: none;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  /* Main-Bereich volle Breite */
-  .md-main__inner {
-    max-width: none;
+    width: 12rem;
   }
 }
 
@@ -112,18 +110,7 @@
   }
 
   .md-sidebar--secondary {
-    width: 14rem;
-  }
-}
-
-/* Content-Grid maximale Breite nutzen */
-.md-grid {
-  max-width: 100%;
-}
-
-@media screen and (min-width: 1220px) {
-  .md-grid {
-    max-width: none;
+    width: 13rem;
   }
 }
 

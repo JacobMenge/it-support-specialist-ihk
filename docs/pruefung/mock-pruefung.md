@@ -25,30 +25,12 @@ description: Anleitung für realistische Online-Probeprüfungen
 
 ### Zeitrahmen pro Teilnehmer: 30-45 Minuten
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│  Phase 1: Technik-Check (5 Min.)                             │
-│    • Teilnehmer prüft Webcam, Mikrofon, Bildschirmfreigabe   │
-│    • Dozent bestätigt: „Ich sehe und höre Sie gut"           │
-│    • Prüfer-Rolle einnehmen (neutral, aufmerksam)            │
-├──────────────────────────────────────────────────────────────┤
-│  Phase 2: Präsentation (10 Min.)                             │
-│    • Teilnehmer startet Bildschirmfreigabe                   │
-│    • Stoppuhr läuft                                          │
-│    • Keine Unterbrechungen                                   │
-│    • Notizen machen für Feedback                             │
-├──────────────────────────────────────────────────────────────┤
-│  Phase 3: Fachgespräch (5 Min.)                              │
-│    • 3-5 Fragen stellen                                      │
-│    • Mix aus Verständnis, Alternativen, Vertiefung           │
-│    • Wie in echter Prüfung: sachlich, nicht helfend          │
-├──────────────────────────────────────────────────────────────┤
-│  Phase 4: Feedback (15-20 Min.)                              │
-│    • Positives zuerst                                        │
-│    • Konkrete Verbesserungspunkte (inkl. Online-Aspekte!)    │
-│    • Nächste Schritte vereinbaren                            │
-└──────────────────────────────────────────────────────────────┘
-```
+| Phase | Zeit | Aufgaben |
+|-------|------|----------|
+| **1. Technik-Check** | 5 Min. | Teilnehmer prüft Webcam, Mikrofon, Bildschirmfreigabe. Dozent bestätigt: „Ich sehe und höre Sie gut". Prüfer-Rolle einnehmen. |
+| **2. Präsentation** | 10 Min. | Teilnehmer startet Bildschirmfreigabe. Stoppuhr läuft. Keine Unterbrechungen. Notizen für Feedback machen. |
+| **3. Fachgespräch** | 5 Min. | 3-5 Fragen stellen. Mix aus Verständnis, Alternativen, Vertiefung. Wie in echter Prüfung: sachlich, nicht helfend. |
+| **4. Feedback** | 15-20 Min. | Positives zuerst. Konkrete Verbesserungspunkte (inkl. Online-Aspekte!). Nächste Schritte vereinbaren. |
 
 ---
 

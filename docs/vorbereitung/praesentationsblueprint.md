@@ -40,39 +40,16 @@ Hier findest du den Standard-Folienplan für deine 10-Minuten-Präsentation. Dre
 
 Für technische Troubleshooting-Cases (DNS, Client-Problem, Security-Incident).
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ Folie 1: Titel + Zielgruppe (0:30)                              │
-│   → Name, Thema, „Meine Zielgruppe sind IT-Administratoren"     │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 2: Incident-Beschreibung (1:00)                           │
-│   → Was war das Problem? Symptome, Impact, Dringlichkeit        │
-│   → Artefakt: Ticket-Auszug oder Fehlermeldung                  │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 3: Analyse-Ansatz (1:00)                                  │
-│   → Welche Hypothesen? Welche Diagnoseschritte?                 │
-│   → Artefakt: Diagnose-Workflow oder OSI-Layer-Zuordnung        │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 4: Troubleshooting (1:30)                                 │
-│   → Konkrete Schritte, Tools, Befehle                           │
-│   → Artefakt: Log-Auszug, Ping/nslookup-Output                  │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 5: Root Cause + Lösung (1:30)                             │
-│   → Ursache gefunden, Entscheidung für Lösung                   │
-│   → Artefakt: Konfigurationsänderung, Fix-Nachweis              │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 6: Ergebnis + Validierung (1:30)                          │
-│   → Problem gelöst, Nachweis (Vorher/Nachher)                   │
-│   → Artefakt: Erfolgstest, Ticket-Abschluss                     │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 7: Dokumentation + Prävention (1:00)                      │
-│   → Was wurde dokumentiert? Wie wird Wiederholung verhindert?   │
-│   → Artefakt: Knowledge-Base-Eintrag, Monitoring-Alert          │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 8: Fazit + Q&A-Überleitung (1:00)                         │
-│   → Kernaussagen, „Ich freue mich auf Ihre Fragen"              │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Folie | Zeit | Inhalt | Artefakt |
+|-------|------|--------|----------|
+| **1. Titel + Zielgruppe** | 0:30 | Name, Thema, „Meine Zielgruppe sind IT-Administratoren" | – |
+| **2. Incident-Beschreibung** | 1:00 | Was war das Problem? Symptome, Impact, Dringlichkeit | Ticket-Auszug, Fehlermeldung |
+| **3. Analyse-Ansatz** | 1:00 | Welche Hypothesen? Welche Diagnoseschritte? | Diagnose-Workflow, OSI-Layer |
+| **4. Troubleshooting** | 1:30 | Konkrete Schritte, Tools, Befehle | Log-Auszug, Ping/nslookup |
+| **5. Root Cause + Lösung** | 1:30 | Ursache gefunden, Entscheidung begründet | Konfiguration, Fix-Nachweis |
+| **6. Ergebnis + Validierung** | 1:30 | Problem gelöst, Vorher/Nachher | Erfolgstest, Ticket-Abschluss |
+| **7. Dokumentation + Prävention** | 1:00 | Was dokumentiert? Wiederholung verhindern? | KB-Eintrag, Monitoring-Alert |
+| **8. Fazit + Q&A** | 1:00 | Kernaussagen, „Ich freue mich auf Ihre Fragen" | – |
 
 ---
 
@@ -80,39 +57,16 @@ Für technische Troubleshooting-Cases (DNS, Client-Problem, Security-Incident).
 
 Für Cases mit Schwerpunkt Kundenkommunikation, Eskalation, Service Recovery.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ Folie 1: Titel + Zielgruppe (0:30)                              │
-│   → „Meine Zielgruppe ist das Service-Management"               │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 2: Ausgangssituation (1:00)                               │
-│   → Was war passiert? Wer war betroffen? Emotionslage?          │
-│   → Artefakt: Anonymisierte Beschwerde oder Eskalationsmail     │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 3: Herausforderung (1:00)                                 │
-│   → Was machte den Fall schwierig? Zeitdruck, VIP, History?     │
-│   → Artefakt: Timeline, Stakeholder-Übersicht                   │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 4: Kommunikationsstrategie (1:30)                         │
-│   → Wie bin ich vorgegangen? Gesprächsstruktur, Deeskalation    │
-│   → Artefakt: Gesprächsleitfaden, Kommunikationsmodell          │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 5: Umsetzung (1:30)                                       │
-│   → Konkrete Gespräche, Maßnahmen, Abstimmungen                 │
-│   → Artefakt: Protokollauszug, Maßnahmenplan                    │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 6: Ergebnis (1:30)                                        │
-│   → Situation entschärft, Kundenbeziehung stabilisiert          │
-│   → Artefakt: Feedback, Follow-up-Status                        │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 7: Lessons Learned (1:00)                                 │
-│   → Was habe ich gelernt? Was würde ich anders machen?          │
-│   → Artefakt: Prozessverbesserung, Eskalationsmatrix            │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 8: Fazit + Q&A-Überleitung (1:00)                         │
-│   → Kernaussagen zur Servicekommunikation                       │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Folie | Zeit | Inhalt | Artefakt |
+|-------|------|--------|----------|
+| **1. Titel + Zielgruppe** | 0:30 | „Meine Zielgruppe ist das Service-Management" | – |
+| **2. Ausgangssituation** | 1:00 | Was war passiert? Wer betroffen? Emotionslage? | Anonymisierte Beschwerde, Eskalationsmail |
+| **3. Herausforderung** | 1:00 | Was machte den Fall schwierig? Zeitdruck, VIP? | Timeline, Stakeholder-Übersicht |
+| **4. Kommunikationsstrategie** | 1:30 | Gesprächsstruktur, Deeskalation | Gesprächsleitfaden, Kommunikationsmodell |
+| **5. Umsetzung** | 1:30 | Konkrete Gespräche, Maßnahmen, Abstimmungen | Protokollauszug, Maßnahmenplan |
+| **6. Ergebnis** | 1:30 | Situation entschärft, Beziehung stabilisiert | Feedback, Follow-up-Status |
+| **7. Lessons Learned** | 1:00 | Was gelernt? Was anders machen? | Prozessverbesserung, Eskalationsmatrix |
+| **8. Fazit + Q&A** | 1:00 | Kernaussagen zur Servicekommunikation | – |
 
 ---
 
@@ -120,39 +74,16 @@ Für Cases mit Schwerpunkt Kundenkommunikation, Eskalation, Service Recovery.
 
 Für Cases, die technische Kompetenz und Kommunikation verbinden.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ Folie 1: Titel + Zielgruppe (0:30)                              │
-│   → „Meine Zielgruppe ist die IT-Leitung"                       │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 2: Ausgangslage (1:00)                                    │
-│   → Technisches Problem + betroffene User + Business Impact     │
-│   → Artefakt: Ticket mit Impact-Beschreibung                    │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 3: Ziel + Scope (0:45)                                    │
-│   → Technisches Ziel + Kommunikationsziel                       │
-│   → Artefakt: Erfolgskriterien-Liste                            │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 4: Technische Analyse (1:30)                              │
-│   → Diagnose, Hypothesen, Troubleshooting-Schritte              │
-│   → Artefakt: Diagnose-Output, Log-Auszug                       │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 5: User-Kommunikation (1:15)                              │
-│   → Wie habe ich den User informiert? Erwartungsmanagement      │
-│   → Artefakt: Kommunikationsbeispiel, Status-Update             │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 6: Lösung + Entscheidung (1:30)                           │
-│   → Lösung implementiert, Option A vs. B begründet              │
-│   → Artefakt: Konfiguration, Entscheidungsmatrix                │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 7: Ergebnis (1:30)                                        │
-│   → Technisch gelöst + User zufrieden + Dokumentiert            │
-│   → Artefakt: Erfolgsnachweise, Feedback                        │
-├─────────────────────────────────────────────────────────────────┤
-│ Folie 8: Fazit + Lessons Learned (1:00)                         │
-│   → Zusammenfassung, Prävention, Ausblick                       │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Folie | Zeit | Inhalt | Artefakt |
+|-------|------|--------|----------|
+| **1. Titel + Zielgruppe** | 0:30 | „Meine Zielgruppe ist die IT-Leitung" | – |
+| **2. Ausgangslage** | 1:00 | Technisches Problem + betroffene User + Business Impact | Ticket mit Impact |
+| **3. Ziel + Scope** | 0:45 | Technisches Ziel + Kommunikationsziel | Erfolgskriterien-Liste |
+| **4. Technische Analyse** | 1:30 | Diagnose, Hypothesen, Troubleshooting-Schritte | Diagnose-Output, Log-Auszug |
+| **5. User-Kommunikation** | 1:15 | Wie User informiert? Erwartungsmanagement | Kommunikationsbeispiel, Status-Update |
+| **6. Lösung + Entscheidung** | 1:30 | Lösung implementiert, Option A vs. B begründet | Konfiguration, Entscheidungsmatrix |
+| **7. Ergebnis** | 1:30 | Technisch gelöst + User zufrieden + Dokumentiert | Erfolgsnachweise, Feedback |
+| **8. Fazit + Lessons Learned** | 1:00 | Zusammenfassung, Prävention, Ausblick | – |
 
 ---
 

@@ -76,39 +76,14 @@ Alles, was du für deine Online-Prüfung per Videokonferenz brauchst: Technik-Se
 
 ## Zeitplan Prüfungstag
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  -60 Min: Vorbereitung                                      │
-│    • Raum aufräumen, Technik hochfahren                     │
-│    • Internetverbindung prüfen                              │
-│    • Präsentation öffnen, Bildschirmfreigabe testen         │
-├─────────────────────────────────────────────────────────────┤
-│  -30 Min: Bereit machen                                     │
-│    • Wasser hinstellen                                      │
-│    • Zur Toilette gehen                                     │
-│    • Alle ablenkenden Tabs/Programme schließen              │
-│    • Handy auf lautlos                                      │
-├─────────────────────────────────────────────────────────────┤
-│  -15 bis -20 Min: Einwählen                                 │
-│    • In Videokonferenz einwählen                            │
-│    • Technik-Check mit Prüfern                              │
-│    • Präsentation im Präsentationsmodus bereit              │
-├─────────────────────────────────────────────────────────────┤
-│  0:00: Prüfung beginnt                                      │
-│    • Zielgruppe nennen                                      │
-│    • Bildschirmfreigabe starten                             │
-│    • Präsentation beginnen                                  │
-├─────────────────────────────────────────────────────────────┤
-│  10:00: Präsentation endet                                  │
-│    • Bildschirmfreigabe beenden (oder lassen)               │
-│    • Auf Q&A vorbereiten                                    │
-├─────────────────────────────────────────────────────────────┤
-│  15:00: Fachgespräch endet                                  │
-│    • Dankeschön sagen                                       │
-│    • Auf Verabschiedung warten                              │
-│    • Geschafft!                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+| Zeit | Phase | Aufgaben |
+|------|-------|----------|
+| **-60 Min** | Vorbereitung | Raum aufräumen, Technik hochfahren, Internetverbindung prüfen, Präsentation öffnen, Bildschirmfreigabe testen |
+| **-30 Min** | Bereit machen | Wasser hinstellen, zur Toilette gehen, alle ablenkenden Tabs/Programme schließen, Handy auf lautlos |
+| **-15 bis -20 Min** | Einwählen | In Videokonferenz einwählen, Technik-Check mit Prüfern, Präsentation im Präsentationsmodus bereit |
+| **0:00** | Prüfung beginnt | Zielgruppe nennen, Bildschirmfreigabe starten, Präsentation beginnen |
+| **10:00** | Präsentation endet | Bildschirmfreigabe beenden (oder lassen), auf Q&A vorbereiten |
+| **15:00** | Fachgespräch endet | Dankeschön sagen, auf Verabschiedung warten – Geschafft! |
 
 ---
 

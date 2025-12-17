@@ -208,6 +208,16 @@
    Tabellen
    ============================================ */
 
+/* Tabellen-Container ohne horizontales Scrollen */
+.md-typeset__scrollwrap {
+  overflow-x: visible;
+}
+
+.md-typeset__table {
+  display: block;
+  overflow-x: visible;
+}
+
 .md-typeset table:not([class]) {
   border-radius: var(--card-border-radius);
   overflow: hidden;
@@ -216,21 +226,27 @@
   margin: 1.5rem 0;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: fixed;
 }
 
 .md-typeset table:not([class]) th {
   background-color: #060F38;
   color: white;
   font-weight: 600;
-  padding: 0.875rem 1rem;
+  padding: 0.75rem 0.6rem;
   text-align: left;
   border: none;
+  font-size: 0.85rem;
+  word-wrap: break-word;
 }
 
 .md-typeset table:not([class]) td {
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.6rem;
   border-bottom: 1px solid rgba(6, 15, 56, 0.1);
   vertical-align: top;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .md-typeset table:not([class]) tr:last-child td {
@@ -248,9 +264,22 @@
 /* Tabellen mit Code-Inhalten besser formatieren */
 .md-typeset table:not([class]) code {
   background-color: rgba(6, 15, 56, 0.05);
-  padding: 0.15rem 0.4rem;
+  padding: 0.15rem 0.3rem;
   border-radius: 4px;
-  font-size: 0.85em;
+  font-size: 0.8em;
+  word-break: break-word;
+}
+
+/* Spaltenbreiten für Themenpool-Tabellen optimieren */
+.md-typeset table:not([class]) th:first-child,
+.md-typeset table:not([class]) td:first-child {
+  width: 3%;
+}
+
+/* Thema-Spalte breiter */
+.md-typeset table:not([class]) th:nth-child(2),
+.md-typeset table:not([class]) td:nth-child(2) {
+  width: 18%;
 }
 
 /* ============================================

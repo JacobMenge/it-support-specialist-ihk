@@ -67,21 +67,11 @@ flowchart LR
 
 Wenn ein User verärgert ist, folge diesem Ablauf:
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ Sekunde 0-20: ZUHÖREN                                           │
-│   → Nicht unterbrechen                                          │
-│   → Kurze Bestätigungen: „Ja", „Ich verstehe"                   │
-├─────────────────────────────────────────────────────────────────┤
-│ Sekunde 20-40: VERSTEHEN ZEIGEN                                 │
-│   → „Das klingt wirklich frustrierend."                         │
-│   → „Ich kann nachvollziehen, dass Sie ärgerlich sind."         │
-├─────────────────────────────────────────────────────────────────┤
-│ Sekunde 40-60: LÖSUNG ANBIETEN                                  │
-│   → „Lassen Sie mich schauen, wie ich Ihnen helfen kann."       │
-│   → „Ich kümmere mich sofort darum."                            │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Zeit | Phase | Was tun |
+|------|-------|---------|
+| **0-20 Sek.** | Zuhören | Nicht unterbrechen. Kurze Bestätigungen: „Ja", „Ich verstehe" |
+| **20-40 Sek.** | Verstehen zeigen | „Das klingt wirklich frustrierend." / „Ich kann nachvollziehen, dass Sie ärgerlich sind." |
+| **40-60 Sek.** | Lösung anbieten | „Lassen Sie mich schauen, wie ich Ihnen helfen kann." / „Ich kümmere mich sofort darum." |
 
 ### Deeskalations-Phrasen
 
@@ -119,21 +109,12 @@ Wenn ein User verärgert ist, folge diesem Ablauf:
 
 Die 4 Schritte nach Marshall Rosenberg:
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│ 1. BEOBACHTUNG  (Was sehe/höre ich konkret?)                │
-│    „Ich sehe, dass Ihre Anfrage seit 3 Tagen offen ist."     │
-├──────────────────────────────────────────────────────────────┤
-│ 2. GEFÜHL  (Wie fühle ich mich dabei?)                       │
-│    „Das ist mir unangenehm."                                 │
-├──────────────────────────────────────────────────────────────┤
-│ 3. BEDÜRFNIS  (Was brauche ich?)                             │
-│    „Mir ist wichtig, dass Sie eine schnelle Lösung bekommen."│
-├──────────────────────────────────────────────────────────────┤
-│ 4. BITTE  (Konkrete Handlung, die ich mir wünsche)           │
-│    „Können wir jetzt gemeinsam das Problem durchgehen?"      │
-└──────────────────────────────────────────────────────────────┘
-```
+| Schritt | Frage | Beispiel |
+|---------|-------|----------|
+| **1. Beobachtung** | Was sehe/höre ich konkret? | „Ich sehe, dass Ihre Anfrage seit 3 Tagen offen ist." |
+| **2. Gefühl** | Wie fühle ich mich dabei? | „Das ist mir unangenehm." |
+| **3. Bedürfnis** | Was brauche ich? | „Mir ist wichtig, dass Sie eine schnelle Lösung bekommen." |
+| **4. Bitte** | Konkrete Handlung, die ich mir wünsche | „Können wir jetzt gemeinsam das Problem durchgehen?" |
 
 ### Beispiel: User beschwert sich
 
@@ -152,17 +133,12 @@ Die 4 Schritte nach Marshall Rosenberg:
 
 Jede Nachricht hat 4 Seiten – als Sender und Empfänger:
 
-```
-                    SACHINHALT
-                    (Worüber informiere ich?)
-                         │
-    SELBSTOFFENBARUNG ───┼─── APPELL
-    (Was sage ich über    │    (Was soll der
-     mich selbst?)        │     andere tun?)
-                         │
-                    BEZIEHUNG
-                    (Wie stehe ich zum anderen?)
-```
+| Seite | Bedeutung |
+|-------|-----------|
+| **Sachinhalt** | Worüber informiere ich? |
+| **Selbstoffenbarung** | Was sage ich über mich selbst? |
+| **Beziehung** | Wie stehe ich zum anderen? |
+| **Appell** | Was soll der andere tun? |
 
 ### Beispiel: „Der Drucker geht schon wieder nicht!"
 
@@ -210,33 +186,19 @@ Manchmal musst du „Nein" sagen – aber konstruktiv:
 
 **Situation:** User ruft zum dritten Mal wegen desselben Problems an.
 
-```
-USER: „Das ist jetzt das dritte Mal, dass ich anrufe! Kann bei euch
-       niemand ein Problem richtig lösen?"
+**User:** „Das ist jetzt das dritte Mal, dass ich anrufe! Kann bei euch niemand ein Problem richtig lösen?"
 
-SUPPORT: „Ich verstehe Ihre Frustration – dreimal anrufen zu müssen,
-          ist wirklich ärgerlich. [ACKNOWLEDGE]
+**Support:** „Ich verstehe Ihre Frustration – dreimal anrufen zu müssen, ist wirklich ärgerlich." *(Acknowledge)*
 
-          Lassen Sie mich Ihr Ticket aufrufen und schauen, was bisher
-          passiert ist. [CLARIFY]
+„Lassen Sie mich Ihr Ticket aufrufen und schauen, was bisher passiert ist. Ich sehe hier die letzten beiden Einträge. Tritt das Problem immer noch genauso auf wie beim ersten Mal?" *(Clarify)*
 
-          Ich sehe hier die letzten beiden Einträge. Tritt das Problem
-          immer noch genauso auf wie beim ersten Mal? [CLARIFY]
+**User:** „Ja, mein Outlook stürzt jeden Morgen ab!"
 
-USER: „Ja, mein Outlook stürzt jeden Morgen ab!"
+**Support:** „Okay, ich verstehe. Das wurde bisher nur temporär gelöst. Ich werde das jetzt eskalieren und sicherstellen, dass wir die Ursache finden. Ich rufe Sie heute bis 16 Uhr zurück mit einem Update. Ist das in Ordnung für Sie?" *(Agree)*
 
-SUPPORT: „Okay, ich verstehe. Das wurde bisher nur temporär gelöst.
-          Ich werde das jetzt eskalieren und sicherstellen, dass wir
-          die Ursache finden. [AGREE]
+**User:** „Na gut, aber diesmal will ich eine richtige Lösung."
 
-          Ich rufe Sie heute bis 16 Uhr zurück mit einem Update.
-          Ist das in Ordnung für Sie?" [AGREE]
-
-USER: „Na gut, aber diesmal will ich eine richtige Lösung."
-
-SUPPORT: „Das verstehe ich. Ich notiere mir, dass es diesmal eine
-          dauerhafte Lösung sein muss. Sie hören heute von mir." [ADVISE]
-```
+**Support:** „Das verstehe ich. Ich notiere mir, dass es diesmal eine dauerhafte Lösung sein muss. Sie hören heute von mir." *(Advise)*
 
 ---
 
@@ -244,30 +206,19 @@ SUPPORT: „Das verstehe ich. Ich notiere mir, dass es diesmal eine
 
 **Situation:** Abteilungsleiter meldet sich, weil sein Team nicht arbeiten kann.
 
-```
-USER: „Hier ist Herr Schmidt, Leiter Vertrieb. Mein komplettes Team
-       kann nicht auf das CRM zugreifen. Wir haben Kundentelefonate!"
+**User:** „Hier ist Herr Schmidt, Leiter Vertrieb. Mein komplettes Team kann nicht auf das CRM zugreifen. Wir haben Kundentelefonate!"
 
-SUPPORT: „Herr Schmidt, das ist kritisch – ich verstehe. Ich kümmere
-          mich sofort darum. [ACKNOWLEDGE]
+**Support:** „Herr Schmidt, das ist kritisch – ich verstehe. Ich kümmere mich sofort darum." *(Acknowledge)*
 
-          Betrifft das alle 12 Mitarbeiter im Vertrieb? Und seit wann
-          genau? [CLARIFY]
+„Betrifft das alle 12 Mitarbeiter im Vertrieb? Und seit wann genau?" *(Clarify)*
 
-USER: „Seit etwa 10 Minuten. Alle 12 haben das gleiche Problem."
+**User:** „Seit etwa 10 Minuten. Alle 12 haben das gleiche Problem."
 
-SUPPORT: „Verstanden. Das klingt nach einem serverweiten Problem,
-          nicht nach einzelnen Clients. Ich prüfe sofort den
-          CRM-Server und melde mich in 10 Minuten bei Ihnen –
-          oder früher, wenn ich etwas habe. [AGREE]
+**Support:** „Verstanden. Das klingt nach einem serverweiten Problem, nicht nach einzelnen Clients. Ich prüfe sofort den CRM-Server und melde mich in 10 Minuten bei Ihnen – oder früher, wenn ich etwas habe. Soll ich Sie direkt zurückrufen oder eine Mail an Sie und Ihr Team schicken?" *(Agree)*
 
-          Soll ich Sie direkt zurückrufen oder eine Mail an Sie und
-          Ihr Team schicken?"
+**User:** „Rufen Sie mich an, [Nummer]."
 
-USER: „Rufen Sie mich an, [Nummer]."
-
-SUPPORT: „Notiert. In spätestens 10 Minuten hören Sie von mir." [ADVISE]
-```
+**Support:** „Notiert. In spätestens 10 Minuten hören Sie von mir." *(Advise)*
 
 ---
 
@@ -275,39 +226,21 @@ SUPPORT: „Notiert. In spätestens 10 Minuten hören Sie von mir." [ADVISE]
 
 **Situation:** User weiß nicht genau, was er braucht.
 
-```
-USER: „Ich bräuchte mal irgendwie Zugriff auf die Daten von der
-       Buchhaltung."
+**User:** „Ich bräuchte mal irgendwie Zugriff auf die Daten von der Buchhaltung."
 
-SUPPORT: „Okay, da helfe ich gerne. Können Sie mir etwas mehr erzählen?
-          [CLARIFY]
+**Support:** „Okay, da helfe ich gerne. Können Sie mir etwas mehr erzählen? Um welche Daten geht es genau – sind das Berichte, einzelne Dateien, oder ein bestimmtes System?" *(Clarify)*
 
-          Um welche Daten geht es genau – sind das Berichte, einzelne
-          Dateien, oder ein bestimmtes System?"
+**User:** „Hmm, keine Ahnung. Mein Chef meinte, ich soll die Zahlen für die Auswertung holen."
 
-USER: „Hmm, keine Ahnung. Mein Chef meinte, ich soll die Zahlen für
-       die Auswertung holen."
+**Support:** „Verstehe. Das klingt nach den Monatsberichten. Die liegen normalerweise auf dem Share \\\\server\\buchhaltung. Haben Sie schon versucht, darauf zuzugreifen?" *(Clarify)*
 
-SUPPORT: „Verstehe. Das klingt nach den Monatsberichten. Die liegen
-          normalerweise auf dem Share \\server\buchhaltung. [CLARIFY]
+**User:** „Ja, da steht ‚Zugriff verweigert'."
 
-          Haben Sie schon versucht, darauf zuzugreifen?"
+**Support:** „Okay, dann fehlt Ihnen die Berechtigung. Die kann ich nicht selbst vergeben – das muss Ihr Vorgesetzter bei der Buchhaltungsleitung anfragen. Ich kann aber ein Ticket erstellen und die Anfrage für Sie einleiten. Soll ich das machen?" *(Agree)*
 
-USER: „Ja, da steht 'Zugriff verweigert'."
+**User:** „Ja, das wäre super."
 
-SUPPORT: „Okay, dann fehlt Ihnen die Berechtigung. Die kann ich
-          nicht selbst vergeben – das muss Ihr Vorgesetzter bei der
-          Buchhaltungsleitung anfragen. [AGREE]
-
-          Ich kann aber ein Ticket erstellen und die Anfrage für Sie
-          einleiten. Soll ich das machen?" [AGREE]
-
-USER: „Ja, das wäre super."
-
-SUPPORT: „Erledigt. Die Buchhaltung bekommt die Anfrage, und Sie
-          erhalten eine Bestätigung per Mail. Das dauert
-          erfahrungsgemäß 1-2 Arbeitstage." [ADVISE]
-```
+**Support:** „Erledigt. Die Buchhaltung bekommt die Anfrage, und Sie erhalten eine Bestätigung per Mail. Das dauert erfahrungsgemäß 1-2 Arbeitstage." *(Advise)*
 
 ---
 

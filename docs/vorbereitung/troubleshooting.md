@@ -51,23 +51,19 @@ flowchart TD
 
 Teile das System in Komponenten und isoliere das Problem.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Gesamtsystem                             │
-├──────────────┬──────────────┬──────────────┬───────────────┤
-│    Client    │   Netzwerk   │    Server    │    Dienst     │
-├──────────────┼──────────────┼──────────────┼───────────────┤
-│ ✓ Funktioniert│ ? Unklar    │ ? Unklar     │ ? Unklar      │
-└──────────────┴──────────────┴──────────────┴───────────────┘
-                      ↓
-         Teste Netzwerk → Ergebnis: OK
-                      ↓
-┌──────────────┬──────────────┬──────────────┬───────────────┐
-│    Client    │   Netzwerk   │    Server    │    Dienst     │
-├──────────────┼──────────────┼──────────────┼───────────────┤
-│ ✓ OK         │ ✓ OK         │ ? Unklar     │ ? Unklar      │
-└──────────────┴──────────────┴──────────────┴───────────────┘
-```
+**Schritt 1:** Status erfassen
+
+| Client | Netzwerk | Server | Dienst |
+|--------|----------|--------|--------|
+| OK | ? Unklar | ? Unklar | ? Unklar |
+
+**Schritt 2:** Netzwerk testen (Ergebnis: OK)
+
+| Client | Netzwerk | Server | Dienst |
+|--------|----------|--------|--------|
+| OK | OK | ? Unklar | ? Unklar |
+
+**Schritt 3:** Server testen, dann Dienst eingrenzen
 
 !!! tip "Prinzip"
     Halbiere das System, teste die Mitte, grenze ein.
@@ -88,14 +84,14 @@ Beginne bei Layer 1 (physisch) und arbeite dich nach oben.
 
 ### Typischer Ablauf bei „Kein Netzwerk"
 
-```
-1. Kabel drin? LED an?                    → Layer 1
-2. IP-Adresse vorhanden? DHCP OK?         → Layer 3
-3. Gateway erreichbar? (ping)             → Layer 3
-4. DNS funktioniert? (nslookup)           → Layer 7
-5. Zielserver erreichbar? (ping hostname) → Layer 3
-6. Dienst auf Zielport erreichbar?        → Layer 4
-```
+| Schritt | Prüfung | Layer |
+|---------|---------|-------|
+| 1 | Kabel drin? LED an? | Layer 1 |
+| 2 | IP-Adresse vorhanden? DHCP OK? | Layer 3 |
+| 3 | Gateway erreichbar? (ping) | Layer 3 |
+| 4 | DNS funktioniert? (nslookup) | Layer 7 |
+| 5 | Zielserver erreichbar? (ping hostname) | Layer 3 |
+| 6 | Dienst auf Zielport erreichbar? | Layer 4 |
 
 ---
 
@@ -130,22 +126,14 @@ Vergleiche das fehlerhafte System mit einem funktionierenden.
 
 Für komplexere Probleme mit mehreren möglichen Ursachen:
 
-```
-                    ┌─────────────────────┐
-    Mensch ─────────┤                     │
-                    │                     │
-    Maschine ───────┤      PROBLEM        │
-                    │   (User kann nicht  │
-    Methode ────────┤    auf Share        │
-                    │    zugreifen)       │
-    Material ───────┤                     │
-                    └─────────────────────┘
+| Kategorie | Mögliche Ursachen |
+|-----------|-------------------|
+| **Mensch** | Falsches Passwort? Fehlende Berechtigungen? |
+| **Maschine** | Server down? Netzwerk-Problem? |
+| **Methode** | Falscher Pfad? Vererbung falsch? |
+| **Material** | Dateien gelöscht? Verschlüsselt? |
 
-Mensch:    Falsches Passwort? Berechtigungen?
-Maschine:  Server down? Netzwerk-Problem?
-Methode:   Falscher Pfad? Vererbung falsch?
-Material:  Dateien gelöscht? Verschlüsselt?
-```
+**Beispiel-Problem:** User kann nicht auf Share zugreifen
 
 ---
 
@@ -221,19 +209,16 @@ Material:  Dateien gelöscht? Verschlüsselt?
 
 ### Beispiel-Dokumentation
 
-```
-SYMPTOM: User Müller kann nicht auf \\server\share zugreifen
-REPRO: Zugriff über Explorer → Fehlermeldung „Zugriff verweigert"
-BETROFFENE: 1 User, Buchhaltung
-DIAGNOSE:
-  - NTFS-Rechte geprüft → User nicht in Gruppe
-  - Share-Rechte OK
-  - Konto nicht gesperrt
-ROOT CAUSE: User fehlte in AD-Gruppe „Buchhaltung"
-FIX: User zur AD-Gruppe hinzugefügt, gpupdate /force
-VALIDIERUNG: User kann jetzt auf Share zugreifen
-PRÄVENTION: Onboarding-Checkliste um Gruppenzuweisung ergänzt
-```
+| Feld | Dokumentation |
+|------|---------------|
+| **Symptom** | User Müller kann nicht auf \\\\server\\share zugreifen |
+| **Repro** | Zugriff über Explorer, Fehlermeldung „Zugriff verweigert" |
+| **Betroffene** | 1 User, Buchhaltung |
+| **Diagnose** | NTFS-Rechte geprüft: User nicht in Gruppe. Share-Rechte OK. Konto nicht gesperrt. |
+| **Root Cause** | User fehlte in AD-Gruppe „Buchhaltung" |
+| **Fix** | User zur AD-Gruppe hinzugefügt, gpupdate /force |
+| **Validierung** | User kann jetzt auf Share zugreifen |
+| **Prävention** | Onboarding-Checkliste um Gruppenzuweisung ergänzt |
 
 ---
 

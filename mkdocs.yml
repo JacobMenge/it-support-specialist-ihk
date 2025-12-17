@@ -41,7 +41,6 @@ theme:
   icon:
     logo: material/school
     repo: fontawesome/brands/github
-  custom_dir: docs/overrides
 
 extra:
   social:

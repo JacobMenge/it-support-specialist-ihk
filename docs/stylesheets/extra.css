@@ -76,20 +76,47 @@
    Sidebar / Inhaltsverzeichnis
    ============================================ */
 
-/* Rechte Sidebar (Inhaltsverzeichnis) breiter machen */
+/* Kompaktere Sidebars für mehr Content-Platz */
 @media screen and (min-width: 1220px) {
+  /* Linke Sidebar kompakter */
+  .md-sidebar--primary {
+    width: 11rem;
+  }
+
+  /* Rechte Sidebar (TOC) kompakter */
   .md-sidebar--secondary {
-    width: 16rem;
+    width: 11rem;
   }
 
   .md-sidebar--secondary .md-sidebar__inner {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Content-Bereich maximieren */
+  .md-content {
+    max-width: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .md-sidebar--primary {
+    width: 12rem;
+  }
+
   .md-sidebar--secondary {
-    width: 18rem;
+    width: 12rem;
+  }
+}
+
+/* Content-Grid für maximale Breite */
+.md-grid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1220px) {
+  .md-grid {
+    max-width: 1800px;
   }
 }
 

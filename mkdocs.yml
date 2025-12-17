@@ -39,7 +39,7 @@ theme:
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
-  logo: stylesheets/img/syntax-logo.svg
+  logo: stylesheets/img/syntax-logo2.svg
   favicon: stylesheets/img/syntax-logo2.svg
   icon:
     repo: fontawesome/brands/github

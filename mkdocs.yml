@@ -99,18 +99,17 @@ plugins:
 
 nav:
   - Übersicht: index.md
-  - Glossar: glossar.md
   - 1. Die Prüfung verstehen:
     - Prüfungsablauf: grundlagen/pruefungsleitfaden.md
     - Bewertungskriterien: grundlagen/vorgaben-bewertung.md
   - 2. Thema wählen:
     - Themenpool: vorbereitung/themenpool.md
-  - 3. Präsentation erstellen:
-    - Folienaufbau: vorbereitung/praesentationsblueprint.md
-    - Formulierungshilfen: vorbereitung/merksatzkarten.md
-  - 4. Fachliches Wissen:
+  - 3. Fachliches Wissen:
     - Fehleranalyse: vorbereitung/troubleshooting.md
     - Kundenkommunikation: vorbereitung/kommunikation.md
+  - 4. Präsentation erstellen:
+    - Folienaufbau: vorbereitung/praesentationsblueprint.md
+    - Formulierungshilfen: vorbereitung/merksatzkarten.md
   - 5. Beispiele:
     - DNS-Problem lösen: beispiele/technik-dns.md
     - Client-Rollout: beispiele/technik-rollout.md
@@ -120,5 +119,6 @@ nav:
     - Fragen und Antworten: pruefung/fragenkatalog.md
     - Probeprüfung: pruefung/mock-pruefung.md
     - Checkliste Prüfungstag: pruefung/checkliste.md
+  - Glossar: glossar.md
 
 copyright: "&copy; 2025 Syntax-Institut – IT Support Specialist (IHK)"

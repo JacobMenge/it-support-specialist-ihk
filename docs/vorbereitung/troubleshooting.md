@@ -22,7 +22,7 @@ Hier findest du Methoden für systematische Fehleranalyse. Damit zeigst du in de
 ## Methode 1: Hypothesenbasiertes Troubleshooting
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Problem beschreiben] --> B[Symptome sammeln]
     B --> C[Hypothese aufstellen]
     C --> D[Test durchführen]

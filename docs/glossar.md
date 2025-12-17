@@ -5,303 +5,387 @@ description: Wichtige Fachbegriffe für die IHK-Prüfung IT Support Specialist
 
 # Glossar
 
-Hier findest du alle wichtigen Fachbegriffe, die du für die Prüfung kennen musst. Die Begriffe sind nach Themengebieten sortiert.
+Nachschlagewerk mit allen wichtigen Fachbegriffen für die Prüfung. Nutze die Suchfunktion (++ctrl+k++) oder navigiere über das Inhaltsverzeichnis rechts.
+
+!!! tip "Prüfungs-Tipp"
+    In der Prüfung wird erwartet, dass du Fachbegriffe korrekt verwendest und voneinander abgrenzen kannst. Achte besonders auf die Unterschiede zwischen ähnlichen Begriffen.
 
 ---
 
 ## ITIL und Service-Management
 
-### Störung (Incident)
-Ein einzelnes Ereignis, das den normalen Betrieb eines IT-Dienstes unterbricht oder beeinträchtigt.
+Diese Begriffe stammen aus ITIL (IT Infrastructure Library) und beschreiben standardisierte IT-Service-Prozesse.
 
-**Beispiel:** Ein Benutzer kann sich nicht anmelden.
+### Störung vs. Problem vs. Änderung
 
-**In der Prüfung wichtig:** Der Begriff beschreibt das WAS (das Symptom), nicht das WARUM (die Ursache).
+| Begriff | Definition | Beispiel | Prüfungsrelevant |
+|---------|------------|----------|------------------|
+| **Störung (Incident)** | Einzelnes Ereignis, das den Betrieb unterbricht | User kann sich nicht anmelden | Beschreibt das Symptom (WAS) |
+| **Problem** | Unbekannte Ursache einer oder mehrerer Störungen | Domänencontroller ausgefallen | Beschreibt die Ursache (WARUM) |
+| **Änderung (Change)** | Geplante Veränderung an der IT-Infrastruktur | Betriebssystem-Update | Muss dokumentiert und genehmigt werden |
 
-### Problem
-Die unbekannte Ursache einer oder mehrerer Störungen. Ein Problem wird erst zum Problem, wenn die Ursache noch nicht bekannt ist.
-
-**Beispiel:** Mehrere Benutzer können sich nicht anmelden → Problem: Der Domänencontroller ist ausgefallen.
-
-**Unterschied zur Störung:** Die Störung ist das Symptom, das Problem ist die Ursache.
-
-### Änderung (Change)
-Eine geplante Veränderung an der IT-Infrastruktur oder an IT-Diensten.
-
-**Beispiel:** Aktualisierung des Betriebssystems auf allen Arbeitsplätzen.
-
-**In der Prüfung wichtig:** Änderungen müssen dokumentiert und genehmigt werden.
+!!! warning "Häufiger Prüfungsfehler"
+    Störung und Problem werden oft verwechselt. Merke: Die Störung ist das, was der User meldet (Symptom). Das Problem ist das, was du als Support findest (Ursache).
 
 ### Serviceanfrage (Service Request)
-Eine Anfrage eines Benutzers nach Informationen, Beratung oder einer Standardänderung.
 
-**Beispiel:** Benutzer braucht Zugriff auf einen Ordner.
+Eine Anfrage nach Informationen, Beratung oder einer Standardänderung – **keine Störung**.
 
-**Unterschied zur Störung:** Bei einer Serviceanfrage funktioniert alles – der Benutzer braucht nur etwas Neues.
+**Typische Beispiele:**
 
-### Dienstgütevereinbarung (SLA – Service Level Agreement)
-Eine schriftliche Vereinbarung zwischen IT und Kunde über die zu erbringende Servicequalität.
+- Neuer Benutzer braucht Zugriff auf einen Ordner
+- Anfrage nach einem zweiten Monitor
+- Rückfrage zu einer Anwendung
 
-**Enthält typischerweise:**
+**Abgrenzung:** Bei einer Serviceanfrage funktioniert alles – der User braucht nur etwas Neues oder eine Information.
 
-- Reaktionszeit (wie schnell reagiert der Support?)
-- Lösungszeit (wie schnell wird das Problem behoben?)
-- Verfügbarkeit (wie oft ist der Dienst erreichbar?)
+### SLA (Service Level Agreement)
 
-**Beispiel:** „Priorität 1 wird innerhalb von 4 Stunden gelöst."
+Schriftliche Vereinbarung zwischen IT und Kunde über die Servicequalität.
+
+| SLA-Element | Bedeutung | Typischer Wert |
+|-------------|-----------|----------------|
+| **Reaktionszeit** | Wie schnell meldet sich der Support? | P1: 15 Min, P4: 8 Std |
+| **Lösungszeit** | Wie schnell wird das Problem behoben? | P1: 4 Std, P4: 72 Std |
+| **Verfügbarkeit** | Wie oft ist der Dienst erreichbar? | 99,9% (8,76 Std Ausfall/Jahr) |
 
 ### Erstlösungsquote (First Call Resolution)
-Der Anteil der Störungen, die bereits beim ersten Kontakt gelöst werden.
 
-**Berechnung:** (Beim ersten Kontakt gelöste Tickets / Alle Tickets) × 100
+Anteil der Störungen, die beim **ersten Kontakt** gelöst werden.
 
-**Guter Wert:** 60-80%
+**Formel:** (Beim ersten Kontakt gelöste Tickets / Alle Tickets) × 100
+
+**Benchmark:** 60-80% gilt als guter Wert im 1st-Level-Support.
 
 ---
 
 ## Netzwerk
 
+Grundlegende Netzwerkbegriffe, die du für Troubleshooting kennen musst.
+
 ### DHCP (Dynamic Host Configuration Protocol)
-Ein Protokoll, das automatisch IP-Adressen und Netzwerkkonfiguration an Geräte verteilt.
 
-**Verteilt:**
+Protokoll zur automatischen Vergabe von Netzwerkkonfiguration.
 
-- IP-Adresse
-- Subnetzmaske
-- Standardgateway
-- DNS-Server
+**Was DHCP verteilt:**
 
-**Warum wichtig:** Ohne DHCP müsste jedes Gerät manuell konfiguriert werden.
+| Parameter | Bedeutung |
+|-----------|-----------|
+| IP-Adresse | Eindeutige Adresse des Geräts |
+| Subnetzmaske | Definiert Netzwerk- und Hostanteil |
+| Standardgateway | Router ins Internet/andere Netze |
+| DNS-Server | Für Namensauflösung |
 
-**Häufiges Problem:** Gerät bekommt keine IP-Adresse → DHCP-Server nicht erreichbar oder Adresspool erschöpft.
+**Typische Probleme:**
+
+| Problem | Symptom | Lösung |
+|---------|---------|--------|
+| DHCP-Server nicht erreichbar | IP beginnt mit 169.254.x.x (APIPA) | Server-Erreichbarkeit prüfen |
+| Adresspool erschöpft | Neue Geräte bekommen keine IP | Pool erweitern oder Leases verkürzen |
+| Falsche DHCP-Antwort | Falsche Konfiguration | Rogue DHCP Server suchen |
 
 ### DNS (Domain Name System)
-Ein System, das Hostnamen in IP-Adressen übersetzt.
 
-**So funktioniert es:** Wenn du „www.beispiel.de" eingibst, fragt dein Computer den DNS-Server nach der zugehörigen IP-Adresse.
+Übersetzt Hostnamen in IP-Adressen (und umgekehrt).
 
-**Wichtige Begriffe:**
+**Wichtige Eintragstypen:**
 
-- **A-Eintrag:** Übersetzt Name zu IPv4-Adresse
-- **AAAA-Eintrag:** Übersetzt Name zu IPv6-Adresse
-- **MX-Eintrag:** Zeigt auf den Mailserver
-- **CNAME:** Alias-Eintrag (ein Name verweist auf einen anderen Namen)
+| Typ | Funktion | Beispiel |
+|-----|----------|----------|
+| **A** | Name → IPv4 | www.example.de → 93.184.216.34 |
+| **AAAA** | Name → IPv6 | www.example.de → 2001:db8::1 |
+| **MX** | Mailserver für Domain | example.de → mail.example.de |
+| **CNAME** | Alias (Name → Name) | ftp.example.de → server1.example.de |
+| **PTR** | Reverse-Lookup (IP → Name) | 93.184.216.34 → www.example.de |
 
-**Typischer Befehl:** `nslookup beispiel.de`
+**Diagnose-Befehle:**
 
-### IP-Adresse
-Eine eindeutige Nummer, die ein Gerät im Netzwerk identifiziert.
+```cmd
+nslookup example.de           # Standard-Abfrage
+nslookup -type=MX example.de  # MX-Records abfragen
+nslookup example.de 8.8.8.8   # Bestimmten DNS-Server fragen
+```
 
-**IPv4-Format:** 192.168.1.100 (4 Zahlen von 0-255)
+### IP-Adressen
 
-**IPv6-Format:** 2001:0db8:85a3::8a2e:0370:7334
+**IPv4-Format:** 4 Zahlen (0-255), getrennt durch Punkte → `192.168.1.100`
 
 **Private Adressbereiche (nicht im Internet routbar):**
 
-- 10.0.0.0 – 10.255.255.255
-- 172.16.0.0 – 172.31.255.255
-- 192.168.0.0 – 192.168.255.255
+| Bereich | Klasse | Typische Verwendung |
+|---------|--------|---------------------|
+| 10.0.0.0 – 10.255.255.255 | A | Große Unternehmen |
+| 172.16.0.0 – 172.31.255.255 | B | Mittlere Netze |
+| 192.168.0.0 – 192.168.255.255 | C | Heimnetze, kleine Firmen |
 
-### Subnetzmaske
-Definiert, welcher Teil der IP-Adresse das Netzwerk identifiziert und welcher Teil das Gerät.
+**Sonderadressen:**
 
-**Beispiel:** 255.255.255.0 bedeutet: Die ersten drei Zahlen sind das Netzwerk, die letzte Zahl ist das Gerät.
+| Adresse | Bedeutung |
+|---------|-----------|
+| 127.0.0.1 | Localhost (eigener Rechner) |
+| 169.254.x.x | APIPA (kein DHCP verfügbar) |
+| 0.0.0.0 | Alle Interfaces / unspezifisch |
+| 255.255.255.255 | Broadcast |
 
-**CIDR-Schreibweise:** /24 entspricht 255.255.255.0
+### Subnetzmaske und CIDR
+
+Definiert, welcher Teil der IP das Netzwerk und welcher das Gerät ist.
+
+| Subnetzmaske | CIDR | Hosts | Erklärung |
+|--------------|------|-------|-----------|
+| 255.0.0.0 | /8 | 16.777.214 | Erste Zahl = Netzwerk |
+| 255.255.0.0 | /16 | 65.534 | Erste zwei Zahlen = Netzwerk |
+| 255.255.255.0 | /24 | 254 | Erste drei Zahlen = Netzwerk |
+| 255.255.255.128 | /25 | 126 | Halbes /24-Netz |
 
 ### Standardgateway
-Die IP-Adresse des Routers, der Datenpakete aus dem lokalen Netzwerk in andere Netzwerke weiterleitet.
 
-**Einfach erklärt:** Der Standardgateway ist die „Tür nach draußen" für dein Netzwerk.
+Die IP-Adresse des Routers – die „Tür nach draußen" für das lokale Netzwerk.
+
+**Prüfen:** `ipconfig` (Windows) oder `ip route` (Linux)
+
+**Problem:** Ohne Gateway kann der Rechner nur lokale Geräte erreichen, kein Internet.
 
 ### VPN (Virtual Private Network)
-Eine verschlüsselte Verbindung über ein unsicheres Netzwerk (z.B. Internet).
 
-**Anwendung:** Sichere Verbindung zum Firmennetzwerk aus dem Homeoffice.
+Verschlüsselte Verbindung über ein unsicheres Netzwerk.
 
-**Arten:**
-
-- **Split-Tunnel:** Nur Firmendaten gehen durch VPN, Internet geht direkt
-- **Full-Tunnel:** Gesamter Datenverkehr geht durch VPN
+| VPN-Typ | Beschreibung | Vor-/Nachteil |
+|---------|--------------|---------------|
+| **Split-Tunnel** | Nur Firmendaten durch VPN | Schneller, aber weniger sicher |
+| **Full-Tunnel** | Gesamter Traffic durch VPN | Sicherer, aber langsamer |
 
 ### OSI-Modell
-Ein Referenzmodell mit 7 Schichten, das beschreibt, wie Netzwerkkommunikation funktioniert.
 
-| Schicht | Name | Beispiel |
-|---------|------|----------|
-| 7 | Anwendung | HTTP, SMTP, DNS |
-| 6 | Darstellung | SSL/TLS, Verschlüsselung |
-| 5 | Sitzung | NetBIOS, RPC |
-| 4 | Transport | TCP, UDP |
-| 3 | Vermittlung | IP, ICMP, Router |
-| 2 | Sicherung | Ethernet, MAC-Adresse, Switch |
-| 1 | Physisch | Kabel, Hub, Lichtsignal |
+7-Schichten-Referenzmodell für Netzwerkkommunikation.
 
-**Merksatz:** „Alle Deutschen Studenten Trinken Verschiedene Sorten Bier" (von oben nach unten)
+| Layer | Name | Protokolle/Geräte | Troubleshooting |
+|-------|------|-------------------|-----------------|
+| 7 | Anwendung | HTTP, SMTP, DNS | Dienst-Logs prüfen |
+| 6 | Darstellung | SSL/TLS | Zertifikate prüfen |
+| 5 | Sitzung | NetBIOS, RPC | Session-Status |
+| 4 | Transport | TCP, UDP | Ports prüfen (netstat) |
+| 3 | Vermittlung | IP, ICMP | ping, tracert |
+| 2 | Sicherung | Ethernet, MAC | Switch-Port, VLAN |
+| 1 | Physisch | Kabel, Hub | LED, Kabeltest |
 
-**Bei der Fehlersuche:** Von unten nach oben arbeiten (erst Kabel prüfen, dann IP, dann Dienst).
+!!! tip "Merksatz"
+    **Von oben:** „**A**lle **D**eutschen **S**tudenten **T**rinken **V**erschiedene **S**orten **B**ier"
+    **Von unten:** „**B**itte **S**chicken **V**iele **T**ausend **S**chöne **D**aten **A**n"
+
+**Fehlersuche:** Immer von unten (Layer 1) nach oben arbeiten!
 
 ---
 
 ## Identitäts- und Zugriffsverwaltung
 
+Begriffe rund um Benutzer, Berechtigungen und Authentifizierung.
+
 ### Active Directory (AD)
-Microsofts Verzeichnisdienst zur zentralen Verwaltung von Benutzern, Computern und Berechtigungen.
+
+Microsofts Verzeichnisdienst für zentrale Verwaltung.
 
 **Enthält:**
 
-- Benutzerkonten
-- Computerkonten
-- Gruppen
-- Organisationseinheiten (OUs)
+| Objekt | Beschreibung |
+|--------|--------------|
+| Benutzerkonten | Login-Daten, Attribute |
+| Computerkonten | Domänenmitgliedschaft |
+| Gruppen | Berechtigungsbündel |
+| OUs | Organisationseinheiten (Struktur) |
 
-**Vorteil:** Einmalige Anmeldung (Single Sign-On) für verschiedene Ressourcen.
+**Vorteile:** Single Sign-On (SSO), zentrale Richtlinien, einheitliche Verwaltung.
 
-### Gruppenrichtlinie (GPO – Group Policy Object)
-Einstellungen, die zentral auf Benutzer oder Computer angewendet werden.
+### Gruppenrichtlinie (GPO)
 
-**Beispiele:**
+Zentrale Einstellungen für Benutzer oder Computer.
 
-- Kennwortrichtlinie (Mindestlänge, Ablauf)
-- Desktop-Hintergrund
-- Softwareinstallation
-- Sicherheitseinstellungen
+**Typische Anwendungen:**
 
-**Typischer Befehl:** `gpupdate /force` (Richtlinien sofort anwenden)
+| Bereich | Beispiel-Einstellung |
+|---------|---------------------|
+| Sicherheit | Kennwortlänge, Sperrrichtlinie |
+| Desktop | Hintergrund, Startmenü |
+| Software | Automatische Installation |
+| Netzwerk | Proxy-Einstellungen, VPN |
 
-### Authentifizierung
-Der Nachweis der Identität – „Wer bist du?"
+**Wichtige Befehle:**
 
-**Faktoren:**
+```cmd
+gpupdate /force     # Richtlinien sofort anwenden
+gpresult /r         # Angewendete Richtlinien anzeigen
+rsop.msc            # Resultant Set of Policy (grafisch)
+```
 
-- **Wissen:** Passwort, PIN
-- **Besitz:** Smartphone, Token
-- **Biometrie:** Fingerabdruck, Gesicht
+### Authentifizierung vs. Autorisierung
 
-### Autorisierung
-Die Prüfung der Berechtigung – „Was darfst du?"
+| Begriff | Frage | Beispiel |
+|---------|-------|----------|
+| **Authentifizierung** | Wer bist du? | Login mit Passwort |
+| **Autorisierung** | Was darfst du? | Zugriff auf Ordner X erlaubt |
 
-**Beispiel:** Nach der Anmeldung prüft das System, auf welche Ordner der Benutzer zugreifen darf.
+!!! warning "Prüfungsrelevant"
+    Diese Begriffe werden oft verwechselt. Authentifizierung kommt immer **vor** Autorisierung.
 
-### Mehrstufige Authentifizierung (MFA)
-Authentifizierung mit mindestens zwei verschiedenen Faktoren.
+### Authentifizierungsfaktoren
 
-**Beispiel:** Passwort (Wissen) + SMS-Code (Besitz)
+| Faktor | Beschreibung | Beispiele |
+|--------|--------------|-----------|
+| **Wissen** | Etwas, das du weißt | Passwort, PIN, Sicherheitsfrage |
+| **Besitz** | Etwas, das du hast | Smartphone, Token, Smartcard |
+| **Biometrie** | Etwas, das du bist | Fingerabdruck, Gesicht, Iris |
 
-**Warum wichtig:** Selbst wenn das Passwort gestohlen wird, fehlt noch der zweite Faktor.
+### MFA (Mehrstufige Authentifizierung)
+
+Authentifizierung mit mindestens **zwei verschiedenen** Faktoren.
+
+**Beispiel:** Passwort (Wissen) + Authenticator-App (Besitz)
+
+**Warum wichtig:** Selbst bei gestohlenem Passwort fehlt der zweite Faktor.
 
 ### Kontosperrung (Account Lockout)
-Automatische Sperrung eines Kontos nach mehreren falschen Anmeldeversuchen.
 
-**Typische Einstellung:** Sperrung nach 5 Fehlversuchen für 30 Minuten.
+Automatische Sperrung nach mehreren Fehlversuchen.
+
+**Typische Einstellungen:**
+
+| Parameter | Wert | Bedeutung |
+|-----------|------|-----------|
+| Schwelle | 5 | Nach 5 Fehlversuchen sperren |
+| Dauer | 30 Min | Automatische Entsperrung nach 30 Min |
+| Zähler-Reset | 30 Min | Fehlversuche vergessen nach 30 Min |
 
 **Häufige Ursachen für wiederholte Sperrungen:**
 
-- Altes Passwort in einer Anwendung gespeichert
-- Verbundenes Mobilgerät mit falschem Passwort
-- Geplante Aufgabe mit abgelaufenen Anmeldedaten
+- Altes Passwort in Anwendung gespeichert
+- Mobilgerät mit falschem Passwort verbunden
+- Geplante Aufgabe mit abgelaufenen Credentials
+- Netzlaufwerk mit gespeichertem altem Passwort
 
-### NTFS-Berechtigungen
-Berechtigungen auf Dateiebene im Windows-Dateisystem.
+### NTFS- vs. Freigabeberechtigungen
 
-**Wichtige Rechte:**
+| Typ | Gilt für | Prüfung bei |
+|-----|----------|-------------|
+| **NTFS** | Lokaler + Netzwerkzugriff | Dateisystem-Ebene |
+| **Freigabe** | Nur Netzwerkzugriff | Netzwerkpfad (\\\\server\\share) |
 
-- **Vollzugriff:** Alles erlaubt, auch Berechtigungen ändern
-- **Ändern:** Lesen, schreiben, löschen
-- **Lesen und Ausführen:** Nur anschauen und Programme starten
-- **Lesen:** Nur anschauen
+**Wichtig:** Bei Netzwerkzugriff gelten **beide** – die restriktivere gewinnt!
 
-**Vererbung:** Berechtigungen werden von übergeordneten Ordnern übernommen.
+**NTFS-Rechte im Detail:**
 
-### Freigabeberechtigungen
-Berechtigungen für den Netzwerkzugriff auf einen freigegebenen Ordner.
-
-**Wichtig:** Es gelten immer BEIDE – NTFS- und Freigabeberechtigungen. Die restriktivere gewinnt.
+| Recht | Lesen | Schreiben | Löschen | Rechte ändern |
+|-------|-------|-----------|---------|---------------|
+| Lesen | Ja | - | - | - |
+| Lesen/Ausführen | Ja | - | - | - |
+| Ändern | Ja | Ja | Ja | - |
+| Vollzugriff | Ja | Ja | Ja | Ja |
 
 ---
 
 ## Sicherheit
 
+Wichtige Begriffe zur IT-Sicherheit.
+
 ### Phishing
-Betrugsversuch per E-Mail oder Website, um an vertrauliche Daten zu kommen.
+
+Betrugsversuch per E-Mail, SMS oder Website.
 
 **Erkennungsmerkmale:**
 
-- Dringlichkeit („Sofort handeln!")
-- Rechtschreibfehler
-- Verdächtige Absenderadresse
-- Unbekannte Links
+| Merkmal | Beispiel |
+|---------|----------|
+| Dringlichkeit | „Sofort handeln!" „Letzte Warnung!" |
+| Rechtschreibfehler | Tippfehler, schlechte Grammatik |
+| Verdächtige Absender | support@amaz0n.evil.com |
+| Unbekannte Links | Link zeigt anders als der Text |
+| Generische Anrede | „Sehr geehrter Kunde" statt Name |
 
-**Bei Verdacht:** Nicht klicken, IT-Sicherheit informieren.
+**Reaktion:** Nicht klicken, IT-Sicherheit informieren, E-Mail melden.
 
-### Schadsoftware (Malware)
-Oberbegriff für schädliche Software.
+### Schadsoftware-Typen
 
-**Arten:**
+| Typ | Beschreibung | Verbreitung |
+|-----|--------------|-------------|
+| **Virus** | Infiziert andere Dateien | Durch Ausführen infizierter Dateien |
+| **Wurm** | Verbreitet sich selbstständig | Über Netzwerk automatisch |
+| **Trojaner** | Tarnt sich als nützliche Software | Download, E-Mail-Anhang |
+| **Ransomware** | Verschlüsselt Daten, fordert Lösegeld | Phishing, Exploits |
+| **Spyware** | Spioniert Benutzer aus | Gebündelt mit Software |
 
-- **Virus:** Verbreitet sich durch Infektion anderer Dateien
-- **Trojaner:** Tarnt sich als nützliche Software
-- **Ransomware:** Verschlüsselt Daten und fordert Lösegeld
-- **Wurm:** Verbreitet sich selbstständig im Netzwerk
+### Least Privilege (Minimale Rechtevergabe)
 
-### Minimale Rechtevergabe (Least Privilege)
-Prinzip, dass jeder Benutzer nur die minimal notwendigen Rechte erhält.
+Prinzip: Jeder erhält nur die **minimal notwendigen** Rechte.
 
-**Warum:** Begrenzt den Schaden bei einer Kompromittierung.
+**Warum:** Begrenzt Schaden bei Kompromittierung oder Fehlbedienung.
 
-### Härtung (Hardening)
-Absicherung eines Systems durch Entfernen unnötiger Funktionen und Anwenden sicherer Einstellungen.
+**Beispiel:** Buchhaltung braucht keinen Admin-Zugriff auf den Mailserver.
 
-**Beispiele:**
+### Hardening (Härtung)
+
+Absicherung durch Entfernen unnötiger Funktionen und Anwenden sicherer Einstellungen.
+
+**Maßnahmen:**
 
 - Nicht benötigte Dienste deaktivieren
-- Sichere Passwortrichtlinie
+- Sichere Passwortrichtlinie durchsetzen
 - Automatische Updates aktivieren
-- Firewall einschalten
+- Firewall konfigurieren
+- Unnötige Ports schließen
 
 ### BitLocker
-Windows-Funktion zur Festplattenverschlüsselung.
 
-**Schützt vor:** Datendiebstahl bei Geräteverlust.
+Windows-Festplattenverschlüsselung.
 
-**Wiederherstellungsschlüssel:** Muss sicher gespeichert werden, um bei Problemen auf die Daten zugreifen zu können.
+**Schützt vor:** Datendiebstahl bei Geräteverlust oder -diebstahl.
+
+**Wichtig:** Wiederherstellungsschlüssel sicher speichern (AD, Azure AD, oder manuell).
 
 ---
 
 ## Datenschutz
 
 ### DSGVO (Datenschutz-Grundverordnung)
+
 EU-Verordnung zum Schutz personenbezogener Daten.
 
-**Wichtig für den Support:**
+**Relevanz für den Support:**
 
-- Nur notwendige Daten erheben
-- Identität vor Auskünften verifizieren
-- Protokolle nicht länger als nötig speichern
+| Grundsatz | Bedeutung für Support |
+|-----------|----------------------|
+| Datenminimierung | Nur notwendige Daten erheben |
+| Identitätsprüfung | Vor Auskünften Identität verifizieren |
+| Speicherbegrenzung | Logs nicht länger als nötig speichern |
+| Integrität | Daten vor unbefugtem Zugriff schützen |
 
 ### Personenbezogene Daten
-Alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen.
 
-**Beispiele:** Name, E-Mail, IP-Adresse, Telefonnummer.
+Alle Informationen zu einer identifizierten oder identifizierbaren Person.
+
+**Beispiele:** Name, E-Mail, IP-Adresse, Telefonnummer, Standortdaten, Gerätekennungen.
 
 ---
 
 ## Kommunikation
 
+Modelle und Techniken für professionelle Kundenkommunikation.
+
 ### Vier-Seiten-Modell (Schulz von Thun)
-Jede Nachricht hat vier Aspekte.
 
-| Seite | Bedeutung | Beispiel bei „Der Drucker geht nicht!" |
-|-------|-----------|----------------------------------------|
-| Sachinhalt | Was wird gesagt? | Der Drucker funktioniert nicht |
-| Selbstoffenbarung | Was sagt der Sender über sich? | Ich bin frustriert |
-| Beziehung | Was hält der Sender vom Empfänger? | Ihr (IT) macht eure Arbeit nicht |
-| Appell | Was soll der Empfänger tun? | Repariere den Drucker! |
+Jede Nachricht hat vier Aspekte:
 
-**Im Support:** Erst auf die emotionale Seite eingehen, dann auf die Sachebene.
+| Seite | Frage | Bei „Der Drucker geht nicht!" |
+|-------|-------|-------------------------------|
+| **Sachinhalt** | Was wird gesagt? | Drucker funktioniert nicht |
+| **Selbstoffenbarung** | Was sagt der Sender über sich? | Ich bin frustriert/unter Druck |
+| **Beziehung** | Wie steht der Sender zum Empfänger? | Ihr (IT) macht eure Arbeit nicht |
+| **Appell** | Was soll der Empfänger tun? | Repariere das sofort! |
 
-### Gewaltfreie Kommunikation (GFK)
-Kommunikationsmethode in vier Schritten.
+!!! tip "Praxis-Tipp"
+    Im Support erst auf **Beziehungs-** und **Selbstoffenbarungsseite** eingehen, dann Sachebene bedienen.
+
+### GFK (Gewaltfreie Kommunikation)
+
+Vier-Schritte-Methode nach Marshall Rosenberg:
 
 1. **Beobachtung:** Was ist passiert? (ohne Bewertung)
 2. **Gefühl:** Wie fühle ich mich dabei?
@@ -309,66 +393,89 @@ Kommunikationsmethode in vier Schritten.
 4. **Bitte:** Was wünsche ich mir konkret?
 
 ### Aktives Zuhören
-Technik, um dem Gesprächspartner zu zeigen, dass man zuhört und versteht.
 
-**Elemente:**
-
-- **Paraphrasieren:** „Wenn ich Sie richtig verstehe..."
-- **Gefühle spiegeln:** „Das klingt frustrierend."
-- **Nachfragen:** „Können Sie mir mehr dazu sagen?"
+| Technik | Beispiel |
+|---------|----------|
+| **Paraphrasieren** | „Wenn ich Sie richtig verstehe, können Sie seit heute Morgen nicht drucken?" |
+| **Gefühle spiegeln** | „Das klingt frustrierend, besonders mit Ihrer Deadline." |
+| **Nachfragen** | „Können Sie mir mehr dazu sagen? Was haben Sie schon versucht?" |
 
 ### Deeskalation
-Techniken, um eine angespannte Situation zu beruhigen.
 
-**Schritte:**
+**3-Schritte-Ablauf:**
 
-1. Zuhören (nicht unterbrechen)
-2. Verständnis zeigen („Ich verstehe Ihre Frustration")
-3. Lösung anbieten („Ich kümmere mich darum")
+1. **Zuhören** (0-20 Sek): Nicht unterbrechen, kurze Bestätigungen
+2. **Verstehen zeigen** (20-40 Sek): „Ich verstehe Ihre Frustration"
+3. **Lösung anbieten** (40-60 Sek): „Ich kümmere mich sofort darum"
 
 ---
 
-## Dokumentation
+## Dokumentation und Prozesse
 
 ### Wissensdatenbank (Knowledge Base)
-Sammlung von dokumentierten Lösungen für bekannte Probleme.
 
-**Vorteile:**
+Dokumentierte Lösungen für bekannte Probleme.
+
+**Nutzen:**
 
 - Schnellere Problemlösung
 - Wissenstransfer im Team
-- Konsistente Lösungen
+- Konsistente Lösungsqualität
+- Einarbeitung neuer Mitarbeiter
 
 ### Ursachenanalyse (Root Cause Analysis)
-Systematische Suche nach der eigentlichen Ursache eines Problems.
 
-**Methoden:**
+**Fünf-Warum-Methode:** 5× „Warum?" fragen bis zur Ursache.
 
-- **Fünf-Warum-Methode:** Fünfmal „Warum?" fragen
-- **Ishikawa-Diagramm:** Mögliche Ursachen nach Kategorien sortieren
+| Iteration | Frage | Antwort |
+|-----------|-------|---------|
+| 1 | Warum konnte der User nicht drucken? | Drucker war offline |
+| 2 | Warum war der Drucker offline? | IP hatte sich geändert |
+| 3 | Warum hatte sich die IP geändert? | DHCP-Lease abgelaufen |
+| 4 | Warum gab es keine Reservierung? | Drucker nicht reserviert |
+| 5 | Warum war er nicht reserviert? | Kein Onboarding-Prozess |
+
+**Root Cause:** Fehlender Prozess → **Maßnahme:** DHCP-Reservierung für alle Drucker.
 
 ### Eskalation
-Weitergabe eines Problems an eine höhere Instanz.
 
-**Arten:**
-
-- **Fachliche Eskalation:** An Spezialisten mit mehr Fachwissen
-- **Hierarchische Eskalation:** An Vorgesetzte für Entscheidungen oder Ressourcen
+| Typ | Wann | An wen |
+|-----|------|--------|
+| **Fachlich** | Mehr Expertise nötig | Spezialisten, 2nd/3rd Level |
+| **Hierarchisch** | Entscheidung/Ressourcen nötig | Vorgesetzte, Management |
 
 ---
 
-## Wichtige Befehle (Windows)
+## Wichtige Befehle
+
+### Windows
 
 | Befehl | Funktion |
 |--------|----------|
-| `ipconfig /all` | Zeigt Netzwerkkonfiguration |
-| `ping [Ziel]` | Testet Erreichbarkeit |
-| `nslookup [Name]` | Testet DNS-Auflösung |
-| `tracert [Ziel]` | Zeigt Route zum Ziel |
-| `gpupdate /force` | Aktualisiert Gruppenrichtlinien |
-| `gpresult /r` | Zeigt angewendete Richtlinien |
-| `netstat -an` | Zeigt Netzwerkverbindungen |
-| `whoami /all` | Zeigt Benutzer und Gruppenmitgliedschaften |
+| `ipconfig /all` | Netzwerkkonfiguration anzeigen |
+| `ipconfig /release` | DHCP-Lease freigeben |
+| `ipconfig /renew` | Neue IP vom DHCP anfordern |
+| `ipconfig /flushdns` | DNS-Cache leeren |
+| `ping [Ziel]` | Erreichbarkeit testen |
+| `nslookup [Name]` | DNS-Auflösung testen |
+| `tracert [Ziel]` | Route zum Ziel anzeigen |
+| `netstat -an` | Netzwerkverbindungen anzeigen |
+| `gpupdate /force` | Gruppenrichtlinien aktualisieren |
+| `gpresult /r` | Angewendete Richtlinien anzeigen |
+| `whoami /all` | Benutzer und Gruppen anzeigen |
+| `net user [Name] /domain` | Benutzerinfos aus AD |
+
+### Linux
+
+| Befehl | Funktion |
+|--------|----------|
+| `ip a` / `ifconfig` | Netzwerkkonfiguration |
+| `ping [Ziel]` | Erreichbarkeit testen |
+| `nslookup` / `dig` / `host` | DNS-Auflösung |
+| `traceroute [Ziel]` | Route anzeigen |
+| `ss -tuln` / `netstat -tuln` | Offene Ports |
+| `systemctl status [Dienst]` | Dienststatus |
+| `journalctl` | Systemlogs |
 
 ---
 
@@ -377,17 +484,22 @@ Weitergabe eines Problems an eine höhere Instanz.
 | Abkürzung | Bedeutung |
 |-----------|-----------|
 | AD | Active Directory |
+| APIPA | Automatic Private IP Addressing |
+| CIDR | Classless Inter-Domain Routing |
 | DHCP | Dynamic Host Configuration Protocol |
 | DNS | Domain Name System |
 | DSGVO | Datenschutz-Grundverordnung |
-| GPO | Group Policy Object (Gruppenrichtlinie) |
+| FCR | First Call Resolution |
+| GFK | Gewaltfreie Kommunikation |
+| GPO | Group Policy Object |
 | IP | Internet Protocol |
 | ITIL | IT Infrastructure Library |
 | LAN | Local Area Network |
-| MFA | Mehrstufige Authentifizierung |
+| MFA | Multi-Factor Authentication |
 | NTFS | New Technology File System |
 | OSI | Open Systems Interconnection |
-| RCA | Root Cause Analysis (Ursachenanalyse) |
+| OU | Organizational Unit |
+| RCA | Root Cause Analysis |
 | SLA | Service Level Agreement |
 | SSO | Single Sign-On |
 | VPN | Virtual Private Network |

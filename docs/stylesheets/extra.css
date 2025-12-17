@@ -86,20 +86,20 @@
   padding: 0 1.2rem;
 }
 
-/* Sidebars schmal halten */
+/* Sidebars optimal dimensionieren */
 @media screen and (min-width: 60em) {
   .md-sidebar--primary {
-    width: 9.4rem;
+    width: 11rem;
   }
 }
 
 @media screen and (min-width: 76.25em) {
   .md-sidebar--secondary {
-    width: 10rem;
+    width: 12rem;
   }
 
   .md-sidebar--primary {
-    width: 9.4rem;
+    width: 12rem;
   }
 }
 
@@ -194,18 +194,21 @@
 /* Alle Tabellen-Container auf volle Breite */
 .md-typeset__scrollwrap {
   margin: 0 !important;
-  overflow: visible !important;
+  overflow-x: auto !important;
 }
 
 .md-typeset__table {
   width: 100% !important;
   display: block !important;
+  max-width: 100% !important;
 }
 
 /* Tabellen selbst */
 .md-typeset table {
   width: 100% !important;
+  min-width: 100% !important;
   display: table !important;
+  table-layout: auto !important;
   border-radius: var(--card-border-radius);
   overflow: hidden;
   box-shadow: var(--card-shadow);
@@ -512,6 +515,13 @@
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-shadow);
   margin: 1rem 0;
+  overflow-x: auto;
+}
+
+/* Horizontale Flowcharts gut darstellen */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ============================================

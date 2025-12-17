@@ -1,0 +1,121 @@
+site_name: IT Support Specialist (IHK) - Prüfungsvorbereitung
+site_description: Komplette Unterlagensammlung für die IHK-Zertifikatsprüfung "IT Support Specialist"
+site_author: IHK Prüfungsvorbereitung
+site_url: ""
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Dunkelmodus aktivieren
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Hellmodus aktivieren
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  custom_dir: docs/overrides
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub Repository
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: de
+  - tags
+
+nav:
+  - Start: index.md
+  - Grundlagen:
+    - Prüfungsleitfaden: grundlagen/pruefungsleitfaden.md
+    - Vorgaben & Bewertung: grundlagen/vorgaben-bewertung.md
+  - Vorbereitung:
+    - Themenpool & Scoping: vorbereitung/themenpool.md
+    - Präsentationsblueprint: vorbereitung/praesentationsblueprint.md
+    - Troubleshooting Playbook: vorbereitung/troubleshooting.md
+    - Kommunikation im Support: vorbereitung/kommunikation.md
+    - Merksatzkarten: vorbereitung/merksatzkarten.md
+  - Beispiele:
+    - "Technik: DNS-Problem": beispiele/technik-dns.md
+    - "Technik: Client-Rollout": beispiele/technik-rollout.md
+    - "Kommunikation: Service Recovery": beispiele/kommunikation-recovery.md
+    - "Mix: Identity & Access": beispiele/mix-identity.md
+  - Prüfung:
+    - Fragenkatalog (55+ Fragen): pruefung/fragenkatalog.md
+    - Mock-Prüfung Leitfaden: pruefung/mock-pruefung.md
+    - Checkliste Prüfungstag: pruefung/checkliste.md
+
+copyright: "&copy; 2024 IHK Prüfungsvorbereitung - IT Support Specialist"

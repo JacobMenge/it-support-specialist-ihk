@@ -80,30 +80,24 @@
 @media screen and (min-width: 1220px) {
   /* Linke Sidebar kompakt */
   .md-sidebar--primary {
-    width: 12rem;
+    width: 11rem;
   }
 
   /* Rechte Sidebar (TOC) kompakt */
   .md-sidebar--secondary {
-    width: 12rem;
+    width: 13rem;
   }
 
-  .md-sidebar--secondary .md-sidebar__inner {
-    padding-right: 0.25rem;
-  }
-
-  /* Content-Bereich maximieren */
+  /* Content nimmt verfügbaren Platz */
   .md-content {
     max-width: none;
-    margin-left: 12.4rem;
-    margin-right: 12.4rem;
   }
 
-  /* Mehr Platz für Content-Artikel */
+  /* Content-Artikel volle Breite */
   .md-content__inner {
     max-width: none;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 
   /* Main-Bereich volle Breite */
@@ -114,29 +108,22 @@
 
 @media screen and (min-width: 1440px) {
   .md-sidebar--primary {
-    width: 14rem;
+    width: 12rem;
   }
 
   .md-sidebar--secondary {
     width: 14rem;
   }
-
-  .md-content {
-    margin-left: 14.4rem;
-    margin-right: 14.4rem;
-  }
 }
 
-/* Content-Grid für maximale Breite */
+/* Content-Grid maximale Breite nutzen */
 .md-grid {
   max-width: 100%;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 1220px) {
   .md-grid {
     max-width: none;
-    padding: 0 0.5rem;
   }
 }
 

@@ -1,16 +1,15 @@
 ---
-title: Q&A Fragenkatalog
-description: Über 55 typische Prüferfragen mit Beispielantworten
+title: Fragen und Antworten
+description: Typische Prüferfragen mit Beispielantworten
 ---
 
-# Q&A Fragenkatalog: Typische Prüferfragen
+# Fragen und Antworten
 
-!!! abstract "Auf einen Blick"
-    Dieser Katalog enthält über 55 typische Prüferfragen, sortiert nach 7 Kategorien. Zu jeder Frage: Was will der Prüfer hören? Plus eine Beispielantwort. Nutze den Katalog zum Üben für das Fachgespräch.
+Dieser Katalog enthält über 55 typische Prüferfragen, sortiert nach 7 Kategorien. Zu jeder Frage: Was will der Prüfer hören? Plus eine Beispielantwort.
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - Prüferfragen testen **Verständnis**, nicht nur Auswendiglernen
 - **Strukturierte Antworten** sind besser als lange Monologe
@@ -20,7 +19,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-book-open-variant: Kategorie 1: Verständnis & Begriffe
+## Kategorie 1: Begriffe und Grundlagen
 
 ??? question "Frage 1.1: Was ist der Unterschied zwischen Incident und Problem?"
     **Was will der Prüfer hören?** ITIL-Begriffe verstanden, klare Abgrenzung.
@@ -74,7 +73,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-hammer-wrench: Kategorie 2: Vorgehen & Methodik
+## Kategorie 2: Vorgehen und Methodik
 
 ??? question "Frage 2.1: Wie gehen Sie bei einem unbekannten Problem vor?"
     **Was will der Prüfer hören?** Strukturiertes Vorgehen, Hypothesenbildung.
@@ -108,7 +107,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-scale-balance: Kategorie 3: Alternativen & Trade-offs
+## Kategorie 3: Alternativen und Entscheidungen
 
 ??? question "Frage 3.1: Sie haben Lösung A gewählt. Welche Alternativen gab es?"
     **Was will der Prüfer hören?** Alternativen kennen, Entscheidung begründen.
@@ -127,7 +126,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-shield-lock: Kategorie 4: Sicherheit & Datenschutz
+## Kategorie 4: Sicherheit und Datenschutz
 
 ??? question "Frage 4.1: Was machen Sie bei einem Phishing-Verdacht?"
     **Was will der Prüfer hören?** Incident-Response, Schutzmaßnahmen.
@@ -151,7 +150,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-clipboard-text: Kategorie 5: Betrieb & Dokumentation
+## Kategorie 5: Betrieb und Dokumentation
 
 ??? question "Frage 5.1: Warum ist Dokumentation wichtig?"
     **Was will der Prüfer hören?** Nutzen verstanden.
@@ -170,7 +169,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-message-text: Kategorie 6: Kommunikation & Service
+## Kategorie 6: Kommunikation und Service
 
 ??? question "Frage 6.1: Wie gehen Sie mit einem verärgerten User um?"
     **Was will der Prüfer hören?** Deeskalation, Empathie, Struktur.
@@ -194,7 +193,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-video: Kategorie 7: Online-Prüfung & Remote Support
+## Kategorie 7: Online-Prüfung und Remote Support
 
 ??? question "Frage 7.1: Wie stellen Sie bei Remote Support sicher, dass Sie den richtigen User unterstützen?"
     **Was will der Prüfer hören?** Identitätsverifikation, Sicherheitsbewusstsein.
@@ -213,7 +212,7 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 ---
 
-## :material-school: Schnell-Übung: Antwortstruktur
+## Übung: Antwortstruktur
 
 Übe, Antworten in dieser Struktur zu geben:
 
@@ -225,11 +224,3 @@ description: Über 55 typische Prüferfragen mit Beispielantworten
 
 **Gesamtzeit pro Antwort:** 30-60 Sekunden
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [IT Process Wiki](https://wiki.en.it-processmaps.com/) – ITIL-Begriffe und Prozesse
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Fachwissen im Fachgespräch
-    - Schulz von Thun: Miteinander reden – Kommunikationsmodelle

@@ -1,16 +1,15 @@
 ---
-title: Merksatzkarten & Spickzettel
-description: Formulierungen, die immer gehen, und häufige Fehler zum Vermeiden
+title: Formulierungshilfen
+description: Formulierungen für Präsentation und Fachgespräch
 ---
 
-# Merksatzkarten & Spickzettel
+# Formulierungshilfen
 
-!!! abstract "Auf einen Blick"
-    Eine Seite mit Formulierungen, die immer gehen. Eine Seite mit häufigen Fehlern, die du vermeiden solltest. Zum Ausdrucken und Lernen.
+Hier findest du Formulierungen, die immer funktionieren, und häufige Fehler, die du vermeiden solltest.
 
 ---
 
-## :material-message-check: Seite 1: Formulierungen & Sätze, die immer gehen
+## Formulierungen für die Präsentation
 
 ### Präsentation: Einstieg
 
@@ -81,7 +80,7 @@ description: Formulierungen, die immer gehen, und häufige Fehler zum Vermeiden
 
 ---
 
-## :material-alert-circle: Seite 2: Häufige Fehler und wie du sie vermeidest
+## Häufige Fehler vermeiden
 
 ### Fehler 1: Zu technisch, keine Zielgruppe
 
@@ -223,7 +222,7 @@ description: Formulierungen, die immer gehen, und häufige Fehler zum Vermeiden
 
 ---
 
-## :material-checkbox-marked-circle-outline: Schnell-Check vor der Online-Prüfung
+## Schnell-Check vor der Prüfung
 
 ### Inhalt
 
@@ -249,11 +248,3 @@ description: Formulierungen, die immer gehen, und häufige Fehler zum Vermeiden
 - [ ] Hintergrund aufgeräumt?
 - [ ] In die Webcam schauen geübt?
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Offizielle Quellen"
-    - [IHK Bewertungskriterien Präsentation](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Offizielle Kriterien
-    - [IHK Bodensee-Oberschwaben: Präsentation](https://www.ihk.de/bodensee-oberschwaben/ausbildung/ausbildungspruefungen/berufsbezogene-pruefungsanforderungen/it-berufe/praesentation-der-projektarbeit-und-fachgespraech-3013362) – Zielgruppenorientierung
-    - [der-pruefer.de](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Typische Fehler vermeiden

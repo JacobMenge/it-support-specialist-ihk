@@ -1,16 +1,15 @@
 ---
-title: Kommunikation im IT-Support
-description: Service-Mindset, Gesprächsstruktur, Deeskalation und Kommunikationsmodelle
+title: Kundenkommunikation
+description: Professionelle Kommunikation im IT-Support
 ---
 
-# Kommunikation im IT-Support
+# Kundenkommunikation
 
-!!! abstract "Auf einen Blick"
-    Hier findest du alles zu professioneller Kommunikation im Support: Service-Mindset, Gesprächsstruktur, Deeskalation und bewährte Kommunikationsmodelle. Mit konkreten Dialogbeispielen für typische Situationen.
+Hier findest du alles zu professioneller Kommunikation im Support: Gesprächsstruktur, Deeskalation und bewährte Kommunikationsmodelle. Mit konkreten Dialogbeispielen für typische Situationen.
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - **Service-Mindset:** Empathie + Klarheit + Verbindlichkeit
 - **Gesprächsstruktur:** Acknowledge → Clarify → Agree → Act → Advise
@@ -20,7 +19,7 @@ description: Service-Mindset, Gesprächsstruktur, Deeskalation und Kommunikation
 
 ---
 
-## :material-heart-pulse: Service-Mindset: Die 3 Säulen
+## Die drei Säulen guter Kommunikation
 
 ### 1. Empathie
 
@@ -42,7 +41,7 @@ description: Service-Mindset, Gesprächsstruktur, Deeskalation und Kommunikation
 
 ---
 
-## :material-message-processing: Gesprächsstruktur: ACAAA-Framework
+## Gesprächsstruktur in 5 Schritten
 
 ```mermaid
 flowchart LR
@@ -64,7 +63,7 @@ flowchart LR
 
 ---
 
-## :material-shield-half-full: Deeskalation in 60 Sekunden
+## Deeskalation in 60 Sekunden
 
 Wenn ein User verärgert ist, folge diesem Ablauf:
 
@@ -95,7 +94,7 @@ Wenn ein User verärgert ist, folge diesem Ablauf:
 
 ---
 
-## :material-ear-hearing: Kommunikationsmodell 1: Aktives Zuhören
+## Aktives Zuhören
 
 ### 3 Komponenten
 
@@ -116,7 +115,7 @@ Wenn ein User verärgert ist, folge diesem Ablauf:
 
 ---
 
-## :material-handshake: Kommunikationsmodell 2: Gewaltfreie Kommunikation (GFK)
+## Gewaltfreie Kommunikation
 
 Die 4 Schritte nach Marshall Rosenberg:
 
@@ -149,7 +148,7 @@ Die 4 Schritte nach Marshall Rosenberg:
 
 ---
 
-## :material-ear-hearing-loop: Kommunikationsmodell 3: Vier-Ohren-Modell (Schulz von Thun)
+## Vier-Ohren-Modell
 
 Jede Nachricht hat 4 Seiten – als Sender und Empfänger:
 
@@ -183,7 +182,7 @@ Reagiere auf das **Beziehungs-** und **Selbstoffenbarungs-Ohr** bevor du das **S
 
 ---
 
-## :material-scale-balance: Erwartungsmanagement & Grenzen setzen
+## Erwartungen managen und Grenzen setzen
 
 ### Erwartungen managen
 
@@ -205,7 +204,7 @@ Manchmal musst du „Nein" sagen – aber konstruktiv:
 
 ---
 
-## :material-message-text-outline: 3 Dialogbeispiele
+## Dialogbeispiele
 
 ### Dialog 1: Verärgerter User
 
@@ -312,7 +311,7 @@ SUPPORT: „Erledigt. Die Buchhaltung bekommt die Anfrage, und Sie
 
 ---
 
-## :material-video: Kommunikation per Videokonferenz (Online-Support)
+## Kommunikation per Videokonferenz
 
 Im Online-Support per Video gelten besondere Regeln:
 
@@ -343,7 +342,7 @@ Im Online-Support per Video gelten besondere Regeln:
 
 ---
 
-## :material-checkbox-marked-outline: Kommunikations-Checkliste für jeden Kontakt
+## Checkliste für jeden Kontakt
 
 ### Allgemein
 
@@ -362,13 +361,3 @@ Im Online-Support per Video gelten besondere Regeln:
 - [ ] Backup-Kontaktmöglichkeit (Telefon) ausgetauscht?
 - [ ] Deutlich und langsam gesprochen?
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - Marshall Rosenberg: Gewaltfreie Kommunikation – 4-Schritte-Modell
-    - Friedemann Schulz von Thun: Miteinander reden – 4-Ohren-Modell
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – Kommunikation bei Incidents
-    - [ManageEngine: IT Incident Management](https://www.manageengine.com/products/service-desk/it-incident-management/what-is-it-incident-management.html) – Kundenorientierung im Support
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Kommunikative Kompetenz als Bewertungskriterium

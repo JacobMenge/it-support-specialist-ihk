@@ -1,16 +1,15 @@
 ---
 title: Checkliste Prüfungstag
-description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, Plan B
+description: Technik-Setup, Raum, Nervosität, Plan B
 ---
 
-# Checkliste Prüfungstag (Online-Prüfung)
+# Checkliste Prüfungstag
 
-!!! abstract "Auf einen Blick"
-    Alles, was du für deine **Online-Prüfung per Videokonferenz** brauchst: Technik-Setup, Raum vorbereiten, Umgang mit Nervosität, Plan B bei technischen Problemen. Plus ein „Letzte 24 Stunden"-Plan.
+Alles, was du für deine Online-Prüfung per Videokonferenz brauchst: Technik-Setup, Raum vorbereiten, Umgang mit Nervosität, Plan B bei technischen Problemen.
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - Die Prüfung findet **komplett online** per Videokonferenz statt
 - Teste Technik am Vortag: Internet, Webcam, Mikrofon, Bildschirmfreigabe
@@ -21,7 +20,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-laptop: Technik-Checkliste: Was du brauchst
+## Technik-Checkliste
 
 ### Hardware
 
@@ -50,7 +49,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-home: Raum vorbereiten: Online-Prüfungsumgebung
+## Raum vorbereiten
 
 ### Setting
 
@@ -75,7 +74,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-clock-outline: Zeitplan Prüfungstag
+## Zeitplan Prüfungstag
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -113,7 +112,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-alert-circle: Plan B: Technische Probleme
+## Plan B: Technische Probleme
 
 ### Problem: Internet fällt aus
 
@@ -146,7 +145,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-meditation: Umgang mit Nervosität
+## Umgang mit Nervosität
 
 ### Atemübung (4-7-8-Technik)
 
@@ -177,7 +176,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-human-handsup: Körpersprache online: Do's und Don'ts
+## Körpersprache online
 
 ### Do's
 
@@ -199,7 +198,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-calendar-check: Letzte 24 Stunden: Plan
+## Letzte 24 Stunden
 
 ### Abend vorher (Tag -1)
 
@@ -224,7 +223,7 @@ description: Alles für die Online-Prüfung - Technik-Setup, Raum, Nervosität, 
 
 ---
 
-## :material-clipboard-check: Notfall-Kontakte
+## Notfall-Kontakte
 
 Notiere dir:
 
@@ -237,7 +236,7 @@ Notiere dir:
 
 ---
 
-## :material-star: Die wichtigsten 10 Punkte für die Online-Prüfung
+## Die wichtigsten 10 Punkte
 
 1. :material-check: Technik am Vortag testen
 2. :material-check: Stabile Internetverbindung (LAN > WLAN)
@@ -250,11 +249,3 @@ Notiere dir:
 9. :material-check: Langsam und deutlich sprechen
 10. :material-check: Backup-Plan bereit (Hotspot, Telefon, Cloud)
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Offizielle Quellen"
-    - [IHK Merkblatt Präsentation](https://www.ihk.de/blueprint/servlet/resource/blob/1338796/3ccabf0a1654d84e430a0b403145ba7d/merkblattitfg-data.pdf) – Prüfungsablauf
-    - [IHK Rheinhessen: Präsentation](https://www.ihk.de/rheinhessen/aus-und-weiterbildung/fallback1426754992470/info-praesentation-fachgespraech-4396278) – Ablauf
-    - [der-pruefer.de](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Praxis-Tipps

@@ -1,16 +1,15 @@
 ---
-title: Themenpool und Scoping
-description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
+title: Themenpool
+description: 28 Themenideen für deine Präsentation
 ---
 
-# Themenpool und Scoping
+# Themenpool
 
-!!! abstract "Auf einen Blick"
-    Hier findest du über 28 Themenideen für deine Präsentation, gruppiert nach Kategorien. Zu jedem Thema: Was ist der Kern? Welche Ergebnisse kannst du zeigen? Welche Prüferfragen drohen? Plus: Drei Methoden, um DEIN Thema zu finden.
+Hier findest du 28 Themenideen für deine Präsentation. Zu jedem Thema: Was ist der Kern? Welche Ergebnisse kannst du zeigen? Welche Prüferfragen kommen?
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - Wähle ein Thema aus deiner echten Praxis (Kurs, Praktikum, Job)
 - Grenze ein: **Ein Problem vollständig** statt drei oberflächlich
@@ -20,9 +19,9 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 
 ---
 
-## :material-lightbulb: Themenpool: 28 Ideen nach Kategorien
+## Themenideen nach Kategorien
 
-### :material-lan: Kategorie 1: Netzwerk & Connectivity
+### Netzwerk
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -32,7 +31,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 4 | **VPN-Connectivity-Issue** | Remote-Zugriff schlägt fehl | Verbindungslogs, Firewall-Regeln | Was ist ein VPN-Tunnel? Split vs. Full Tunnel? |
 | 5 | **Netzwerkdrucker nicht erreichbar** | Drucker offline, Diagnose Netzwerk vs. Drucker | Ping-Tests, Treiber-Status, Lösung | Welche Druckprotokolle gibt es? Was ist ein Print-Server? |
 
-### :material-laptop: Kategorie 2: Client / Windows / Linux
+### Client und Betriebssystem
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -42,7 +41,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 9 | **Softwareverteilung/Paketierung** | Software zentral ausrollen | Deployment-Log, Erfolgsquote | Was ist ein MSI? Silent Install Parameter? |
 | 10 | **Linux-Client-Integration** | Linux in Windows-Domäne einbinden | Konfigurationsdateien, Authentifizierungs-Test | Was ist SSSD? Kerberos vs. NTLM? |
 
-### :material-account-key: Kategorie 3: Identity & Access Management
+### Identitäts- und Zugriffsverwaltung
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -52,7 +51,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 14 | **Conditional Access Policy** | Zugriff nach Bedingungen steuern | Policy-Screenshot, Testfälle | Was ist Zero Trust? Device Compliance? |
 | 15 | **Berechtigungsproblem (NTFS/Share)** | User kann nicht auf Ressource zugreifen | Berechtigungs-Analyse, effektive Rechte | Was ist Vererbung? Share vs. NTFS-Rechte? |
 
-### :material-microsoft-teams: Kategorie 4: M365 / Collaboration
+### Microsoft 365 und Zusammenarbeit
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -61,7 +60,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 18 | **SharePoint-Berechtigungsproblem** | Zugriff auf Dokumente klappt nicht | Berechtigungs-Hierarchie, Lösung | Was sind SharePoint-Gruppen? Vererbung brechen? |
 | 19 | **OneDrive-Sync-Problem** | Dateien synchronisieren nicht | Sync-Status, Konfliktlösung | Was ist Known Folder Move? Offline-Dateien? |
 
-### :material-shield-lock: Kategorie 5: Security / Phishing / Hardening
+### Sicherheit
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -70,7 +69,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 22 | **Malware-Verdacht analysieren** | Auffälliges Verhalten untersuchen | Scan-Ergebnisse, Quarantäne, Bereinigung | Was ist ein False Positive? Sandbox-Analyse? |
 | 23 | **BitLocker-Aktivierung** | Festplattenverschlüsselung ausrollen | Deployment-Status, Recovery-Key-Management | Warum verschlüsseln? Was ist TPM? |
 
-### :material-clipboard-flow: Kategorie 6: Prozesse / Ticket / Onboarding
+### Prozesse und Abläufe
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -78,7 +77,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 | 25 | **User-Onboarding-Prozess** | Neuer Mitarbeiter, alle Zugänge einrichten | Checkliste, Zeitersparnis, Automatisierung | Was gehört zum Onboarding? Provisioning? |
 | 26 | **Offboarding/Deprovisioning** | Mitarbeiter verlässt Firma, Zugänge entziehen | Prozess-Dokumentation, Sicherheitsaspekte | Was ist ein Deprovisioning-Workflow? Revocation? |
 
-### :material-message-alert: Kategorie 7: Kommunikation / Service Recovery
+### Kommunikation und Eskalation
 
 | # | Thema | Kern | Zeigbare Ergebnisse | Typische Prüferfragen |
 |---|-------|------|---------------------|----------------------|
@@ -87,7 +86,7 @@ description: Über 28 Themenideen für deine Präsentation mit Scoping-Hilfe
 
 ---
 
-## :material-magnify: So findest du DEIN Thema: 3 Methoden
+## So findest du dein Thema
 
 ### Methode 1: Ticket-Rückblick
 
@@ -126,7 +125,7 @@ Stell dir selbst diese Fragen:
 
 ---
 
-## :material-checkbox-marked-outline: Scoping-Checkliste: Ist mein Thema passend?
+## Checkliste: Ist mein Thema geeignet?
 
 - [ ] Kann ich das Problem in 1-2 Sätzen erklären?
 - [ ] Ist der Impact klar (Wer war betroffen? Wie stark?)?
@@ -148,7 +147,7 @@ Stell dir selbst diese Fragen:
 
 ---
 
-## :material-target: Scope richtig setzen: Beispiele
+## Beispiele für gute Eingrenzung
 
 === "Zu breit (schlecht)"
     > „Ich präsentiere unser gesamtes Ticketsystem und alle Prozesse."
@@ -162,12 +161,3 @@ Stell dir selbst diese Fragen:
 === "Richtig eingegrenzt (gut)"
     > „Ich zeige, wie ich einen sicheren Self-Service-Passwort-Reset implementiert habe, der die Support-Tickets um 30% reduziert hat."
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Offizielle Quellen"
-    - [IHK Merkblatt IT-Berufe](https://www.ihk.de/blueprint/servlet/resource/blob/5025172/1659802233c53ffe145011d80396badc/merkblatt-it-berufe-data.pdf) – Anforderungen an Projektarbeit und Präsentation
-    - [IHK Bodensee-Oberschwaben: Projektarbeit](https://www.ihk.de/bodensee-oberschwaben/ausbildung/ausbildungspruefungen/berufsbezogene-pruefungsanforderungen/it-berufe/praesentation-der-projektarbeit-und-fachgespraech-3013362) – Echte betriebliche Aufgaben, keine künstlichen Szenarien
-    - [Atlassian: Problem Management](https://www.atlassian.com/itsm/problem-management) – ITIL-Konzepte für Themenfindung
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – Incident vs. Problem vs. Change

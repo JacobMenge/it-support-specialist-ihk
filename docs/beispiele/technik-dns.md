@@ -10,7 +10,7 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - DNS/Connect
 
 ---
 
-## :material-file-document-outline: Metadaten
+## Metadaten
 
 | Feld | Inhalt |
 |------|--------|
@@ -193,7 +193,7 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - DNS/Connect
 
 ---
 
-## :material-image-multiple: Artefakte (Platzhalter-Übersicht)
+## Artefakte (Platzhalter-Übersicht)
 
 | Folie | Artefakt | Beschreibung |
 |-------|----------|--------------|
@@ -206,7 +206,7 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - DNS/Connect
 
 ---
 
-## :material-head-question: Prüferfragen und Model-Antworten
+## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist DNS und wofür wird es gebraucht?"
     **Antwort:** DNS steht für Domain Name System. Es übersetzt Hostnamen wie ‚erp-server.firma.local' in IP-Adressen wie ‚192.168.1.50'. Das ist nötig, weil Menschen mit Namen arbeiten, aber Netzwerke mit IP-Adressen. Ohne DNS müssten wir uns alle IP-Adressen merken.
@@ -238,11 +238,3 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - DNS/Connect
 ??? question "Frage 10: Wie hätten Sie das Problem anders dokumentieren können?"
     **Antwort:** Alternativ zum Ticket hätte ich ein Post-Incident-Review machen können, wenn das Problem größer gewesen wäre. Bei einem Major Incident wäre auch eine Timeline und ein Lessons-Learned-Workshop angebracht gewesen.
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – Dokumentationsstandards
-    - [Atlassian: Problem Management](https://www.atlassian.com/itsm/problem-management) – Root Cause Analysis
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Strukturierte Darstellung

@@ -10,7 +10,7 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - Standardisi
 
 ---
 
-## :material-file-document-outline: Metadaten
+## Metadaten
 
 | Feld | Inhalt |
 |------|--------|
@@ -113,7 +113,7 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - Standardisi
 
 ---
 
-## :material-head-question: Prüferfragen und Model-Antworten
+## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist BitLocker und warum ist es wichtig?"
     **Antwort:** BitLocker ist die Festplattenverschlüsselung von Microsoft Windows. Sie schützt Daten bei Verlust oder Diebstahl eines Geräts. Ohne BitLocker könnte jemand die Festplatte ausbauen und in einem anderen Gerät auslesen. Mit BitLocker sind die Daten verschlüsselt und ohne Key unlesbar.
@@ -133,11 +133,3 @@ description: Vollständige Beispielpräsentation mit Technik-Fokus - Standardisi
 ??? question "Frage 6: Warum GPO statt PowerShell-Skript?"
     **Antwort:** Eine GPO ist zentral verwaltet, auditierbar und greift automatisch bei jedem Gruppenrichtlinien-Refresh. Ein Skript müsste man manuell ausführen oder in die Task Sequence einbauen, was fehleranfälliger ist.
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [Microsoft: BitLocker Overview](https://docs.microsoft.com/de-de/windows/security/information-protection/bitlocker/bitlocker-overview) – Funktionsweise BitLocker
-    - [IT Process Wiki: Change Management](https://wiki.en.it-processmaps.com/index.php/Change_Management) – Rollout als Change
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Entscheidungsbegründung als Kriterium

@@ -10,7 +10,7 @@ description: Anleitung für realistische Online-Probeprüfungen
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - Mock-Prüfung **online per Videokonferenz** – wie die echte Prüfung
 - Dauert ca. **30-45 Minuten** pro Teilnehmer (inkl. Feedback)
@@ -21,7 +21,7 @@ description: Anleitung für realistische Online-Probeprüfungen
 
 ---
 
-## :material-format-list-numbered: Ablaufplan Mock-Prüfung (Online)
+## Ablaufplan Mock-Prüfung (Online)
 
 ### Zeitrahmen pro Teilnehmer: 30-45 Minuten
 
@@ -52,7 +52,7 @@ description: Anleitung für realistische Online-Probeprüfungen
 
 ---
 
-## :material-table: Bewertungsbogen Light
+## Bewertungsbogen Light
 
 ### Teil 1: Präsentation
 
@@ -91,7 +91,7 @@ description: Anleitung für realistische Online-Probeprüfungen
 
 ---
 
-## :material-comment-text: Feedback-Struktur: 3 Regeln
+## Feedback-Struktur: 3 Regeln
 
 ### Regel 1: Konkret sein
 
@@ -117,7 +117,7 @@ Jedes kritische Feedback mit einer Handlungsempfehlung verknüpfen:
 
 ---
 
-## :material-help-circle: Fragen-Pool für Q&A
+## Fragen-Pool für Q&A
 
 ### Verständnisfragen
 - „Was war die Root Cause des Problems?"
@@ -141,7 +141,7 @@ Jedes kritische Feedback mit einer Handlungsempfehlung verknüpfen:
 
 ---
 
-## :material-alert: Typische Probleme und Interventionen
+## Typische Probleme und Interventionen
 
 | Problem | Sofort-Intervention | Feedback danach |
 |---------|---------------------|-----------------|
@@ -151,10 +151,3 @@ Jedes kritische Feedback mit einer Handlungsempfehlung verknüpfen:
 | Schlechte Tonqualität | Kurz hinweisen | „Nutze ein Headset oder sprich lauter." |
 | Bildschirmfreigabe klappt nicht | Kurz helfen, Zeit neu starten | „Übe das vorher." |
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Offizielle Quellen"
-    - [IHK Merkblatt Präsentation](https://www.ihk.de/blueprint/servlet/resource/blob/1338796/3ccabf0a1654d84e430a0b403145ba7d/merkblattitfg-data.pdf) – Prüfungsanforderungen
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Offizielle Kriterien

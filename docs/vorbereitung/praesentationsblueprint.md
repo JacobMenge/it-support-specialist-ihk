@@ -1,16 +1,15 @@
 ---
-title: Präsentationsblueprint für 10 Minuten
-description: Standard-Folienplan für deine 10-Minuten-Präsentation mit Zeitbudget pro Slide
+title: Folienaufbau
+description: Standard-Folienplan für deine 10-Minuten-Präsentation
 ---
 
-# Präsentationsblueprint für 10 Minuten
+# Folienaufbau
 
-!!! abstract "Auf einen Blick"
-    Hier findest du den Standard-Folienplan für deine 10-Minuten-Präsentation mit Zeitbudget pro Slide. Drei Varianten (Technik, Kommunikation, Mix) und eine Checkliste für die finale Prüfung deiner Folien.
+Hier findest du den Standard-Folienplan für deine 10-Minuten-Präsentation. Drei Varianten (Technik, Kommunikation, Mix) und eine Checkliste für die finale Prüfung deiner Folien.
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - **7-9 Folien** sind optimal für 10 Minuten
 - Pro Folie: **1-1,5 Minuten** Redezeit
@@ -21,7 +20,7 @@ description: Standard-Folienplan für deine 10-Minuten-Präsentation mit Zeitbud
 
 ---
 
-## :material-presentation: Standard-Folienplan (8 Slides)
+## Standard-Folienplan (8 Folien)
 
 | Folie | Titel | Zeit | Inhalt |
 |-------|-------|------|--------|
@@ -37,7 +36,7 @@ description: Standard-Folienplan für deine 10-Minuten-Präsentation mit Zeitbud
 
 ---
 
-## :material-cog: Variante A: Technik-Fokus
+## Variante A: Technik-Fokus
 
 Für technische Troubleshooting-Cases (DNS, Client-Problem, Security-Incident).
 
@@ -77,7 +76,7 @@ Für technische Troubleshooting-Cases (DNS, Client-Problem, Security-Incident).
 
 ---
 
-## :material-message-text: Variante B: Kommunikation-Fokus
+## Variante B: Kommunikation-Fokus
 
 Für Cases mit Schwerpunkt Kundenkommunikation, Eskalation, Service Recovery.
 
@@ -117,7 +116,7 @@ Für Cases mit Schwerpunkt Kundenkommunikation, Eskalation, Service Recovery.
 
 ---
 
-## :material-star: Variante C: Mix-Fokus (empfohlen)
+## Variante C: Mix-Fokus (empfohlen)
 
 Für Cases, die technische Kompetenz und Kommunikation verbinden.
 
@@ -157,7 +156,7 @@ Für Cases, die technische Kompetenz und Kommunikation verbinden.
 
 ---
 
-## :material-chart-pie: Zeitverteilung visualisiert
+## Zeitverteilung
 
 ```mermaid
 pie title Zeitverteilung 10 Minuten
@@ -169,7 +168,7 @@ pie title Zeitverteilung 10 Minuten
 
 ---
 
-## :material-checkbox-marked-outline: Checkliste: Folien final prüfen
+## Checkliste: Folien prüfen
 
 ### Timing
 
@@ -207,7 +206,7 @@ pie title Zeitverteilung 10 Minuten
 
 ---
 
-## :material-image-multiple: Artefakte: Was zeigen?
+## Artefakte: Was zeigen?
 
 | Artefakt-Typ | Beispiele | Hinweis |
 |--------------|-----------|---------|
@@ -223,11 +222,3 @@ pie title Zeitverteilung 10 Minuten
 !!! tip "Online-Tipp"
     Bei Bildschirmfreigabe können Details schwer erkennbar sein. Vergrößere wichtige Bereiche in Screenshots oder markiere sie farbig. Teste die Lesbarkeit vorher in einer Probe-Videokonferenz!
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Offizielle Quellen"
-    - [IHK Merkblatt Präsentation](https://www.ihk.de/blueprint/servlet/resource/blob/1338796/3ccabf0a1654d84e430a0b403145ba7d/merkblattitfg-data.pdf) – Zeitrahmen 15 Minuten (hier adaptiert auf 10 Min.)
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Struktur und Aufbau als Kriterium
-    - [der-pruefer.de](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Praktische Tipps zur Foliengestaltung

@@ -1,16 +1,15 @@
 ---
-title: Troubleshooting Playbook
-description: Frameworks für systematisches Troubleshooting, Ticket-Triage und Root Cause Analysis
+title: Fehleranalyse
+description: Systematisches Troubleshooting, Ticket-Triage und Ursachenanalyse
 ---
 
-# Troubleshooting Playbook
+# Fehleranalyse
 
-!!! abstract "Auf einen Blick"
-    Dieses Playbook gibt dir Frameworks für systematisches Troubleshooting, Ticket-Triage und Root Cause Analysis. Alles, was du brauchst, um in der Präsentation und im Fachgespräch zu zeigen, dass du strukturiert arbeitest.
+Hier findest du Methoden für systematische Fehleranalyse. Damit zeigst du in der Präsentation und im Fachgespräch, dass du strukturiert arbeitest.
 
 ---
 
-## :material-clock-fast: In 2 Minuten gelesen
+## Das Wichtigste
 
 - Troubleshooting ist **kein Raten** – es folgt einem System
 - **Hypothese → Test → Ergebnis → Nächster Schritt**
@@ -20,7 +19,7 @@ description: Frameworks für systematisches Troubleshooting, Ticket-Triage und R
 
 ---
 
-## :material-lightbulb-on: Framework 1: Hypothesenbasiertes Troubleshooting
+## Methode 1: Hypothesenbasiertes Troubleshooting
 
 ```mermaid
 flowchart TD
@@ -48,7 +47,7 @@ flowchart TD
 
 ---
 
-## :material-call-split: Framework 2: Divide & Conquer
+## Methode 2: Teile und Herrsche
 
 Teile das System in Komponenten und isoliere das Problem.
 
@@ -75,7 +74,7 @@ Teile das System in Komponenten und isoliere das Problem.
 
 ---
 
-## :material-layers-triple: OSI-Modell für Netzwerk-Troubleshooting
+## OSI-Modell für Netzwerk-Fehlersuche
 
 Beginne bei Layer 1 (physisch) und arbeite dich nach oben.
 
@@ -100,7 +99,7 @@ Beginne bei Layer 1 (physisch) und arbeite dich nach oben.
 
 ---
 
-## :material-magnify: Root Cause Analysis (RCA)
+## Ursachenanalyse
 
 ### Methode 1: 5-Why
 
@@ -150,7 +149,7 @@ Material:  Dateien gelöscht? Verschlüsselt?
 
 ---
 
-## :material-sort-ascending: Ticket-Triage: Impact × Urgency = Priority
+## Ticket-Priorisierung
 
 ### Definitionen
 
@@ -179,7 +178,7 @@ Material:  Dateien gelöscht? Verschlüsselt?
 
 ---
 
-## :material-escalator-up: Eskalation: Wann und wie?
+## Eskalation: Wann und wie?
 
 ### Funktionale Eskalation (Fachlich)
 → An Spezialisten mit mehr Know-how
@@ -205,7 +204,7 @@ Material:  Dateien gelöscht? Verschlüsselt?
 
 ---
 
-## :material-file-document-edit: Dokumentation: Was muss ins Ticket?
+## Dokumentation: Was muss ins Ticket?
 
 ### Minimum-Standard
 
@@ -238,7 +237,7 @@ PRÄVENTION: Onboarding-Checkliste um Gruppenzuweisung ergänzt
 
 ---
 
-## :material-toolbox: Toolbox: Typische Checks
+## Wichtige Befehle und Tools
 
 ### Windows
 
@@ -275,12 +274,3 @@ PRÄVENTION: Onboarding-Checkliste um Gruppenzuweisung ergänzt
 | SSL/TLS prüfen | openssl s_client |
 | HTTP-Requests | curl, wget |
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – ITIL-Definitionen Impact/Urgency/Priority
-    - [Atlassian: Problem Management](https://www.atlassian.com/itsm/problem-management) – RCA-Methoden, Known Error Database
-    - [ManageEngine: IT Incident Management](https://www.manageengine.com/products/service-desk/it-incident-management/what-is-it-incident-management.html) – Eskalation und Triage
-    - [INOC: ITIL Incident Management Best Practices](https://www.inoc.com/blog/itil-incident-management) – Knowledge Base, Troubleshooting Templates

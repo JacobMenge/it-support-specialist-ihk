@@ -10,7 +10,7 @@ description: Vollständige Beispielpräsentation mit Mix-Fokus - Account-Lockout
 
 ---
 
-## :material-file-document-outline: Metadaten
+## Metadaten
 
 | Feld | Inhalt |
 |------|--------|
@@ -132,7 +132,7 @@ description: Vollständige Beispielpräsentation mit Mix-Fokus - Account-Lockout
 
 ---
 
-## :material-head-question: Prüferfragen und Model-Antworten
+## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist Account-Lockout und wozu dient es?"
     **Antwort:** Account-Lockout ist eine Sicherheitsfunktion, die einen Account nach einer bestimmten Anzahl von Fehlversuchen sperrt. Das schützt vor Brute-Force-Angriffen, bei denen ein Angreifer viele Passwörter durchprobiert.
@@ -149,11 +149,3 @@ description: Vollständige Beispielpräsentation mit Mix-Fokus - Account-Lockout
 ??? question "Frage 5: Was ist der Unterschied zwischen Conditional Access und MFA?"
     **Antwort:** MFA ist ein Authentifizierungsfaktor. Conditional Access ist eine Policy-Engine, die entscheidet, wann welche Anforderungen gelten. Conditional Access kann MFA als Anforderung enthalten, aber auch andere Bedingungen prüfen.
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [Microsoft: Account Lockout](https://docs.microsoft.com/de-de/windows/security/threat-protection/security-policy-settings/account-lockout-policy) – Lockout-Policy und Event-IDs
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – VIP-Incidents und Eskalation
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Fachliche Tiefe und Kommunikation

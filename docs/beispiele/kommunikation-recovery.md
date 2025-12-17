@@ -10,7 +10,7 @@ description: Vollständige Beispielpräsentation mit Kommunikation-Fokus - Eskal
 
 ---
 
-## :material-file-document-outline: Metadaten
+## Metadaten
 
 | Feld | Inhalt |
 |------|--------|
@@ -107,7 +107,7 @@ description: Vollständige Beispielpräsentation mit Kommunikation-Fokus - Eskal
 
 ---
 
-## :material-head-question: Prüferfragen und Model-Antworten
+## Prüferfragen und Model-Antworten
 
 ??? question "Frage 1: Was ist Service Recovery?"
     **Antwort:** Service Recovery bezeichnet alle Maßnahmen, um nach einem Serviceausfall oder einer negativen Erfahrung das Vertrauen der Kunden oder User wiederherzustellen. Es geht nicht nur um die technische Lösung, sondern auch um die emotionale und kommunikative Ebene.
@@ -124,12 +124,3 @@ description: Vollständige Beispielpräsentation mit Kommunikation-Fokus - Eskal
 ??? question "Frage 5: Wie messen Sie den Erfolg von Service Recovery?"
     **Antwort:** Kurzfristig: Keine weiteren Beschwerden, Eskalation abgewendet. Mittelfristig: Positives Feedback im Follow-up-Gespräch. Langfristig: Weniger Beschwerden bei zukünftigen Incidents.
 
----
-
-## :material-link-variant: Quellen
-
-!!! info "Weiterführende Ressourcen"
-    - [IT Process Wiki: Incident Management](https://wiki.en.it-processmaps.com/index.php/Incident_Management) – Major Incident und Eskalation
-    - Friedemann Schulz von Thun: Miteinander reden – Kommunikationsmodelle
-    - Marshall Rosenberg: Gewaltfreie Kommunikation – Deeskalationstechniken
-    - [IHK Bewertungskriterien](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Kommunikative Kompetenz

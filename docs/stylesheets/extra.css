@@ -73,16 +73,23 @@
 }
 
 /* ============================================
-   Sidebar / Inhaltsverzeichnis
+   Layout - Volle Breite nutzen
    ============================================ */
 
-/* Content-Bereich maximieren */
+/* MkDocs Material Grid-Variable überschreiben */
+:root {
+  --md-grid-max-width: 100%;
+}
+
+/* Alle Container auf volle Breite */
 .md-grid {
   max-width: 100% !important;
+  margin: 0 !important;
 }
 
 .md-main__inner {
   max-width: 100% !important;
+  margin: 0 !important;
 }
 
 .md-content {
@@ -91,26 +98,33 @@
 
 .md-content__inner {
   max-width: 100% !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 
-/* Sidebars kompakt halten */
+/* Typeset-Container auch volle Breite */
+.md-typeset {
+  max-width: 100% !important;
+}
+
+/* Sidebars kompakt */
 @media screen and (min-width: 1220px) {
   .md-sidebar--primary {
-    width: 11rem;
+    width: 10rem !important;
   }
 
   .md-sidebar--secondary {
-    width: 12rem;
+    width: 11rem !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .md-sidebar--primary {
-    width: 12rem;
+    width: 11rem !important;
   }
 
   .md-sidebar--secondary {
-    width: 13rem;
+    width: 12rem !important;
   }
 }
 

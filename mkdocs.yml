@@ -6,22 +6,23 @@ site_url: ""
 theme:
   name: material
   language: de
+  custom_dir: docs/overrides
   palette:
     - scheme: default
-      primary: indigo
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Dunkelmodus aktivieren
     - scheme: slate
-      primary: indigo
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Hellmodus aktivieren
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tracking
@@ -38,8 +39,9 @@ theme:
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
+  logo: stylesheets/img/syntax-logo.svg
+  favicon: stylesheets/img/syntax-logo2.svg
   icon:
-    logo: material/school
     repo: fontawesome/brands/github
 
 extra:

@@ -191,27 +191,27 @@
    Tabellen
    ============================================ */
 
-/* Tabellen-Container volle Breite */
+/* Alle Tabellen-Container auf volle Breite */
 .md-typeset__scrollwrap {
-  overflow-x: visible;
-  margin: 0;
+  margin: 0 !important;
+  overflow: visible !important;
 }
 
 .md-typeset__table {
-  display: block;
-  overflow-x: visible;
-  width: 100%;
+  width: 100% !important;
+  display: block !important;
 }
 
-.md-typeset table:not([class]) {
+/* Tabellen selbst */
+.md-typeset table {
+  width: 100% !important;
+  display: table !important;
   border-radius: var(--card-border-radius);
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  width: 100% !important;
   margin: 1.5rem 0;
   border-collapse: separate;
   border-spacing: 0;
-  table-layout: fixed;
 }
 
 .md-typeset table:not([class]) th {

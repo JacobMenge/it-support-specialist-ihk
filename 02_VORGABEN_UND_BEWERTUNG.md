@@ -8,7 +8,6 @@ Hier erfährst du, was genau bewertet wird und welche formalen Anforderungen gel
 
 ## In 2 Minuten gelesen
 
-- Präsentation wird mit ca. 1/3, Fachgespräch mit ca. 2/3 gewichtet
 - Bewertet werden: Fachliche Tiefe, Struktur, Kommunikation, Nutzen
 - Zielgruppe muss zu Beginn genannt werden
 - Prüfungsausschuss ist KEINE gültige Zielgruppe
@@ -97,14 +96,14 @@ Diese Fragen stellen sich Prüfer während deiner Präsentation:
 
 ---
 
-## Gewichtung verstehen
+## Die beiden Prüfungsteile
 
 ```
 ┌─────────────────────────────────────────────────────┐
 │                    Gesamtnote                       │
 ├─────────────────────┬───────────────────────────────┤
 │   Präsentation      │      Fachgespräch             │
-│       ~33%          │         ~67%                  │
+│     (10 Min.)       │        (5 Min.)               │
 ├─────────────────────┼───────────────────────────────┤
 │ • Struktur          │ • Fachwissen                  │
 │ • Visualisierung    │ • Argumentation               │
@@ -113,7 +112,7 @@ Diese Fragen stellen sich Prüfer während deiner Präsentation:
 └─────────────────────┴───────────────────────────────┘
 ```
 
-**Wichtig:** Das Fachgespräch wiegt doppelt so viel wie die Präsentation! Eine gute Präsentation allein reicht nicht – du musst auch im Q&A überzeugen.
+**Wichtig:** Beide Teile sind wichtig für den Gesamteindruck. Eine gute Präsentation allein reicht nicht – du musst auch im Q&A überzeugen.
 
 ---
 
@@ -122,4 +121,4 @@ Diese Fragen stellen sich Prüfer während deiner Präsentation:
 - [IHK Bewertungskriterien Präsentation neue VO](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Offizielle Kriterien
 - [IHK Bewertungsbogen Präsentation/Fachgespräch](https://www.ihk.de/blueprint/servlet/resource/blob/3588506/0367f6f5eb2d930c445bbe6191283cfd/it-pruefung-bewertungsbogen-praesentation-fachgespraech-data.pdf) – Punkteschema
 - [IHK Bodensee-Oberschwaben: Zielgruppenhinweise](https://www.ihk.de/bodensee-oberschwaben/ausbildung/ausbildungspruefungen/berufsbezogene-pruefungsanforderungen/it-berufe/praesentation-der-projektarbeit-und-fachgespraech-3013362) – Zielgruppe definieren
-- [der-pruefer.de: Beurteilung](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Gewichtung 1/3 zu 2/3
+- [der-pruefer.de: Beurteilung](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Praktische Hinweise zur Prüfung

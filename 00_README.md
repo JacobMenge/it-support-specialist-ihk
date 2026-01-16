@@ -127,4 +127,4 @@ Diese Checkliste bestätigt die Vollständigkeit der Unterlagen:
 - [IHK Bewertungskriterien Präsentation](https://www.ihk.de/blueprint/servlet/resource/blob/2618244/21345f4e591a4a035d4e1ca68c3c011f/kriterien-bewertung-praesentation-data.pdf) – Offizielle Bewertungskriterien
 - [IHK Bodensee-Oberschwaben: Präsentation und Fachgespräch](https://www.ihk.de/bodensee-oberschwaben/ausbildung/ausbildungspruefungen/berufsbezogene-pruefungsanforderungen/it-berufe/praesentation-der-projektarbeit-und-fachgespraech-3013362) – Hinweise zur Zielgruppenorientierung
 - [IHK Ulm: Hinweise IT-Prüfungen](https://www.ihk.de/ulm/hauptnavigation/ausbildungsbetriebe-azubis/pruefungen2/vorbereitungen-auf-die-pruefungen/it-berufe-6694102) – Bewertungsmatrizen und Merkblätter
-- [der-pruefer.de: Beurteilung Präsentation](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Praktische Hinweise zur Gewichtung 1/3 Präsentation, 2/3 Fachgespräch
+- [der-pruefer.de: Beurteilung Präsentation](https://der-pruefer.de/ratgeber/beurteilung-praesentation-fachgespraech/) – Praktische Hinweise zur Prüfung

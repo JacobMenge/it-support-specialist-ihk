@@ -9,17 +9,15 @@ Hier erfährst du, worauf die Prüfer achten und was du in deinem IT-Support-Sze
 
 ---
 
-## Die Gewichtung verstehen
+## Die Prüfung besteht aus zwei Teilen
 
-Die Prüfung besteht aus zwei Teilen:
-
-| Teil | Gewichtung | Das bedeutet |
-|------|------------|--------------|
-| Präsentation | ca. 33% | Du präsentierst dein IT-Support-Szenario |
-| Fachgespräch | ca. 67% | Du beantwortest vertiefende Fragen |
+| Teil | Das bedeutet |
+|------|--------------|
+| Präsentation (10 Min.) | Du präsentierst dein IT-Support-Szenario |
+| Fachgespräch (5 Min.) | Du beantwortest vertiefende Fragen |
 
 !!! warning "Wichtig"
-    Das Fachgespräch zählt etwa doppelt so viel wie die Präsentation. Eine gute Präsentation allein reicht nicht – du musst auch im Fachgespräch überzeugen. Die genaue Gewichtung kann je nach IHK variieren.
+    Beide Teile sind wichtig für den Gesamteindruck. Eine gute Präsentation allein reicht nicht – du musst auch im Fachgespräch überzeugen.
 
 ---
 

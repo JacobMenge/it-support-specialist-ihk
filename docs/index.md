@@ -15,8 +15,8 @@ Dieser Leitfaden bereitet dich Schritt für Schritt auf die IHK-Zertifikatsprüf
 flowchart LR
     A[1. Prüfung<br>verstehen] --> B[2. Thema<br>wählen]
     B --> C[3. Fachliches<br>Wissen]
-    C --> D[4. Präsentation<br>erstellen]
-    D --> E[5. Beispiele<br>ansehen]
+    C --> D[4. Beispiele<br>ansehen]
+    D --> E[5. Präsentation<br>erstellen]
     E --> F[6. Prüfung<br>üben]
 ```
 
@@ -24,15 +24,12 @@ flowchart LR
 
 ## Die Prüfung auf einen Blick
 
-| Bestandteil | Dauer | Gewichtung |
-|-------------|-------|------------|
-| Präsentation | 10 Minuten | ca. 33% |
-| Fachgespräch | 5 Minuten | ca. 67% |
+| Bestandteil | Dauer |
+|-------------|-------|
+| Präsentation | 10 Minuten |
+| Fachgespräch | 5 Minuten |
 
 Die Prüfung findet online per Videokonferenz statt.
-
-!!! warning "Wichtig"
-    Das Fachgespräch zählt doppelt so viel wie die Präsentation. Eine gute Präsentation allein reicht nicht.
 
 ---
 
@@ -62,16 +59,7 @@ Das Fachgespräch prüft dein Verständnis. Hier sind die wichtigsten Themen.
 
 ---
 
-## Schritt 4: Präsentation erstellen
-
-Baue deine Präsentation nach einem bewährten Schema auf.
-
-- [x] **[Folienaufbau](vorbereitung/praesentationsblueprint.md):** 8 Folien für 10 Minuten – mit Zeitplan.
-- [x] **[Formulierungshilfen](vorbereitung/merksatzkarten.md):** Sätze, die immer funktionieren.
-
----
-
-## Schritt 5: Von Beispielen lernen
+## Schritt 4: Von Beispielen lernen
 
 Schau dir an, wie eine gute Präsentation aussehen kann.
 
@@ -81,6 +69,15 @@ Schau dir an, wie eine gute Präsentation aussehen kann.
 | [Client-Rollout](beispiele/technik-rollout.md) | Strukturiertes Vorgehen |
 | [Eskalation bewältigen](beispiele/kommunikation-recovery.md) | Kommunikation und Deeskalation |
 | [Zugangsproblem](beispiele/mix-identity.md) | Technik und Kommunikation kombiniert |
+
+---
+
+## Schritt 5: Präsentation erstellen
+
+Baue deine Präsentation nach einem bewährten Schema auf.
+
+- [x] **[Folienaufbau](vorbereitung/praesentationsblueprint.md):** 8 Folien für 10 Minuten – mit Zeitplan.
+- [x] **[Formulierungshilfen](vorbereitung/merksatzkarten.md):** Sätze, die immer funktionieren.
 
 ---
 
@@ -111,8 +108,8 @@ Schau dir an, wie eine gute Präsentation aussehen kann.
 | Zeitpunkt | Aufgabe | Leitfaden-Abschnitt |
 |-----------|---------|---------------------|
 | 3 Wochen vorher | Thema wählen und eingrenzen | Schritt 1 + 2 |
-| 2 Wochen vorher | Fachliches auffrischen, Folien erstellen | Schritt 3 + 4 |
-| 1 Woche vorher | Beispiele ansehen, Fragen üben | Schritt 5 + 6 |
+| 2 Wochen vorher | Fachliches auffrischen, Beispiele ansehen | Schritt 3 + 4 |
+| 1 Woche vorher | Präsentation erstellen, Fragen üben | Schritt 5 + 6 |
 | 5 Tage vorher | Erste Generalprobe | – |
 | 3 Tage vorher | Zweite Generalprobe mit Feedback | – |
 | 1 Tag vorher | Technik testen, früh schlafen | Checkliste |

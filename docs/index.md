@@ -74,9 +74,9 @@ Schau dir an, wie eine gute Präsentation aussehen kann.
 
 ## Schritt 5: Präsentation erstellen
 
-Baue deine Präsentation nach einem bewährten Schema auf.
+Es gibt **kein vorgeschriebenes Format** für die Präsentation. Der hier gezeigte Folienaufbau ist eine Orientierungshilfe, kein Muss. Viel wichtiger ist, dass du deinen Supportfall klar und überzeugend darstellst und dabei die Kompetenzen eines IT-Supporters vermittelst.
 
-- [x] **[Folienaufbau](vorbereitung/praesentationsblueprint.md):** 8 Folien für 10 Minuten – mit Zeitplan.
+- [x] **[Folienaufbau](vorbereitung/praesentationsblueprint.md):** Orientierungshilfe mit Zeitplan und Varianten.
 - [x] **[Formulierungshilfen](vorbereitung/merksatzkarten.md):** Sätze, die immer funktionieren.
 
 ---
@@ -92,6 +92,8 @@ Baue deine Präsentation nach einem bewährten Schema auf.
 ---
 
 ## Die fünf goldenen Regeln
+
+Diese Regeln betreffen den **Inhalt**, nicht das Format. Es gibt kein vorgeschriebenes Folienformat – wähle den Aufbau, der deinen Supportfall am besten vermittelt.
 
 | Regel | Beschreibung |
 |-------|--------------|

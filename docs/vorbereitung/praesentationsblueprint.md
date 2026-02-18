@@ -18,6 +18,9 @@ Hier findest du den Standard-Folienplan für deine 10-Minuten-Präsentation. Dre
 - Keine Textwände – Schlagworte und Visuals nutzen
 - **Online-Prüfung:** Bildschirmfreigabe vorbereiten, Folien gut lesbar gestalten
 
+!!! info "Kein festes Format vorgeschrieben"
+    Die IHK schreibt **kein verbindliches Folienformat** vor. Die hier gezeigten Folienpläne und Varianten sind **Orientierungshilfen**, keine Pflicht. Du kannst in Aufbau, Reihenfolge und Anzahl der Folien frei abweichen – entscheidend ist, dass deine Präsentation den Supportfall überzeugend darstellt und zeigt, dass du wie ein professioneller IT-Supporter denkst und handelst. Wenn ein anderer Aufbau deinen Fall besser abbildet, nutze ihn.
+
 ---
 
 ## Standard-Folienplan (8 Folien)

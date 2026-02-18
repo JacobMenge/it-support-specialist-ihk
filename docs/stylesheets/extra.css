@@ -524,6 +524,88 @@
   height: auto;
 }
 
+/* Mermaid Dark Mode */
+[data-md-color-scheme="slate"] .mermaid {
+  background: #2b2b2b;
+}
+
+/* Mermaid SVG-Elemente im Dark Mode anpassen */
+[data-md-color-scheme="slate"] .mermaid text {
+  fill: #e0e0e0 !important;
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node ellipse,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  fill: #1a2a5c !important;
+  stroke: #4a6fa5 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .node .label {
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgePath .path {
+  stroke: #7a9ec9 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel rect {
+  fill: #2b2b2b !important;
+  opacity: 0.8 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .marker {
+  fill: #7a9ec9 !important;
+  stroke: #7a9ec9 !important;
+}
+
+/* Mermaid Flowchart Rhombus (Entscheidung) im Dark Mode */
+[data-md-color-scheme="slate"] .mermaid .node.decision rect,
+[data-md-color-scheme="slate"] .mermaid .node rhombus {
+  fill: #2a3f6c !important;
+}
+
+/* Mermaid Cluster/Gruppen im Dark Mode */
+[data-md-color-scheme="slate"] .mermaid .cluster rect {
+  fill: #1e1e2e !important;
+  stroke: #4a6fa5 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .cluster text {
+  fill: #c0c0c0 !important;
+}
+
+/* Mermaid Labels generell im Dark Mode */
+[data-md-color-scheme="slate"] .mermaid .label {
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .label text {
+  fill: #e0e0e0 !important;
+}
+
+/* Mermaid Arrowheads im Dark Mode */
+[data-md-color-scheme="slate"] .mermaid #arrowhead path,
+[data-md-color-scheme="slate"] .mermaid marker path {
+  fill: #7a9ec9 !important;
+}
+
+/* Mermaid Linien im Dark Mode */
+[data-md-color-scheme="slate"] .mermaid .flowchart-link {
+  stroke: #7a9ec9 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid line {
+  stroke: #7a9ec9 !important;
+}
+
 /* ============================================
    Material Icons - Checkmarks/X
    ============================================ */
@@ -630,6 +712,83 @@
 
 [data-md-color-scheme="slate"] .md-footer {
   background-color: #030820;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) code {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details {
+  border-left-color: #4a6fa5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset details > summary {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details > summary:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details[open] > summary {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details > summary::after {
+  color: #8fa3d9;
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong:first-child {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  border-left-color: #4a6fa5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition {
+  border-left-color: #4a6fa5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.info,
+[data-md-color-scheme="slate"] .md-typeset .admonition.note {
+  border-left-color: #4a6fa5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning {
+  border-left-color: #e6a700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger,
+[data-md-color-scheme="slate"] .md-typeset .admonition.error {
+  border-left-color: #d32f2f;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.success {
+  border-left-color: #4caf50;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset .admonition.hint {
+  border-left-color: #4a6fa5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset mark,
+[data-md-color-scheme="slate"] .md-typeset .highlight {
+  background-color: rgba(255, 242, 80, 0.2);
 }
 
 /* ============================================

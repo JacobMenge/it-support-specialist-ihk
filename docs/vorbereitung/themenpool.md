@@ -16,6 +16,7 @@ Hier findest du 28 Themenideen für deine Präsentation. Zu jedem Thema: Was ist
 - Frage dich: „Kann ich Problem, Vorgehen und Ergebnis in 10 Min. zeigen?"
 - Prüfer fragen nach Alternativen, Risiken und Lessons Learned
 - Nutze die 3 Methoden unten, um dein persönliches Thema zu finden
+- **Kein festes Format:** Es gibt keine vorgeschriebene Folienstruktur – passe den Aufbau an deinen Supportfall an
 
 ---
 

@@ -42,7 +42,9 @@ Wähle ein echtes Szenario aus deinem Kurs, Praktikum oder Job.
 
 ### 2. Folien erstellen (1-2 Wochen vorher)
 
-Baue deine Präsentation nach diesem Schema:
+Der folgende Folienplan ist eine **bewährte Orientierungshilfe** – kein vorgeschriebenes Format. Die IHK macht keine Vorgaben zum Aufbau der Folien. Entscheidend ist, dass du deinen Supportfall überzeugend präsentierst und dabei die Kompetenzen eines IT-Supporters zeigst. Wenn ein anderer Aufbau besser zu deinem Thema passt, weiche davon ab.
+
+**Ein mögliches Schema:**
 
 | Folie | Inhalt | Zeit |
 |-------|--------|------|
@@ -54,7 +56,7 @@ Baue deine Präsentation nach diesem Schema:
 | 7 | Erkenntnisse | 1,5 Minuten |
 | 8 | Zusammenfassung | 1 Minute |
 
-**Regeln für Folien:**
+**Tipps für Folien:**
 
 - Maximal 6 Stichpunkte pro Folie
 - Keine ganzen Sätze, nur Schlagworte
@@ -132,6 +134,8 @@ Schreibe dir zu jeder Folie Stichpunkte auf, was du sagen willst. Keine ausformu
 ---
 
 ## Die fünf wichtigsten Regeln
+
+Diese Regeln beziehen sich auf den **Inhalt** deiner Präsentation. Die IHK schreibt kein festes Folienformat vor – du kannst den Aufbau frei wählen, solange dein Supportfall klar und professionell rüberkommt.
 
 | Regel | Warum |
 |-------|-------|

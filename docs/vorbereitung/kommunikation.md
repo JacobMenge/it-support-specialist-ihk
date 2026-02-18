@@ -11,11 +11,15 @@ Hier findest du alles zu professioneller Kommunikation im Support: Gesprächsstr
 
 ## Das Wichtigste
 
-- **Service-Mindset:** Empathie + Klarheit + Verbindlichkeit
-- **Gesprächsstruktur:** Acknowledge → Clarify → Agree → Act → Advise
-- **Deeskalation:** Zuhören, Verständnis zeigen, Lösung anbieten
-- **GFK (4 Schritte):** Beobachtung → Gefühl → Bedürfnis → Bitte
-- **4-Ohren-Modell:** Jede Nachricht hat 4 Seiten (Sachinhalt, Appell, Beziehung, Selbstoffenbarung)
+- **Service-Mindset:** Empathie + Klarheit + Verbindlichkeit – die 3 Säulen
+- **Gesprächsstruktur (ACAAA):** Acknowledge → Clarify → Agree → Act → Advise
+- **Deeskalation in 60 Sek.:** Zuhören → Verständnis zeigen → Lösung anbieten
+- **Aktives Zuhören:** Paraphrasieren, Gefühle spiegeln, Nachfragen
+- **GFK (4 Schritte):** Beobachtung → Gefühl → Bedürfnis → Bitte (nach Rosenberg)
+- **4-Ohren-Modell (Schulz von Thun):** Sachinhalt, Selbstoffenbarung, Beziehung, Appell
+- **SLA-konforme Kommunikation:** Priority bestimmt den Zeitrahmen – dem User proaktiv mitteilen
+- **Erwartungsmanagement:** Realistische Zeiten nennen, proaktiv updaten, Zusagen einhalten
+- **VIP-Kommunikation:** Sofortige Reaktion, klare Struktur, regelmäßige Updates
 
 ---
 
@@ -263,6 +267,35 @@ Manchmal musst du „Nein" sagen – aber konstruktiv:
 | „Das ist nicht mein Job." | „Dafür ist Abteilung X zuständig. Ich verbinde Sie/erstelle ein Ticket." |
 | „Das geht nicht." | „Das ist technisch nicht möglich, aber wir könnten alternativ..." |
 | „Da kann ich nichts machen." | „Das liegt außerhalb meines Einflussbereichs. Ich eskaliere das für Sie." |
+
+---
+
+## SLA-konforme Gesprächsführung
+
+Im professionellen IT-Support arbeitest du immer innerhalb von SLA-Vorgaben. Das beeinflusst direkt, wie du kommunizierst: Du musst den User über realistische Zeiten informieren und transparent bleiben, wenn Fristen eng werden.
+
+**Warum ist das wichtig?** SLAs schaffen Verbindlichkeit – sowohl gegenüber dem Kunden als auch für dich. Wenn du die SLA-Zeiten kennst, kannst du dem User sofort sagen, bis wann er mit einer Reaktion oder Lösung rechnen kann. Das verhindert Enttäuschung und baut Vertrauen auf.
+
+**Prüfungsrelevanz:** Prüfer fragen gerne: „Wie haben Sie die SLA-Vorgaben in Ihrer Kommunikation berücksichtigt?" Eine gute Antwort verbindet Priorität, Zeitrahmen und transparente Kommunikation.
+
+### SLA in der Kommunikation anwenden
+
+| Situation | SLA-konforme Kommunikation |
+|-----------|---------------------------|
+| P1 (Kritisch) | „Das hat höchste Priorität. Ich arbeite sofort daran und melde mich in 15 Minuten mit einem Update." |
+| P2 (Hoch) | „Ich kümmere mich schnellstmöglich darum. Sie hören innerhalb einer Stunde von mir." |
+| P3 (Mittel) | „Ich nehme das auf und bearbeite es heute. Bis 16 Uhr habe ich ein Update für Sie." |
+| P4 (Gering) | „Das notiere ich. Ich melde mich innerhalb von 2 Arbeitstagen mit einer Lösung." |
+
+### SLA-Verletzung droht – was tun?
+
+Wenn eine SLA-Frist zu platzen droht, musst du **proaktiv** handeln:
+
+1. **Eskalieren:** Hierarchische Eskalation einleiten, bevor die Frist abläuft
+2. **User informieren:** Proaktiv mitteilen, dass es länger dauert – bevor der User nachfragt
+3. **Zwischenstatus geben:** Zeigen, dass du aktiv daran arbeitest
+
+**Beispiel:** „Herr Müller, ich wollte Sie kurz informieren: Die Lösung braucht leider etwas länger als geplant, weil wir auf eine Rückmeldung vom Hersteller warten. Ich habe das Problem an meine Teamleitung eskaliert, damit wir schneller vorankommen. Ich melde mich in einer Stunde wieder."
 
 ---
 

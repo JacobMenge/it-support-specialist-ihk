@@ -13,9 +13,14 @@ Hier findest du Methoden für systematische Fehleranalyse. Damit zeigst du in de
 
 - Troubleshooting ist **kein Raten** – es folgt einem System
 - **Hypothese → Test → Ergebnis → Nächster Schritt**
-- OSI-Modell hilft bei Netzwerkproblemen (unten anfangen)
-- Ticket-Triage: **Impact × Urgency = Priority**
-- Dokumentiere alles: Repro, Logs, Fix, Prävention
+- OSI-Modell hilft bei Netzwerkproblemen (immer unten bei Layer 1 anfangen)
+- Ticket-Triage: **Impact × Urgency = Priority** (P1-P4)
+- SLA-Zeiten bestimmen Reaktions- und Lösungsfristen je Priority-Stufe
+- **5-Why** und **Ishikawa** für Root Cause Analysis – nicht nur Symptom, sondern Ursache beheben
+- Eskalation ist kein Versagen: fachlich (Know-how) oder hierarchisch (Entscheidung/Ressourcen)
+- Dokumentiere alles: Symptom, Diagnose, Root Cause, Fix, Validierung, Prävention
+- Windows: **Event Logs** (eventvwr), **Task-Manager**, **perfmon** für Fehleranalyse
+- Linux: **journalctl**, **/var/log/**, **systemctl** für Dienste und Logs
 
 ---
 

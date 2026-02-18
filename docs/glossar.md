@@ -49,6 +49,33 @@ Schriftliche Vereinbarung zwischen IT und Kunde über die Servicequalität.
 | **Lösungszeit** | Wie schnell wird das Problem behoben? | P1: 4 Std, P4: 72 Std |
 | **Verfügbarkeit** | Wie oft ist der Dienst erreichbar? | 99,9% (8,76 Std Ausfall/Jahr) |
 
+### SLA-Priority-Stufen
+
+Die Priorität ergibt sich aus **Impact × Urgency** und bestimmt Reaktions- und Lösungszeiten.
+
+| Priority | Bedeutung | Reaktionszeit | Lösungszeit | Beispiel |
+|----------|-----------|---------------|-------------|----------|
+| **P1 – Kritisch** | Geschäftskritischer Ausfall, viele User betroffen | 15 Minuten | 4 Stunden | E-Mail-Server für gesamte Firma ausgefallen |
+| **P2 – Hoch** | Wichtige Funktion eingeschränkt, Workaround möglich | 1 Stunde | 8 Stunden | CRM-System langsam, Arbeit möglich aber beeinträchtigt |
+| **P3 – Mittel** | Einzelner User betroffen, keine Deadline | 4 Stunden | 24 Stunden | Drucker in einem Büro funktioniert nicht |
+| **P4 – Gering** | Kosmetisch oder Wunsch, kein Arbeitsausfall | 8 Stunden | 72 Stunden | Desktop-Hintergrund stimmt nicht |
+
+!!! warning "Prüfungsrelevant"
+    Die Priorität ist **nicht** dasselbe wie Dringlichkeit. Priority = Impact × Urgency. Ein laut klagender User hat nicht automatisch P1 – entscheidend ist die objektive Auswirkung.
+
+### Service-Metriken
+
+Kennzahlen zur Messung der Servicequalität im IT-Support.
+
+| Metrik | Bedeutung | Typischer Zielwert |
+|--------|-----------|-------------------|
+| **First Call Resolution (FCR)** | Beim ersten Kontakt gelöst | 60-80% |
+| **Mean Time to Respond (MTTR)** | Durchschnittliche Reaktionszeit | Abhängig von Priority |
+| **Mean Time to Resolve (MTTR)** | Durchschnittliche Lösungszeit | Abhängig von Priority |
+| **SLA-Einhaltungsquote** | Anteil fristgerecht gelöster Tickets | >95% |
+| **Kundenzufriedenheit (CSAT)** | Bewertung durch den User nach Lösung | >4/5 |
+| **Ticket-Backlog** | Anzahl offener Tickets | Soll stabil bleiben / sinken |
+
 ### Erstlösungsquote (First Call Resolution)
 
 Anteil der Störungen, die beim **ersten Kontakt** gelöst werden.
@@ -332,6 +359,23 @@ Absicherung durch Entfernen unnötiger Funktionen und Anwenden sicherer Einstell
 - Firewall konfigurieren
 - Unnötige Ports schließen
 
+### Incident Response (Vorfallreaktion)
+
+Strukturierter Ablauf zur Reaktion auf Sicherheitsvorfälle.
+
+**Die 5 Phasen:**
+
+| Phase | Maßnahme | Beispiel |
+|-------|----------|----------|
+| **1. Erkennen** | Vorfall identifizieren und melden | Phishing-Mail erkannt, Alarm vom Virenscanner |
+| **2. Eindämmen** | Schaden begrenzen, Ausbreitung verhindern | Gerät vom Netzwerk trennen, Konto sperren |
+| **3. Beseitigen** | Ursache entfernen | Malware entfernen, kompromittiertes Passwort ändern |
+| **4. Wiederherstellen** | Systeme in Normalbetrieb bringen | Aus Backup wiederherstellen, Dienste starten |
+| **5. Nachbereiten** | Lessons Learned, Maßnahmen zur Prävention | Dokumentation, Prozessanpassung, User-Schulung |
+
+!!! tip "Prüfungs-Tipp"
+    Im IT-Support betrifft dich vor allem Phase 1 und 2: Erkennen und Eindämmen. Wichtig ist, dass du weißt, wen du informieren musst (Eskalation an IT-Security) und was du sofort tun kannst (Gerät isolieren, Konto sperren).
+
 ### BitLocker
 
 Windows-Festplattenverschlüsselung.
@@ -475,7 +519,121 @@ Dokumentierte Lösungen für bekannte Probleme.
 | `traceroute [Ziel]` | Route anzeigen |
 | `ss -tuln` / `netstat -tuln` | Offene Ports |
 | `systemctl status [Dienst]` | Dienststatus |
-| `journalctl` | Systemlogs |
+| `systemctl restart [Dienst]` | Dienst neu starten |
+| `journalctl -u [Dienst]` | Logs eines bestimmten Dienstes |
+| `journalctl -f` | Live-Log-Ausgabe (wie `tail -f`) |
+| `cat /var/log/syslog` | Allgemeines System-Log |
+| `cat /var/log/auth.log` | Authentifizierungs-Log |
+| `chmod` / `chown` | Berechtigungen / Besitzer ändern |
+| `df -h` | Festplattennutzung anzeigen |
+| `top` / `htop` | Prozesse und Ressourcenverbrauch |
+
+### Linux-Systemdienste (systemd)
+
+Linux verwendet `systemd` zur Verwaltung von Diensten (Services).
+
+| Befehl | Funktion |
+|--------|----------|
+| `systemctl start [Dienst]` | Dienst starten |
+| `systemctl stop [Dienst]` | Dienst stoppen |
+| `systemctl restart [Dienst]` | Dienst neu starten |
+| `systemctl status [Dienst]` | Status prüfen (aktiv, fehlerhaft, gestoppt) |
+| `systemctl enable [Dienst]` | Dienst beim Systemstart automatisch starten |
+| `systemctl disable [Dienst]` | Autostart deaktivieren |
+
+### Linux-Log-Analyse
+
+Wichtige Log-Dateien und ihre Funktion:
+
+| Log-Datei | Inhalt |
+|-----------|--------|
+| `/var/log/syslog` | Allgemeine Systemmeldungen |
+| `/var/log/auth.log` | Login-Versuche, sudo-Nutzung |
+| `/var/log/kern.log` | Kernel-Meldungen (Hardware, Treiber) |
+| `/var/log/dpkg.log` | Paketinstallationen |
+| `journalctl` | Zentrale Log-Abfrage (systemd) |
+
+**Typische Log-Analyse:**
+
+```bash
+journalctl -u ssh --since "1 hour ago"  # SSH-Logs der letzten Stunde
+journalctl -p err                        # Nur Fehlermeldungen
+grep "Failed password" /var/log/auth.log # Fehlgeschlagene Logins suchen
+```
+
+---
+
+## Windows-Fehleranalyse
+
+Wichtige Werkzeuge und Konzepte für die Windows-Fehleranalyse im Support.
+
+### Event Logs (Ereignisanzeige)
+
+Die Windows-Ereignisanzeige (`eventvwr.msc`) ist das zentrale Werkzeug zur Fehleranalyse.
+
+**Wichtige Log-Kategorien:**
+
+| Log | Inhalt | Typische Einträge |
+|-----|--------|-------------------|
+| **System** | Betriebssystem, Treiber, Dienste | Dienstfehler, Hardwareprobleme |
+| **Anwendung** | Programme und Anwendungen | Abstürze, Anwendungsfehler |
+| **Sicherheit** | Anmeldungen, Rechtezugriffe | Login-Versuche, Kontosperrungen |
+
+**Wichtige Event-IDs:**
+
+| Event-ID | Bedeutung |
+|----------|-----------|
+| **4624** | Erfolgreiche Anmeldung |
+| **4625** | Fehlgeschlagene Anmeldung |
+| **4740** | Konto gesperrt (Account Lockout) |
+| **7036** | Dienst gestartet/gestoppt |
+| **1001** | Windows Error Reporting (Anwendungsabsturz) |
+| **41** | Unerwarteter Neustart (Kernel-Power) |
+
+**Befehle:**
+
+```powershell
+Get-EventLog -LogName System -Newest 20     # Letzte 20 Systemereignisse
+Get-EventLog -LogName Security -InstanceId 4740  # Kontosperrungen
+eventvwr.msc                                  # Grafische Ereignisanzeige
+```
+
+### Performance-Analyse
+
+| Tool | Funktion | Aufruf |
+|------|----------|--------|
+| **Task-Manager** | Schneller Überblick CPU, RAM, Disk | `Ctrl+Shift+Esc` |
+| **Ressourcenmonitor** | Detaillierte Analyse pro Prozess | `resmon.exe` |
+| **Leistungsüberwachung** | Langzeit-Monitoring mit Countern | `perfmon.exe` |
+
+**Typische Engpässe:**
+
+| Ressource | Symptom | Prüfung |
+|-----------|---------|---------|
+| **CPU** | System reagiert langsam, hohe Auslastung | Task-Manager → CPU-Spalte |
+| **RAM** | Swapping, Programme starten langsam | Task-Manager → Arbeitsspeicher |
+| **Festplatte** | Lange Ladezeiten, 100% Datenträger | Task-Manager → Datenträger |
+| **Netzwerk** | Langsame Verbindungen, Timeouts | Task-Manager → Netzwerk |
+
+### Blue Screen (BSOD)
+
+Ein Blue Screen of Death (BSOD) zeigt einen kritischen Systemfehler an, der Windows zum Absturz bringt.
+
+**Häufige Ursachen:**
+
+| Ursache | Typischer Stopp-Code | Maßnahme |
+|---------|---------------------|----------|
+| Treiberkonflikt | DRIVER_IRQL_NOT_LESS_OR_EQUAL | Treiber aktualisieren/zurücksetzen |
+| Defekter RAM | MEMORY_MANAGEMENT | Speichertest (`mdsched.exe`) |
+| Festplattenfehler | KERNEL_DATA_INPAGE_ERROR | `chkdsk /f` ausführen |
+| Überhitzung | KERNEL_POWER | Lüfter/Kühlung prüfen |
+
+**Analyse-Schritte:**
+
+1. Stopp-Code notieren (auf dem Bluescreen angezeigt)
+2. Ereignisanzeige → System-Log prüfen (Event-ID 41, 1001)
+3. Zuverlässigkeitsverlauf prüfen (`perfmon /rel`)
+4. Ggf. Minidump analysieren (`C:\Windows\Minidump\`)
 
 ---
 
@@ -485,7 +643,9 @@ Dokumentierte Lösungen für bekannte Probleme.
 |-----------|-----------|
 | AD | Active Directory |
 | APIPA | Automatic Private IP Addressing |
+| BSOD | Blue Screen of Death |
 | CIDR | Classless Inter-Domain Routing |
+| CSAT | Customer Satisfaction Score |
 | DHCP | Dynamic Host Configuration Protocol |
 | DNS | Domain Name System |
 | DSGVO | Datenschutz-Grundverordnung |
@@ -496,11 +656,13 @@ Dokumentierte Lösungen für bekannte Probleme.
 | ITIL | IT Infrastructure Library |
 | LAN | Local Area Network |
 | MFA | Multi-Factor Authentication |
+| MTTR | Mean Time to Resolve |
 | NTFS | New Technology File System |
 | OSI | Open Systems Interconnection |
 | OU | Organizational Unit |
 | RCA | Root Cause Analysis |
 | SLA | Service Level Agreement |
 | SSO | Single Sign-On |
+| TPM | Trusted Platform Module |
 | VPN | Virtual Private Network |
 | WLAN | Wireless Local Area Network |

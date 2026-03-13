@@ -7,6 +7,9 @@ description: Prüfungsvorbereitung für das IHK-Zertifikat IT Support Specialist
 
 Dieser Leitfaden bereitet dich Schritt für Schritt auf die IHK-Zertifikatsprüfung vor. Arbeite die sechs Bereiche in der vorgegebenen Reihenfolge durch.
 
+!!! tip "Meilensteinleitfaden"
+    Nutze den **[Meilensteinleitfaden](vorbereitung/meilensteinleitfaden.md)**, um deine Prüfungsvorbereitung in vier Meilensteinen zu strukturieren. Fülle ihn Woche für Woche aus – am Ende steht deine fertige Präsentation.
+
 ---
 
 ## Dein Weg zur Prüfung

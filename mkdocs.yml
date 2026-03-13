@@ -102,6 +102,7 @@ plugins:
 
 nav:
   - Übersicht: index.md
+  - Meilensteinleitfaden: vorbereitung/meilensteinleitfaden.md
   - 1. Die Prüfung verstehen:
     - Prüfungsablauf: grundlagen/pruefungsleitfaden.md
     - Bewertungskriterien: grundlagen/vorgaben-bewertung.md

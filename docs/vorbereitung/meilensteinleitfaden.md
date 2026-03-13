@@ -42,12 +42,9 @@ Wähle ein Thema aus dem [Themenpool](themenpool.md). Es sollte ein realer oder 
 
 ### 1.2 Zielgruppe definieren
 
-!!! warning "Wichtig"
-    Die Zielgruppe ist **nicht** der Prüfungsausschuss! Nenne eine konkrete Rolle, z. B. IT-Administratoren, IT-Leitung, Fachabteilungsleiter.
-
 **Beantworte in deinem Dokument:**
 
-- An welche Rolle / Position richtet sich meine Präsentation?
+- An welche Rolle / Position richtet sich meine Präsentation? (z. B. IT-Leitung, Fachabteilungsleiter, Prüfungsausschuss)
 - Welches technische Vorwissen hat diese Person? (gering / mittel / hoch)
 - Was erwartet diese Person von mir?
 

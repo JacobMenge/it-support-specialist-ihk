@@ -5,7 +5,10 @@ description: In vier Meilensteinen zur fertigen IHK-Prüfungspräsentation
 
 # Meilensteinleitfaden
 
-Dieser Leitfaden begleitet dich in **vier Meilensteinen** von der Themenwahl bis zur fertigen Präsentation. Fülle jeden Meilenstein Schritt für Schritt aus. Wenn du alle vier abgeschlossen hast, bist du bereit für die Prüfung.
+Dieser Leitfaden begleitet dich in **vier Meilensteinen** von der Themenwahl bis zur fertigen Präsentation. Arbeite jeden Meilenstein der Reihe nach durch.
+
+!!! tip "Eigenes Dokument anlegen"
+    Lege dir ein eigenes Dokument an (z. B. Word, Google Docs oder Notion) und beantworte dort die Leitfragen aus jedem Meilenstein. Dieses Dokument wird dein Arbeitsdokument für die gesamte Vorbereitung – und die Grundlage für deine Präsentation in Meilenstein 4.
 
 ```mermaid
 flowchart LR
@@ -28,54 +31,52 @@ flowchart LR
 !!! info "Ziel"
     Du hast dein Thema gewählt, weißt für wen du präsentierst und kannst die Problemstellung klar beschreiben.
 
-### 1.1 Mein Thema
+### 1.1 Thema wählen
 
 Wähle ein Thema aus dem [Themenpool](themenpool.md). Es sollte ein realer oder realistischer Supportfall sein.
 
-| | Dein Eintrag |
-|---|---|
-| **Gewähltes Thema** | |
-| **Warum dieses Thema?** (z. B. eigene Erfahrung, Interesse, Praxisbezug) | |
+**Beantworte in deinem Dokument:**
 
-### 1.2 Zielgruppe
+- Welches Thema habe ich gewählt?
+- Warum dieses Thema? (z. B. eigene Erfahrung, Interesse, Praxisbezug)
+
+### 1.2 Zielgruppe definieren
 
 !!! warning "Wichtig"
     Die Zielgruppe ist **nicht** der Prüfungsausschuss! Nenne eine konkrete Rolle, z. B. IT-Administratoren, IT-Leitung, Fachabteilungsleiter.
 
-| | Dein Eintrag |
-|---|---|
-| **Rolle / Position** | |
-| **Technisches Vorwissen** | gering / mittel / hoch |
-| **Was erwartet diese Person von mir?** | |
+**Beantworte in deinem Dokument:**
 
-### 1.3 Persona – Der/Die Betroffene
+- An welche Rolle / Position richtet sich meine Präsentation?
+- Welches technische Vorwissen hat diese Person? (gering / mittel / hoch)
+- Was erwartet diese Person von mir?
 
-Beschreibe die Person, die das Support-Problem hat. Das macht dein Szenario greifbar.
+### 1.3 Persona erstellen
 
-| | Dein Eintrag |
-|---|---|
-| **Name** (fiktiv) | |
-| **Abteilung / Rolle** | |
-| **Technisches Niveau** | Einsteiger / Fortgeschritten / Experte |
-| **Stimmung / Dringlichkeit** | |
+Beschreibe die Person, die das Support-Problem hat. Das macht dein Szenario greifbar und hilft dir, den Fall lebendig zu präsentieren.
 
-### 1.4 Die Problemstellung
+**Beantworte in deinem Dokument:**
 
-Beschreibe in 2–3 Sätzen, was genau passiert ist:
+- Wie heißt die Person? (fiktiver Name)
+- In welcher Abteilung / Rolle arbeitet sie?
+- Wie technisch versiert ist sie? (Einsteiger / Fortgeschritten / Experte)
+- Wie ist die Stimmung und wie dringend ist das Problem?
 
-> _Hier deine Problembeschreibung eintragen …_
+### 1.4 Problemstellung beschreiben
 
-| | Dein Eintrag |
-|---|---|
-| **Wie viele Nutzer betroffen?** | |
-| **Auswirkung auf den Betrieb** | |
-| **Priorität** | P1 Kritisch / P2 Hoch / P3 Mittel / P4 Niedrig |
-| **Begründung der Priorität** | |
+**Beantworte in deinem Dokument:**
+
+- Was genau ist passiert? (2–3 Sätze)
+- Wie viele Nutzer sind betroffen?
+- Welche Auswirkung hat das Problem auf den Betrieb?
+- Welche Priorität hat der Fall? (P1–P4) Und warum?
 
 ??? tip "Erinnerung: Priorität bestimmen"
     Priorität = **Impact** (Auswirkung) × **Urgency** (Dringlichkeit). Mehr dazu unter [Fehleranalyse](troubleshooting.md).
 
 ### Selbstcheck Meilenstein 1
+
+Bevor du weitergehst – hast du alles?
 
 - [ ] Ich habe ein konkretes Thema gewählt
 - [ ] Meine Zielgruppe ist eine echte Rolle (nicht „Prüfungsausschuss")
@@ -89,62 +90,54 @@ Beschreibe in 2–3 Sätzen, was genau passiert ist:
 !!! info "Ziel"
     Du dokumentierst deine systematische Fehleranalyse und kannst dein Vorgehen begründen.
 
-### 2.1 Hypothesen
+### 2.1 Hypothesen aufstellen
 
-Bevor du loslegst: Was könnten mögliche Ursachen sein? Stelle **mindestens 3** Hypothesen auf.
+Bevor du loslegst: Was könnten mögliche Ursachen sein? Stelle **mindestens 3 Hypothesen** auf und notiere jeweils, wie du sie prüfen würdest.
 
-| # | Hypothese | Wie prüfe ich das? |
-|---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
+**Notiere in deinem Dokument pro Hypothese:**
+
+- Was vermute ich als Ursache?
+- Wie kann ich das prüfen? (welches Tool, welcher Befehl, welcher Test?)
 
 ??? tip "Erinnerung: Hypothesenbasiertes Troubleshooting"
     Stelle zuerst Vermutungen auf, dann prüfe sie gezielt. Nutze die [Fehleranalyse-Methoden](troubleshooting.md) (OSI-Modell, 5-Why, Divide & Conquer).
 
-### 2.2 Mein Vorgehen Schritt für Schritt
+### 2.2 Vorgehen dokumentieren
 
-Beschreibe deine Schritte mit konkreten Tools und Befehlen.
+Beschreibe dein Vorgehen **Schritt für Schritt** mit konkreten Tools und Befehlen.
 
-| Schritt | Was habe ich getan? | Tool / Befehl | Ergebnis |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+**Notiere in deinem Dokument pro Schritt:**
 
-### 2.3 Die Ursache (Root Cause)
+- Was habe ich getan?
+- Welches Tool / welchen Befehl habe ich verwendet?
+- Was war das Ergebnis dieses Schritts?
 
-| | Dein Eintrag |
-|---|---|
-| **Was war die tatsächliche Ursache?** | |
-| **Welche Hypothese hat sich bestätigt?** | |
+### 2.3 Root Cause benennen
+
+**Beantworte in deinem Dokument:**
+
+- Was war die tatsächliche Ursache des Problems?
+- Welche meiner Hypothesen hat sich bestätigt?
 
 ### 2.4 Entscheidungen begründen
 
 !!! warning "Prüfer fragen immer: Warum genau SO?"
     Du musst deine Lösung begründen können und mindestens eine Alternative kennen.
 
-| | Dein Eintrag |
-|---|---|
-| **Meine Lösung** | |
-| **Warum diese Lösung?** | |
+**Beantworte in deinem Dokument:**
 
-**Welche Alternativen hätte es gegeben?**
+- Wie lautet meine Lösung?
+- Warum habe ich mich für diese Lösung entschieden?
+- Welche Alternativen hätte es gegeben? (mindestens eine, mit Vor- und Nachteilen)
+- Warum habe ich die Alternative nicht gewählt?
 
-| Alternative | Vorteil | Nachteil | Warum nicht gewählt? |
-|---|---|---|---|
-| | | | |
-| | | | |
+### 2.5 Kommunikation festhalten
 
-### 2.5 Kommunikation im Supportfall
+**Beantworte in deinem Dokument:**
 
-| Situation | Was habe ich gesagt/geschrieben? |
-|---|---|
-| **Erstkontakt** | |
-| **Statusupdate** | |
-| **Abschluss** | |
+- Was habe ich beim Erstkontakt gesagt/geschrieben?
+- Wie habe ich den Betroffenen auf dem Laufenden gehalten?
+- Wie habe ich das Ergebnis kommuniziert?
 
 ??? tip "Erinnerung: Gesprächsstruktur"
     Nutze die ACAAA-Methode: Acknowledge → Clarify → Agree → Act → Advise. Mehr unter [Kundenkommunikation](kommunikation.md).
@@ -163,49 +156,47 @@ Beschreibe deine Schritte mit konkreten Tools und Befehlen.
 !!! info "Ziel"
     Du kannst dein Ergebnis mit Nachweisen belegen und reflektierst, was du gelernt hast.
 
-### 3.1 Das Ergebnis
+### 3.1 Ergebnis formulieren
 
-| | Dein Eintrag |
-|---|---|
-| **Konkretes Ergebnis** (z. B. „Nutzer kann wieder auf ERP zugreifen") | |
-| **Zeitersparnis / Wiederherstellungszeit** | |
-| **Betroffene wieder arbeitsfähig?** | Ja / Teilweise / Nein |
-| **Weiterer Nutzen** (z. B. Prozessverbesserung, Sicherheit) | |
+**Beantworte in deinem Dokument:**
+
+- Was ist das konkrete Ergebnis? (z. B. „Der Nutzer kann wieder auf das ERP-System zugreifen")
+- Gibt es eine messbare Zeitersparnis oder Wiederherstellungszeit?
+- Sind die Betroffenen wieder voll arbeitsfähig?
+- Gibt es einen weiteren Nutzen? (z. B. Prozessverbesserung, höhere Sicherheit)
 
 ### 3.2 Nachweise planen
 
-Prüfer wollen Beweise sehen. Welche Nachweise zeigst du in der Präsentation?
+Prüfer wollen Beweise sehen. Überlege, welche Nachweise du in deiner Präsentation zeigen kannst:
 
-- [ ] Screenshot (z. B. erfolgreicher Test, Konfiguration)
-- [ ] Log-Auszug (z. B. Event Viewer, Terminal-Output)
-- [ ] Diagramm (z. B. Netzwerktopologie, Ablaufdiagramm)
-- [ ] Vorher/Nachher-Vergleich
-- [ ] Nutzer-Feedback
-- [ ] Sonstiges: ___
+- Screenshot (z. B. erfolgreicher Test, Konfiguration)
+- Log-Auszug (z. B. Event Viewer, Terminal-Output)
+- Diagramm (z. B. Netzwerktopologie, Ablaufdiagramm)
+- Vorher/Nachher-Vergleich
+- Nutzer-Feedback
 
-**Beschreibe deinen wichtigsten Nachweis:**
+**Notiere in deinem Dokument:**
 
-> _Hier beschreiben …_
+- Welche Nachweise werde ich zeigen?
+- Beschreibe den wichtigsten Nachweis kurz.
 
 ### 3.3 Lessons Learned
 
-| | Dein Eintrag |
-|---|---|
-| **Was habe ich aus diesem Fall gelernt?** | |
-| **Was würde ich beim nächsten Mal anders machen?** | |
-| **Wie lässt sich das Problem in Zukunft verhindern?** | |
+**Beantworte in deinem Dokument:**
 
-### 3.4 Vorbereitung auf das Fachgespräch
+- Was habe ich aus diesem Supportfall gelernt?
+- Was würde ich beim nächsten Mal anders machen?
+- Wie lässt sich das Problem in Zukunft verhindern?
 
-Nach der Präsentation folgen **5 Minuten Fachgespräch**. Bereite Antworten auf diese typischen Fragen vor:
+### 3.4 Fachgespräch vorbereiten
 
-| Mögliche Prüferfrage | Deine Antwort (Stichpunkte) |
-|---|---|
-| Warum haben Sie dieses Vorgehen gewählt? | |
-| Was wäre Ihre Alternativlösung gewesen? | |
-| Welche Risiken gab es bei Ihrem Vorgehen? | |
-| Wie haben Sie die Lösung dokumentiert? | |
-| Was bedeutet [Fachbegriff aus deinem Thema]? | |
+Nach der Präsentation folgen **5 Minuten Fachgespräch**. Bereite dich auf diese typischen Fragen vor und notiere Antworten in Stichpunkten:
+
+1. Warum haben Sie dieses Vorgehen gewählt?
+2. Was wäre Ihre Alternativlösung gewesen?
+3. Welche Risiken gab es bei Ihrem Vorgehen?
+4. Wie haben Sie die Lösung dokumentiert?
+5. Was bedeutet [Fachbegriff aus deinem Thema]?
 
 ??? tip "Mehr Übungsfragen"
     Im [Fragenkatalog](../pruefung/fragenkatalog.md) findest du über 55 typische Prüferfragen mit Antwortvorschlägen.
@@ -213,7 +204,7 @@ Nach der Präsentation folgen **5 Minuten Fachgespräch**. Bereite Antworten auf
 ### Selbstcheck Meilenstein 3
 
 - [ ] Mein Ergebnis ist konkret und messbar formuliert
-- [ ] Ich habe mindestens einen Nachweis (Screenshot, Log, Diagramm) vorbereitet
+- [ ] Ich habe mindestens einen Nachweis (Screenshot, Log, Diagramm) geplant
 - [ ] Ich kann erklären, was ich gelernt habe und was ich anders machen würde
 - [ ] Ich habe Antworten auf mindestens 5 typische Prüferfragen vorbereitet
 
@@ -224,9 +215,9 @@ Nach der Präsentation folgen **5 Minuten Fachgespräch**. Bereite Antworten auf
 !!! info "Ziel"
     Du erstellst deine Präsentation auf Basis der Meilensteine 1–3 und übst den Vortrag.
 
-### 4.1 Folienplanung
+### 4.1 Folien planen
 
-Plane **7–9 Folien** für 10 Minuten. Alle Inhalte hast du bereits in den Meilensteinen 1–3 erarbeitet.
+Plane **7–9 Folien** für 10 Minuten. Alle Inhalte hast du bereits in den Meilensteinen 1–3 erarbeitet. Hier ein Vorschlag, welcher Meilenstein welche Folie füllt:
 
 | Folie | Inhalt | Dauer | Quelle |
 |---|---|---|---|
@@ -242,26 +233,28 @@ Plane **7–9 Folien** für 10 Minuten. Alle Inhalte hast du bereits in den Meil
 ??? tip "Kein festes Format vorgeschrieben"
     Die IHK gibt **kein** Folienformat vor. Die Tabelle oben ist eine Orientierungshilfe. Mehr Varianten findest du im [Folienaufbau](praesentationsblueprint.md).
 
-### 4.2 Checkliste Foliendesign
+### 4.2 Foliendesign prüfen
 
-- [ ] Maximal 6 Stichpunkte pro Folie (keine ganzen Sätze!)
-- [ ] Schriftgröße mindestens 24pt
-- [ ] Mindestens 1 Diagramm oder Screenshot eingebaut
-- [ ] Kontrastreiche Farben, gut lesbar bei Bildschirmfreigabe
-- [ ] Zielgruppe wird auf der ersten Folie genannt
+Achte beim Erstellen deiner Folien auf diese Punkte:
 
-### 4.3 Probelauf
+- Maximal 6 Stichpunkte pro Folie (keine ganzen Sätze!)
+- Schriftgröße mindestens 24pt
+- Mindestens 1 Diagramm oder Screenshot eingebaut
+- Kontrastreiche Farben, gut lesbar bei Bildschirmfreigabe
+- Zielgruppe wird auf der ersten Folie genannt
 
-| | Eintrag |
-|---|---|
-| **Probelauf 1 – Datum** | |
-| **Dauer** | ___ Min. (Ziel: 10 Min.) |
-| **Was muss ich anpassen?** | |
-| **Probelauf 2 – Datum** | |
-| **Dauer** | ___ Min. |
-| **Feedback erhalten von** | |
+### 4.3 Probeläufe durchführen
+
+Führe **mindestens zwei Probeläufe** durch und notiere in deinem Dokument:
+
+- Datum des Probelaufs
+- Wie lange hat der Vortrag gedauert? (Ziel: 10 Minuten)
+- Was muss ich anpassen?
+- Von wem habe ich Feedback bekommen?
 
 ### 4.4 Technik-Check (Prüfungstag)
+
+Gehe vor der Prüfung diese Punkte durch:
 
 - [ ] Laptop geladen / Netzteil angeschlossen
 - [ ] Stabile Internetverbindung (LAN bevorzugt)
@@ -286,4 +279,4 @@ Plane **7–9 Folien** für 10 Minuten. Alle Inhalte hast du bereits in den Meil
 ---
 
 !!! success "Geschafft!"
-    Wenn alle vier Meilensteine abgehakt sind, bist du bereit für die Prüfung.
+    Wenn alle vier Meilensteine abgehakt sind, hast du alles erarbeitet und bist bereit für die Prüfung.
